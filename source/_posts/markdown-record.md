@@ -6,8 +6,6 @@ tags:
 	- sub-Markdown
 ---
 
-*   [Root](../README.md)
-
 ## 標題 1~6 
 ```
 #  A

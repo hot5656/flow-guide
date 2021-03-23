@@ -6,7 +6,6 @@ tags:
 	- sub-GitHub
 ---
 
-*   [Root](../README.md)
 *   [1. Add new repository](#a1)
 
 <h2 id="a1">1. Add new repository</h2>

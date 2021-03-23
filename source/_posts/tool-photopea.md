@@ -6,8 +6,6 @@ tags:
 	- sub-tool
 ---
 
-
-*   [Root](../README.md)
 *   [Manual](https://www.photopea.com/learn/bt-basic)
 *   [Oneline photo edir](https://raw.pics.io/)
 

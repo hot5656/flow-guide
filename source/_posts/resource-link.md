@@ -6,8 +6,6 @@ tags:
 	- sub-Resource
 ---
 
-*   [Root](../README.md)
-
 ### issue
 *		[Flex bugs](https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers)
 		```

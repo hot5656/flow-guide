@@ -6,7 +6,6 @@ tags:
 	- sub-Nodejs
 ---
 
-*   [Root](../README.md)
 *   [1. SASS compile](#a1)
 *   [2. npm command](#a2)
 *   [3. mini-web server](#a3)

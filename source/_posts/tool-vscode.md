@@ -6,9 +6,6 @@ tags:
 	- sub-tool
 ---
 
-
-*   [Root](../README.md)
-
 ### 快捷鍵-	[hot key](https://poychang.github.io/vscode-shortcuts/)
 *	ctrl-shift-p(or F1) : to command line
 *	F11 : 全螢幕切換

@@ -6,7 +6,6 @@ tags:
 	- sub-Nodejs
 ---
 
-*   [Root](../README.md)
 *   [1. Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"}](#a1)
 *   [2. install browser-sync issue](#a2)
 *   [3. run gulp -> Failed to load external module @babel/register](#a3)

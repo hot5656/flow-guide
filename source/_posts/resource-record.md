@@ -6,7 +6,6 @@ tags:
 	- sub-Resource
 ---
 
-*   [Root](../README.md)
 *   [1. Roboto fonts](#a1)
 *   [2. fontawesome](#a2)
 

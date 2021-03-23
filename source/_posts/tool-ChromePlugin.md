@@ -6,8 +6,6 @@ tags:
 	- sub-tool
 ---
 
-*   [Root](../README.md)
-
 # tool
 
 **Selector Gadget**  

@@ -6,10 +6,6 @@ tags:
 	- sub-tool
 ---
 
-
-*   [Root](../README.md)
-
-
 ### 多行編輯
 
 *	滑鼠選中多行，按下Ctrl_Shift_L或Command_Shift_L即可同時編輯這些行

@@ -6,7 +6,6 @@ tags:
 	- sub-tool
 ---
 
-*   [Root](../README.md)
 *   [1. Issue](#a1)
 *   [2. Reference link](#a2)
 *   [3. Basic](#a3)

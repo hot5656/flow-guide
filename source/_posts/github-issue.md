@@ -6,7 +6,6 @@ tags:
 	- sub-GitHub
 ---
 
-*   [Root](../README.md)
 *   [1. A dependency defined in package-lock.json has known security vulnerabilities and should be updated](#a1)
 
 <h2 id="a1">1. A dependency defined in package-lock.json has known security vulnerabilities and should be updated</h2>

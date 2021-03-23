@@ -6,8 +6,6 @@ tags:
 	- sub-tool
 ---
 
-*   [Root](../README.md)
-
 ### temp
  emacs --debug-init
 sudo apt-get install elpa-helm-projectile
