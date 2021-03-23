@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/flow-guide/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/flow-guide/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/flow-guide/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/flow-guide/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/flow-guide/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"hot5656.github.io","root":"/flow-guide/","images":"/flow-guide/images","scheme":"Gemini","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/flow-guide/search.json","localsearch":{"enable":"enable","trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="Root  temp emacs –debug-initsudo apt-get install elpa-helm-projectile;; (setq helm-projectile-fuzzy-match nil)(require ‘helm-projectile)(helm-projectile-on) ;; (setq helm-projectile-fuzzy-match nil">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Emacs">
+<meta property="og:url" content="https://hot5656.github.io/flow-guide/2021/03/23/tool-emacs/index.html">
+<meta property="og:site_name" content="Robert Flow Guide">
+<meta property="og:description" content="Root  temp emacs –debug-initsudo apt-get install elpa-helm-projectile;; (setq helm-projectile-fuzzy-match nil)(require ‘helm-projectile)(helm-projectile-on) ;; (setq helm-projectile-fuzzy-match nil">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2021-03-23T07:44:37.000Z">
+<meta property="article:modified_time" content="2021-03-23T08:22:58.521Z">
+<meta property="article:author" content="Robert Kao">
+<meta property="article:tag" content="sub-tool">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://hot5656.github.io/flow-guide/2021/03/23/tool-emacs/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+<title>Emacs | Robert Flow Guide</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/flow-guide/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Robert Flow Guide</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/flow-guide/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li>
+        <li class="menu-item menu-item-tags"><a href="/flow-guide/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li>
+        <li class="menu-item menu-item-categories"><a href="/flow-guide/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li>
+        <li class="menu-item menu-item-archives"><a href="/flow-guide/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#temp"><span class="nav-number">1.</span> <span class="nav-text">temp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#emacs-training"><span class="nav-number">2.</span> <span class="nav-text">emacs training</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#some-setting"><span class="nav-number">3.</span> <span class="nav-text">some setting</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Robert Kao</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/flow-guide/archives/">
+        
+          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/flow-guide/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/flow-guide/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/tool-emacs/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/flow-guide/images/avatar.gif">
+      <meta itemprop="name" content="Robert Kao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Robert Flow Guide">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Emacs
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2021-03-23 15:44:37 / 修改時間：16:22:58" itemprop="dateCreated datePublished" datetime="2021-03-23T15:44:37+08:00">2021-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/flow-guide/categories/tool/" itemprop="url" rel="index"><span itemprop="name">tool</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <ul>
+<li>  <a href="../README.md">Root</a></li>
+</ul>
+<h3 id="temp"><a href="#temp" class="headerlink" title="temp"></a>temp</h3><p> emacs –debug-init<br>sudo apt-get install elpa-helm-projectile<br>;; (setq helm-projectile-fuzzy-match nil)<br>(require ‘helm-projectile)<br>(helm-projectile-on)</p>
+<p>;; (setq helm-projectile-fuzzy-match nil)<br>;; (require ‘helm-projectile)<br>;; (projectile-mode +1)<br>;; (define-key projectile-mode-map (kbd “C-c C-p”) ‘projectile-command-map)<br>;; (helm-projectile-on)</p>
+<ul>
+<li>helm-projectile        input pattern<br>helm-projectile-switch-project        switch project</li>
+<li>helm-projectile-find-file            find file</li>
+<li>helm-projectile-find-dir            find directory<br>helm-M-x            helm for M-x</li>
+</ul>
+<p>C-h m shows Helm commands and currently active key bindings.</p>
+<p>silversearcher-ag</p>
+<p>sudo apt-get install global</p>
+<h3 id="emacs-training"><a href="#emacs-training" class="headerlink" title="emacs training"></a>emacs training</h3><p>edit<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;ggtags</span><br><span class="line">M-.		1st find tag definition, 2nd all tag</span><br><span class="line">M-,		return to previous tag</span><br><span class="line">&#x2F;&#x2F; projectile</span><br><span class="line">C-c p f 	search file</span><br><span class="line">C-c p s g	projectile-grep</span><br><span class="line">C-c p s s 	projectile-ag(need install the_silver_searcher[advice grep])</span><br><span class="line">C-c p k 	kill all the porject&#39;s buffer</span><br><span class="line">C-c p S 	save all the porject&#39;s buffer</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; key </span><br><span class="line">   s-x super (windows or cmd) key </span><br><span class="line"></span><br><span class="line">C-?	Ctrl</span><br><span class="line">M-? Meta(Alt)</span><br><span class="line">C-v	向下</span><br><span class="line">M-v	向上</span><br><span class="line">C-l	清除重show(游標置螢幕中間)</span><br><span class="line">C-x k	kill current buffer</span><br><span class="line"></span><br><span class="line">			C-p</span><br><span class="line">C-b(M-b字)		C-f(M-f字)</span><br><span class="line">			C-n</span><br><span class="line"></span><br><span class="line">M-&lt; 文件頭</span><br><span class="line">M-a(句頭) C-a(行頭)			C-e(行尾) M-e(句尾)</span><br><span class="line">M-&gt;文件尾</span><br><span class="line"></span><br><span class="line">C-d刪一字元 (M-d刪一字)</span><br><span class="line">C-x u (undo取消)</span><br><span class="line">C-k 刪至行尾</span><br><span class="line">M-k 刪至句尾</span><br><span class="line">C-SPC 標示刪除頭 C-w刪除尾</span><br><span class="line">C-y	貼上刪除行或區塊</span><br><span class="line">M-w	複製</span><br><span class="line">C-w	剪下</span><br><span class="line">M-x goto-line 輸入數字</span><br><span class="line">M-g g 輸入行號</span><br><span class="line">C-k 刪除目前位置到行尾</span><br><span class="line">C-u 重複</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; windows </span><br><span class="line">C-x o next window</span><br><span class="line">C-x 0 去除方塊所在畫面</span><br><span class="line">C-x	1 成一視窗</span><br><span class="line">C-x 2 水平分鴿</span><br><span class="line">C-x 3 垂直分割</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; file</span><br><span class="line">C-x C-f 	open one file</span><br><span class="line">C-x C-s		save file</span><br><span class="line">C-x C-b		列出緩衝區</span><br><span class="line">C-x b       切換緩衝區</span><br><span class="line">C-x C-c		關閉 Emacs</span><br><span class="line">q           跳回</span><br><span class="line">M-x dired 瀏覽資料夾 (或用　C-x d) </span><br><span class="line">M-x shell (進入 shell)</span><br><span class="line">M-x linum-mode 顯示行號(toggle)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; help </span><br><span class="line">C-h ?	help</span><br><span class="line">C-h c C-p	函數名稱</span><br><span class="line">C-h k C-p	函數說明文件</span><br><span class="line">C-h f		解釋函數</span><br><span class="line">C-h b		show key define</span><br><span class="line">C-h m 		show buffer&#39;s mode</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; buffer</span><br><span class="line">C-x b		更換到另一個緩衝區</span><br><span class="line">C-x C-b		顯示所有緩衝區資料</span><br><span class="line">C-x	k		砍掉緩衝區</span><br><span class="line">q			跳出某些buffer</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; special</span><br><span class="line">C-u 重複指令 C-u 8 C-f(do C-f 8 times)</span><br><span class="line">C-g 取消停止指令</span><br><span class="line">C-z 暫停emacs  (fg 恢復)</span><br><span class="line">C-s,C-r 搜尋 </span><br><span class="line">g  refresh buffer</span><br><span class="line">C-c C-c : end some function(ex:git commit)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;magit</span><br><span class="line">;; C-x g : magit-status(also can do as init)</span><br><span class="line">;; magit : i   add ignore</span><br><span class="line">;;         tab 展開</span><br><span class="line">;;         CR  開檔</span><br><span class="line">;;         ? - help</span><br><span class="line">;; c c --&gt; triger commit</span><br><span class="line">;;     --&gt; write commit message --&gt; C-c C-c</span><br><span class="line">;;     C-c C-c     (with-editor-finish)</span><br><span class="line">;;     C-c C-k     (with-editor-cancel)</span><br><span class="line">;;     commit message</span><br><span class="line">;;        用一行空白行分隔標題與內容</span><br><span class="line">;; b(branch) b(branch-checkout)</span><br><span class="line">;; b(branch) c(new branch-checkout)</span><br><span class="line">;; b(branch) n(new branch)</span><br><span class="line">;; z z --&gt; stash(儲藏)</span><br><span class="line">;; z p --&gt; stash pop(取出)</span><br><span class="line">;; E(Ediff) m(Resolve) --&gt; edit</span><br><span class="line">;;          *Ediff Control buff</span><br><span class="line">;; k   --&gt; Discard(support stash)</span><br><span class="line">;; m(merge) m(merge)</span><br><span class="line">;; X(reset) s(soft) - 保留修改</span><br><span class="line">;;          h(hard) - 修改刪除</span><br><span class="line">;; rebase 放在起分支點</span><br><span class="line">;;          r(rebase) i(interactively) --&gt; continue --&gt; 可調整commit順序(分支消失)</span><br><span class="line">;; M(remote) a(add) --&gt; name:origin --&gt; url</span><br><span class="line">;; P(push) p(origin&#x2F;master) --&gt; name --&gt; password</span><br><span class="line">;; F(pull) p(origin&#x2F;master)</span><br><span class="line">;; magit status</span><br><span class="line">p&#x2F;n		previous&#x2F;next</span><br><span class="line">s		magit-stage</span><br><span class="line">k		magit-discard</span><br><span class="line">i		magit-ginitgore</span><br><span class="line">tab		show toggle</span><br><span class="line">RET		view</span><br><span class="line">;; Ediff ~:now ~^previous </span><br><span class="line">|	vert&#x2F;horiz</span><br><span class="line">p	previous diff</span><br><span class="line">n	nex diff</span><br><span class="line">v&#x2F;V down&#x2F;up page</span><br><span class="line">i	highlighting</span><br><span class="line">D	diff output</span><br><span class="line">j	jump to diff</span><br><span class="line">&#x3D;	compare region</span><br><span class="line">	;; buffer list(M-x buffer-manu)</span><br><span class="line">	p&#x2F;n	previous&#x2F;next</span><br><span class="line">	m	mask</span><br><span class="line">	u	remove make</span><br><span class="line">d	select wait delete buffer --&gt; x (do all delete)</span><br><span class="line">s	select wait save buff</span><br><span class="line">x	excute for &quot;d or s&quot;</span><br><span class="line">u	remove all select</span><br><span class="line">;; </span><br><span class="line">C-x 4 b buffer &lt;RET&gt;	select to one buffer to another buffer</span><br><span class="line">C-x &lt;LEFT&gt;		previous buffer</span><br><span class="line">C-x &lt;RIGHT&gt;		next buffer</span><br><span class="line">C-x C-f			open one file</span><br><span class="line">C-x C-s			save buffer</span><br><span class="line">C-x s 			save all file</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; directory control</span><br><span class="line">+ add directory</span><br><span class="line">C-M-j (use ivy 僅執行輸入值) - 強制 enter</span><br></pre></td></tr></table></figure></p>
+<p>Lisp<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br></pre></td><td class="code"><pre><span class="line">C-x C-e		run 1 Lisp command</span><br><span class="line"></span><br><span class="line">;; dump buffer file</span><br><span class="line">buffer-file-name</span><br><span class="line"></span><br><span class="line">(+ 1 2 3)</span><br><span class="line"></span><br><span class="line">(+ (* 2 3)</span><br><span class="line">   (&#x2F; 4 2))</span><br><span class="line"></span><br><span class="line">;; send message to minibuff &amp; message</span><br><span class="line">;; return value is this is help!</span><br><span class="line">(message &quot;this is help!&quot;)</span><br><span class="line">;; same as printf </span><br><span class="line">(format &quot;Hello World!~&quot;)</span><br><span class="line">;; print</span><br><span class="line">;; 1st is print show</span><br><span class="line">(print &quot;Print to mini buffer&quot;)</span><br><span class="line">;; insert to current burrent</span><br><span class="line">(insert &quot;;insert this text&quot;)</span><br><span class="line"></span><br><span class="line">;; list</span><br><span class="line">(list &#39;my (+ 1 1) &quot;son&quot;)</span><br><span class="line">;; simple list</span><br><span class="line">(quote (1 2 3))</span><br><span class="line">&#39;(1 2 3)</span><br><span class="line">;; get 1st item</span><br><span class="line">(car &#39;(1 2 3))</span><br><span class="line">;; get 2.. item</span><br><span class="line">(cdr &#39;(1 2 3))</span><br><span class="line">;; add one item to list</span><br><span class="line">(cons 1 &#39;(2 5))</span><br><span class="line">;; simple add one item to list</span><br><span class="line">&#39;(1 . (2 5))</span><br><span class="line">;; just link list as one item  </span><br><span class="line">(cons &#39;(2 5) 1)</span><br><span class="line">&#39;((2 5) . 1)</span><br><span class="line">&#39;((2 5) . (1 3))</span><br><span class="line">;; list 2 string</span><br><span class="line">&#39;(&quot; this is &quot; . &quot;a text&quot;)</span><br><span class="line"></span><br><span class="line">;; 2nd item</span><br><span class="line">(cadr &#39;(1st 2nd 3rd 4th))</span><br><span class="line">;; direct 2nd item(index from 0)</span><br><span class="line">(nth 1 &#39;(1st 2nd 3rd 4th))</span><br><span class="line"></span><br><span class="line">;; check member in list - not null mean true</span><br><span class="line">(member &#39;b &#39;(a b c))</span><br><span class="line">(member &#39;(a) &#39;((a) (b)))</span><br><span class="line">;; memq need actually</span><br><span class="line">(memq &#39;(b) &#39;((a) (b)))</span><br><span class="line"></span><br><span class="line">;; key word</span><br><span class="line">(defvar superman (list :name &quot;Superman&quot; :secret-id &quot;Clark kent&quot;))</span><br><span class="line">(format &quot;%s&quot; superman)</span><br><span class="line">(print superman.name)</span><br><span class="line"></span><br><span class="line">;; global variable</span><br><span class="line">(defvar *nums* &#39;(2 4 6))</span><br><span class="line">(push 1 *nums*)</span><br><span class="line">;; show variable</span><br><span class="line">*nums*</span><br><span class="line">;; set variable - 2nd way</span><br><span class="line">(set &#39;some-list &#39;(a b c))</span><br><span class="line">some-list</span><br><span class="line">;; add item</span><br><span class="line">(cons &#39;z some-list)</span><br><span class="line"></span><br><span class="line">;; compare</span><br><span class="line">;; actual equal</span><br><span class="line">(eq some-list &#39;(a b c))</span><br><span class="line">;; actual equal(number also ok)</span><br><span class="line">(eql some-list &#39;(a b c))</span><br><span class="line">;; simple compare</span><br><span class="line">(equal some-list &#39;(a b c))</span><br><span class="line"></span><br><span class="line">;; setq </span><br><span class="line">(setq my-list &#39;(4 5 6))</span><br><span class="line">my-list</span><br><span class="line"></span><br><span class="line">;; call function 5,6 --&gt; 10</span><br><span class="line">(setf (cdr my-list) 10)</span><br><span class="line">my-list</span><br><span class="line"></span><br><span class="line">;; local variable</span><br><span class="line">(let ((a 1) (b 3))</span><br><span class="line">  (format &quot;now a is %d b is %d&quot; a b))</span><br><span class="line">a</span><br><span class="line"></span><br><span class="line">;; 含運算式</span><br><span class="line">(let* ((a 1) (b (+ a 4)))</span><br><span class="line">  (format &quot;now a is %d b is %d&quot; a b))</span><br><span class="line">a</span><br><span class="line"></span><br><span class="line">;; function</span><br><span class="line">(defun say-hello ()</span><br><span class="line">  (message &quot;hello world&quot;))</span><br><span class="line"></span><br><span class="line">(say-hello)</span><br><span class="line">;; check function?</span><br><span class="line">(functionp &#39;say-hello)</span><br><span class="line"></span><br><span class="line">;; optional args</span><br><span class="line">;;    &amp;optional (x y x)</span><br><span class="line">;;    &amp;rest ...</span><br><span class="line">(defun print-list (&amp;optional x y z &amp;rest ns)</span><br><span class="line">  (format &quot;%s&quot; (list x y z ns)))</span><br><span class="line"></span><br><span class="line">(print-list)</span><br><span class="line">;; no func-arity for new emacs</span><br><span class="line">(func-arity &#39;print-list)</span><br><span class="line">(print-list 1 2)</span><br><span class="line">(print-list 1 2 3 4 5 6)</span><br><span class="line"></span><br><span class="line">;; local function</span><br><span class="line">(cl-flet ((double-it (num)</span><br><span class="line">		     (* num 2)))</span><br><span class="line">  (double-it 10))</span><br><span class="line"></span><br><span class="line">;; multi return value</span><br><span class="line">;; expt 幾次方</span><br><span class="line">(defun squares (num)</span><br><span class="line">  (values (expt num 2) (expt num 3)))</span><br><span class="line"></span><br><span class="line">;; try multiple value</span><br><span class="line">;; require on el</span><br><span class="line">(require &#39;cl)</span><br><span class="line">(multiple-value-bind (a b) (squares 2)</span><br><span class="line">  (format &quot;%d and %d&quot; a b))</span><br><span class="line"></span><br><span class="line">;; 函數當參數</span><br><span class="line">(apply #&#39;+ &#39;(1 2 3))</span><br><span class="line">;; 2nd way</span><br><span class="line">(funcall #&#39;+</span><br><span class="line">	 1 2 3)</span><br><span class="line"></span><br><span class="line">;; key biding</span><br><span class="line">(global-set-key (kbd &quot;M-#&quot;) &#39;sort-lines)</span><br><span class="line"></span><br><span class="line">;; show major mode</span><br><span class="line">major-mode</span><br><span class="line"></span><br><span class="line">C-h k key</span><br><span class="line">C-h m mode</span><br><span class="line">C-h f function</span><br><span class="line">C-h a region</span><br><span class="line">C-h v variable</span><br><span class="line">C-h C-h help</span><br><span class="line">C-h i   info-manual</span><br></pre></td></tr></table></figure></p>
+<p>basic setting<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; emacs configure directory</span><br><span class="line">~&#x2F;.emacs.d&#x2F;</span><br><span class="line">&#x2F;&#x2F; configure init file</span><br><span class="line">&#x2F;&#x2F; 1st priority</span><br><span class="line">~&#x2F;~&#x2F;.emacs</span><br><span class="line">&#x2F;&#x2F; 2nd pripority</span><br><span class="line">~&#x2F;.emacs.d&#x2F;init.el</span><br></pre></td></tr></table></figure></p>
+<p>init.el</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br></pre></td><td class="code"><pre><span class="line">;; hide welcome message</span><br><span class="line">(setq inhibit-startup-message t)</span><br><span class="line">;; add MELPA</span><br><span class="line">(require &#39;package)</span><br><span class="line">(add-to-list &#39;package-archives &#39;(&quot;melpa&quot; . &quot;https:&#x2F;&#x2F;melpa.org&#x2F;packages&#x2F;&quot;))</span><br><span class="line">(package-initialize)</span><br><span class="line"></span><br><span class="line">;;</span><br><span class="line">;; set autosave and backup directory</span><br><span class="line">;; &#x2F;tmp&#x2F;emacs1000</span><br><span class="line">(defconst emacs-tmp-dir (format &quot;%s%s%s&#x2F;&quot; temporary-file-directory &quot;emacs&quot; (user-uid)))</span><br><span class="line">(setq backup-directory-alist</span><br><span class="line">      &#96;((&quot;.*&quot; . ,emacs-tmp-dir)))</span><br><span class="line">(setq auto-save-file-name-transforms</span><br><span class="line">      &#96;((&quot;.*&quot; ,emacs-tmp-dir t)))</span><br><span class="line"></span><br><span class="line">;;</span><br><span class="line">;; custome variable path</span><br><span class="line">;;</span><br><span class="line">(setq custom-file &quot;~&#x2F;.emacs.d&#x2F;custom-variables.el&quot;)</span><br><span class="line">(load custom-file)</span><br><span class="line"></span><br><span class="line">;;</span><br><span class="line">;; use use-package(未安裝即安裝)</span><br><span class="line">;; 某 mode 僅啟動某 package</span><br><span class="line">(unless (package-installed-p &#39;use-package)</span><br><span class="line">  (package-refresh-contents)</span><br><span class="line">  (package-install &#39;use-package))</span><br><span class="line"></span><br><span class="line">;; diminish - 次模式隱藏(if not install then install)</span><br><span class="line">(use-package diminish :ensure t)</span><br><span class="line">;; bind-key(if not install then install)</span><br><span class="line">(use-package bind-key :ensure t)</span><br><span class="line">;; package auto update(if not install then install,not do any times)</span><br><span class="line">(use-package auto-package-update</span><br><span class="line">  :ensure t</span><br><span class="line">  :config</span><br><span class="line">  (setq auto-package-update-delete-old-versions t)</span><br><span class="line">  (setq auto-package-update-hide-results t)</span><br><span class="line">  (auto-package-update-maybe))</span><br><span class="line"></span><br><span class="line">;;</span><br><span class="line">;; basic setup</span><br><span class="line">;;</span><br><span class="line">;; if terminal mode not nees menu-bar disable</span><br><span class="line">;; (menu-bar-mode -1)</span><br><span class="line">;; 括號顯示對應</span><br><span class="line">(show-paren-mode t)</span><br><span class="line">;; 相對括號自動產生</span><br><span class="line">(electric-pair-mode t)</span><br><span class="line">;; define pair generate</span><br><span class="line">(setq electric-pair-pairs &#39;(</span><br><span class="line">			    (?\&#39; . ?\&#39;)</span><br><span class="line">			    ))</span><br><span class="line">;; set tab auto transfor to space</span><br><span class="line">;; (setq-default indent-tabs-mode nil)</span><br><span class="line">;; 方便切換 雙畫面</span><br><span class="line">;; C-c left previous windows status</span><br><span class="line">;; C-c right redo  </span><br><span class="line">(winner-mode t)</span><br><span class="line"></span><br><span class="line">;;</span><br><span class="line">;; hideshow(縮開程式block)</span><br><span class="line">;; C-c @ C-h </span><br><span class="line">;; C-c @ C-s</span><br><span class="line">(add-hook &#39;prog-mode-hook #&#39;hs-minor-mode)</span><br><span class="line"></span><br><span class="line">;;</span><br><span class="line">;; multiple cursors</span><br><span class="line">;; C-x C-m C-g : edit all</span><br><span class="line">;; M-3&#x2F;M-4 : select</span><br><span class="line">;; C-g : edit</span><br><span class="line">;; 2nd C-g : 恢復原狀</span><br><span class="line">(use-package multiple-cursors</span><br><span class="line">  :ensure t</span><br><span class="line">  :bind(</span><br><span class="line">	(&quot;M-3&quot; . mc&#x2F;mark-next-like-this)</span><br><span class="line">	(&quot;M-4&quot; . mc&#x2F;mark-previous-like-this)</span><br><span class="line">	:map ctl-x-map</span><br><span class="line">	(&quot;\C-m&quot; . mc&#x2F;mark-all-dwim)</span><br><span class="line">	(&quot;&lt;return&gt;&quot; . mule-keymap)</span><br><span class="line">	))</span><br><span class="line"></span><br><span class="line">;; ***** ivy mode *****</span><br><span class="line">;;</span><br><span class="line">;; ivy mode</span><br><span class="line">;; ibuffer 優化</span><br><span class="line">(use-package ivy</span><br><span class="line">  ;; int not install, auto install</span><br><span class="line">  :ensure t</span><br><span class="line">  ;; 隱藏 ivy mode(即 ivy 次模式)</span><br><span class="line">  :diminish (ivy-mode . &quot;&quot;)</span><br><span class="line">  :config</span><br><span class="line">  (ivy-mode 1)</span><br><span class="line">  ;; 加快速度</span><br><span class="line">  (setq ivy-use-virtual-buffers t)</span><br><span class="line">  (setq enable-recursive-minibuffers t)</span><br><span class="line">  ;; 最多 show 10 筆</span><br><span class="line">  (setq ivy-height 10)</span><br><span class="line">  ;; 無初設資料</span><br><span class="line">  (setq ivy-initial-inputs-alist nil)</span><br><span class="line">  ;; 顯示所在位置 ex: 2&#x2F;20</span><br><span class="line">  (setq ivy-count-format &quot;%d&#x2F;%d&quot;)</span><br><span class="line">  ;; Regular Expression 搜尋 不在乎前後順序</span><br><span class="line">  (setq ivy-re-builders-alist &#39;((t . ivy--regex-ignore-order)))</span><br><span class="line">  )</span><br><span class="line"></span><br><span class="line">;; counsel</span><br><span class="line">;; command search</span><br><span class="line">(use-package counsel</span><br><span class="line">  :ensure t</span><br><span class="line">  :bind ((&quot;M-x&quot; . counsel-M-x)</span><br><span class="line">	 (&quot;\C-x \C-f&quot; . counsel-find-file))</span><br><span class="line">  )</span><br><span class="line"></span><br><span class="line">;; swiper - 取代 i search</span><br><span class="line">;; C-s 後,可在下視窗看到所有符合資料</span><br><span class="line">(use-package swiper</span><br><span class="line">  :ensure t</span><br><span class="line">  :bind ((&quot;\C-s&quot; . swiper))</span><br><span class="line">  )</span><br><span class="line"></span><br><span class="line">;;</span><br><span class="line">;; ***** yasnippet - 帶入預存代碼 *****</span><br><span class="line">;;</span><br><span class="line">;; 有時候not found是因為package not refresh --&gt; run package-refresh-countes</span><br><span class="line">;; default no load any reserve code --&gt; add yasnippet-snippets</span><br><span class="line">;;</span><br><span class="line">;; yas-describe-tables --&gt; check support snippet</span><br><span class="line">;; ex: as</span><br><span class="line">;; 輸入後按tab</span><br><span class="line">;;</span><br><span class="line">;; yas-new-snippet --&gt; add new snippet file</span><br><span class="line">;; # -*- mode: snippet -*-</span><br><span class="line">;; # name: show message</span><br><span class="line">;; # key: show</span><br><span class="line">;; # --</span><br><span class="line">;; (message &quot;hello&quot;)$0</span><br><span class="line">;; *****&gt; save file --&gt; C-c C-c(yas-load-snippet-buffer-and-close)  </span><br><span class="line">;; if no support emacs-lisp-mode</span><br><span class="line">;; *****&gt; yas-active-exttr-mode --&gt; emacs-lisp-mode</span><br><span class="line">(use-package yasnippet</span><br><span class="line">  :ensure t</span><br><span class="line">  ;; 未load前,先執行</span><br><span class="line">  :init</span><br><span class="line">  (add-hook &#39;prog-mode-hook #&#39;yas-minor-mode)</span><br><span class="line">  :config</span><br><span class="line">  (yas-reload-all)</span><br><span class="line">  (use-package yasnippet-snippets</span><br><span class="line">    :ensure t)</span><br><span class="line">  )</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">;;</span><br><span class="line">;; ***** company(complete anything) 自動補全 *****</span><br><span class="line">;;</span><br><span class="line">;; C-h v --&gt; company-backend (check company-backend setting)</span><br><span class="line">(use-package company</span><br><span class="line">  :ensure t</span><br><span class="line">  :config</span><br><span class="line">  (global-company-mode t)</span><br><span class="line">  (setq company-idel-delay 0)</span><br><span class="line">  (setq company-minimum-prefix-length 3)</span><br><span class="line">  (setq company-backends</span><br><span class="line">	&#39;((company-files company-yasnippet company-capf company-keywords)</span><br><span class="line">	  (company-abbrev company-dabbrev)))</span><br><span class="line">  )</span><br><span class="line">;; emacs-lisp-mode add some</span><br><span class="line">(add-hook &#39;emacs-lisp-mode-hook (lambda()</span><br><span class="line">				  (add-to-list (make-local-variable &#39;company-backends)</span><br><span class="line">					       &#39;company-elisp)))</span><br><span class="line">;; change C-n C-p to company select in company buffer</span><br><span class="line">(with-eval-after-load &#39;company</span><br><span class="line">  (define-key company-active-map (kbd &quot;M-n&quot;) nil)</span><br><span class="line">  (define-key company-active-map (kbd &quot;M-p&quot;) nil)</span><br><span class="line">  (define-key company-active-map (kbd &quot;\C-n&quot;) #&#39;company-select-next)</span><br><span class="line">  (define-key company-active-map (kbd &quot;\C-p&quot;) #&#39;company-select-previous)</span><br><span class="line">  )</span><br><span class="line">;; diagnostic</span><br><span class="line">;; company 後 --&gt; M-x company-diag 可分析</span><br><span class="line">;; tab yasnippet 執行</span><br><span class="line">;; company tab 補齊有時會有問題 加入以下 --&gt; not work well</span><br><span class="line">;;(advice-add &#39;company-complete-common :before (lambda() (setq my-company-point (point))))</span><br><span class="line">;;(advice-add &#39;company-complete-common :after (lambda()</span><br><span class="line">;;					    (when (equal my-company-point (point))</span><br><span class="line">;;					      (yas-expand))))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">;;</span><br><span class="line">;; ***** flycheck mode 語法檢查 *****</span><br><span class="line">;;</span><br><span class="line">;; C-c ! v --&gt; check using library</span><br><span class="line">;; C-c ! l --&gt; dump check result</span><br><span class="line">;; (use-package flycheck</span><br><span class="line">;;  :ensure t</span><br><span class="line">;;  :config</span><br><span class="line">;;  (global-flycheck-mode t)</span><br><span class="line">;;  )</span><br><span class="line"></span><br><span class="line">;;</span><br><span class="line">;; ***** magit ****</span><br><span class="line">;;</span><br><span class="line">;; C-x g : magit-status</span><br><span class="line">;; magit : i   add ignore</span><br><span class="line">;;         tab 展開</span><br><span class="line">;;         CR  開檔</span><br><span class="line">;;         ? - help</span><br><span class="line">;; c c --&gt; triger commit</span><br><span class="line">;;     --&gt; write commit message --&gt; C-c C-c</span><br><span class="line">;;     C-c C-c     (with-editor-finish)</span><br><span class="line">;;     C-c C-k     (with-editor-cancel)</span><br><span class="line">;;     commit message</span><br><span class="line">;;        用一行空白行分隔標題與內容</span><br><span class="line">;; b(branch) b(branch-checkout)</span><br><span class="line">;; b(branch) c(new branch-checkout)</span><br><span class="line">;; b(branch) n(new branch)</span><br><span class="line">;; z z --&gt; stash(儲藏)</span><br><span class="line">;; z p --&gt; stash pop(取出)</span><br><span class="line">;; E(Ediff) m(Resolve) --&gt; edit</span><br><span class="line">;;          *Ediff Control buff</span><br><span class="line">;; k   --&gt; Discard(support stash)</span><br><span class="line">;; m(merge) m(merge)</span><br><span class="line">;; X(reset) s(soft) - 保留修改</span><br><span class="line">;;          h(hard) - 修改刪除</span><br><span class="line">;; rebase 放在起分支點</span><br><span class="line">;;          r(rebase) i(interactively) --&gt; continue --&gt; 可調整commit順序(分支消失)</span><br><span class="line">;; M(remote) a(add) --&gt; name:origin --&gt; url</span><br><span class="line">;; P(push) p(origin&#x2F;master) --&gt; name --&gt; password</span><br><span class="line">;; F(pull) p(origin&#x2F;master) </span><br><span class="line">(use-package magit</span><br><span class="line">  :ensure t</span><br><span class="line">  :bind((&quot;C-x g&quot; . magit-status))</span><br><span class="line">  )</span><br><span class="line">;; support add branch then add bracnch</span><br><span class="line">(setq magit-branch-read-upstream-first &#39;fallback)</span><br><span class="line"></span><br><span class="line">;;</span><br><span class="line">;; ***** projectile (project manager)*****</span><br><span class="line">;;</span><br><span class="line">;; C-c p ? : show help</span><br><span class="line">;; C-c p f : search file</span><br><span class="line">;; C-c p a : switch .c .h</span><br><span class="line">;; C-c p s g :	projectile-grep</span><br><span class="line">;; C-c p s s :  projectile-ag(need install the_silver_searcher[advice grep]) - don&#39;t &#39;care ignore files   </span><br><span class="line">(use-package projectile</span><br><span class="line">  :ensure t</span><br><span class="line">  :bind-keymap (&quot;\C-c p&quot; . projectile-command-map)</span><br><span class="line">  :config</span><br><span class="line">  (projectile-mode t)</span><br><span class="line">  (setq projectile-completion-system &#39;ivy)</span><br><span class="line">  (use-package counsel-projectile</span><br><span class="line">    :ensure t)</span><br><span class="line">  )</span><br><span class="line">;; ag</span><br><span class="line">(use-package ag</span><br><span class="line">  :ensure t</span><br><span class="line">  :config</span><br><span class="line">  (setq ag-highlight-search t)</span><br><span class="line">  )</span><br><span class="line"></span><br><span class="line">;;</span><br><span class="line">;; ***** ggtags(function define..switch) *****</span><br><span class="line">;;</span><br><span class="line">;; need install global</span><br><span class="line">;;  sudo apt-get install global</span><br><span class="line">(use-package ggtags</span><br><span class="line">  :ensure t</span><br><span class="line">  ;; :commands ggtags-mode</span><br><span class="line">  ;; :diminish ggtags-mode</span><br><span class="line">  ;; :bind ((&quot;M-*&quot; . pop-tag-mark)</span><br><span class="line">  ;;       (&quot;C-c t s&quot; . ggtags-find-other-symbol)</span><br><span class="line">  ;;       (&quot;C-c t h&quot; . ggtags-view-tag-history)</span><br><span class="line">  ;;       (&quot;C-c t r&quot; . ggtags-find-reference)</span><br><span class="line">  ;;       (&quot;C-c t f&quot; . ggtags-find-file)</span><br><span class="line">  ;;       (&quot;C-c t c&quot; . ggtags-create-tags))</span><br><span class="line">  :init</span><br><span class="line">  (add-hook &#39;c-mode-common-hook</span><br><span class="line">            #&#39;(lambda ()</span><br><span class="line">                (when (derived-mode-p &#39;c-mode &#39;c++-mode &#39;java-mode)</span><br><span class="line">                  (ggtags-mode 1)))))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="some-setting"><a href="#some-setting" class="headerlink" title="some setting"></a>some setting</h3><p>brief</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">	&#x2F;&#x2F; buffer </span><br><span class="line">C-x &lt;LEFT&gt; Select the previous buffe</span><br><span class="line">C-x &lt;RIGHT&gt; Select the next buffer</span><br><span class="line">C-x b        Select a buffer</span><br><span class="line">C-x k		 select kill buffer(some have default buffername)</span><br><span class="line">	c-x c-b	ibuffer</span><br><span class="line">	c-x view-buffer 	view buffer(space backspace - q leave)</span><br><span class="line"></span><br><span class="line">	&#x2F;&#x2F; helm</span><br><span class="line">	helm-projectile-find-file 	find file</span><br><span class="line">	helm-projectile-switch		switch other projectile</span><br><span class="line">	C-SPC 		mark each file individually</span><br><span class="line">	M-a 		mark all</span><br><span class="line"></span><br><span class="line">	&lt;!-- M-x		My execute --&gt;</span><br><span class="line">	M-x		输入函数名就可以調调用函数</span><br><span class="line">	M-x	magit-status</span><br><span class="line"></span><br><span class="line">	c-x c-b	ibuffer</span><br><span class="line">	c-r		privious search</span><br><span class="line">	c-s		next search</span><br><span class="line">	p&#x2F;n		上下</span><br><span class="line">	m		是選文件，可選多個</span><br><span class="line">	n		移除文件選擇</span><br><span class="line">	g 		刷新文件目錄</span><br><span class="line">	q		離開畫面</span><br><span class="line">	c-g		quit command</span><br><span class="line">	c-x k	kill buffer</span><br><span class="line">	C-x 2	垂直切割目前的 Window</span><br><span class="line">	C-x 3	水平切割目前的 Window</span><br><span class="line">	c-v		往後一頁</span><br><span class="line">	m-v		往前一頁</span><br><span class="line"></span><br><span class="line">	c-p		前一行</span><br><span class="line">	c-n		後一行</span><br><span class="line">	c-b		往左</span><br><span class="line">	c-f		往右</span><br><span class="line">	C-a 移动到行首，C-e 移动到行尾。</span><br><span class="line">　　M-a 移动到句首，M-e 移动到句尾</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	C-x C-c	關閉 Emacs	</span><br><span class="line">	c-x c-f 開檔 (tab..)</span><br><span class="line">	C-x C-s	这个命令是用来保存文件的</span><br><span class="line">	C-x C-w	另存</span><br><span class="line"></span><br><span class="line">	c-x	u	undo</span><br><span class="line">	c-h ?	help</span><br><span class="line">	help r	manual</span><br><span class="line">	help t</span><br><span class="line">	backspace&#x2F;space	help buffer up&#x2F;down</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p> customize (example magit)<br>  options –&gt; Customize Emacs –&gt; Specific Group –&gt; input “magit”</p>
+</li>
+<li><p> mode line  </p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">%%	只讀，未更改</span><br><span class="line">--	可寫，未更改</span><br><span class="line">**	可寫，已更改</span><br><span class="line">%*	只讀，已更改</span><br></pre></td></tr></table></figure></li>
+<li><p> ibuffer</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">p&#x2F;n		上下</span><br><span class="line">m		是選文件，可選多個</span><br><span class="line">n		移除文件選擇</span><br><span class="line">D		是kill buffer</span><br><span class="line">cr&#x2F;e	(就是edit)来编辑文件</span><br><span class="line">&#x3D; 		與存檔文件做diff</span><br><span class="line">g 		刷新文件目錄</span><br></pre></td></tr></table></figure></li>
+<li><p> buffer</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">C-x C-b 	list all buffer</span><br><span class="line">C-b		切換 Buffers	</span><br><span class="line">?? C-x k	殺掉 Buffer	</span><br></pre></td></tr></table></figure></li>
+<li><p> Frames<br>  Frames是 Emacs 的 GUI 視窗，Emacs 可以產生出多個視窗，但是共用同一個 daemon。<br>  其中一個節點用 C-x C-c 關閉 Emacs 會導致整棵樹的所有 Frame 也一起被關閉。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">C-x 5 0	關閉目前的 Frame</span><br><span class="line">C-x 5 1	關閉目前以外的所有 Frame</span><br><span class="line">C-x 5 2	建立新的 Frame</span><br><span class="line">C-x 5 o	切換至其他 Frame</span><br></pre></td></tr></table></figure></li>
+<li><p> Windows<br>  Windows是在同一個 Frame 中可在切割出的視窗，我們可以在同一個畫面再水平或垂直地切割出多個視窗，顯示不同的 Buffer，並且在其中進行切換，這樣就不須使用到多個 Frame 來分割畫面。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Emacs	功能</span><br><span class="line">C-x 0	關閉目前的 Window</span><br><span class="line">C-x 1	關閉目前以外的所有 Window</span><br><span class="line">C-x 2	垂直切割目前的 Window</span><br><span class="line">C-x 3	水平切割目前的 Window</span><br><span class="line">C-x o	切換至其他 Window</span><br></pre></td></tr></table></figure></li>
+<li><p> install package<br>  Options–&gt;Emanage Emacs Package<br>  M-x package-list-packages</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">套件		功能	說明</span><br><span class="line">magit				Git 管理操作	</span><br><span class="line">org 				Outline-based notes management and organizer</span><br><span class="line">helm-projectile		</span><br><span class="line">helm-ag</span><br><span class="line"></span><br><span class="line">company				自動補齊		需要根據不同語言來額外安裝其他 company 的套件。</span><br><span class="line">projectile			專案管理	</span><br><span class="line">ivy					自動補齊		與 company 不同的是自動補齊指令輸入等比較通用型的部份。</span><br><span class="line">counsel				強化指令輸入	</span><br><span class="line">counsel-projectile	強化 projectile	</span><br><span class="line">swiper				強化文字搜尋	</span><br><span class="line">avy					強化游標移動	</span><br><span class="line">undo-tree			強化 undo、redo	</span><br><span class="line">multiple-cursors	多游標	</span><br><span class="line">which-key			顯示 Key Map	</span><br></pre></td></tr></table></figure></li>
+<li><p> add parameter</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">emacs -q</span><br></pre></td></tr></table></figure></li>
+<li><p> 初始化檔案</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Emacs 預設的讀取順序是 ~&#x2F;.emacs，~&#x2F;.emacs.el，~&#x2F;.emacs.d&#x2F;init.el，筆者推薦用 .emacs.d&#x2F; 來管理設定</span><br></pre></td></tr></table></figure></li>
+<li><p> emacs ~/.emacs<br>  不要提示<br>  setq 是指派變數 (assign) 的 Function，t 和 nil 分別指 true 和 false，所以 (setq inhibit-startup-message t) 就是將 inhibit-startup-message 這個變數的值設為 true。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">;; ~&#x2F;.emacs</span><br><span class="line">(setq inhibit-startup-message t)</span><br></pre></td></tr></table></figure>
+<p>  add MELPA</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">(require &#39;package)</span><br><span class="line">(let* ((no-ssl (and (memq system-type &#39;(windows-nt ms-dos))</span><br><span class="line">                    (not (gnutls-available-p))))</span><br><span class="line">       (proto (if no-ssl &quot;http&quot; &quot;https&quot;)))</span><br><span class="line">  ;; Comment&#x2F;uncomment these two lines to enable&#x2F;disable MELPA and MELPA Stable as desired</span><br><span class="line">  (add-to-list &#39;package-archives (cons&quot;melpa&quot;(concat proto&quot;:&#x2F;&#x2F;melpa.org&#x2F;packages&#x2F;&quot;)) t)</span><br><span class="line">  ;;(add-to-list &#39;package-archives (cons&quot;melpa-stable&quot;(concat proto&quot;:&#x2F;&#x2F;stable.melpa.org&#x2F;packages&#x2F;&quot;)) t)</span><br><span class="line">  (when (&lt; emacs-major-version 24)</span><br><span class="line">    ;; For important compatibility libraries like cl-lib</span><br><span class="line">    (add-to-list &#39;package-archives&#39;(&quot;gnu&quot; . (concat proto &quot;:&#x2F;&#x2F;elpa.gnu.org&#x2F;packages&#x2F;&quot;)))))</span><br><span class="line">(package-initialize)</span><br></pre></td></tr></table></figure>
+<p>  管理 Buffers<br>  list-buffers –&gt; Buffer Menu</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(global-set-key (kbd &quot;C-x C-b&quot;) &#39;ibuffer)</span><br></pre></td></tr></table></figure>
+<p>  M-x add helm-M-x</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">;; M-x add helm-M-x</span><br><span class="line">(global-set-key (kbd &quot;M-x&quot;) &#39;helm-M-x)</span><br></pre></td></tr></table></figure></li>
+<li><p>  Emacs 按鍵<br>  C=Ctrl M=Alt （註：C-h 在 Emacs 預設是 help，之後我們會將它變成刪除鍵）</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">C-s		:搜尋　　	一直按一直往下找</span><br><span class="line"></span><br><span class="line">Emacs	對應鍵		功能</span><br><span class="line">C-p		Up			游標往上一格</span><br><span class="line">C-n		Down		游標往下一格</span><br><span class="line">C-b		Left		游標往後一格</span><br><span class="line">C-f		Right		游標往前一格</span><br><span class="line">C-a		Home		游標移到最前面</span><br><span class="line">C-e		End			游標移到最後面</span><br><span class="line">C-d		Delete		刪掉後面一個字</span><br><span class="line">C-h		Backspace	刪掉前面一個字</span><br><span class="line">C-i		Tab			縮排</span><br><span class="line">C-m		Enter		換行、確定</span><br></pre></td></tr></table></figure>
+<p>  Kill Ring是 Emacs 特有的像是剪貼簿的列表，它會將你上次透過像是 C-k 或 C-w 所 Kill 掉的字串存進去，之後可以利用 C-y 將它貼回 Buffer。C-y 預設會取用最後存入的字串，如果想要貼回 Kill Ring 中其中一段字串，可以重複按 M-y 來選擇。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Emacs	功能						說明</span><br><span class="line">C-v		往下一頁	</span><br><span class="line">M-v		往上一頁	</span><br><span class="line">C-l		維持游標位置並重新定位畫面	重複執行的話會分別在 top、center、bottom 的位置作切換</span><br><span class="line">C-s		往下搜尋文字	</span><br><span class="line">C-r		往上搜尋文字	</span><br><span class="line">C-g		離開指令					遇到指令執行不順可先嘗試按按這個來結束指令執行</span><br><span class="line">C-o		換行但不移動游標	</span><br><span class="line">C-k		殺掉游標後到換行字元前的文字	</span><br><span class="line">C-w		殺掉目前選取的文字	</span><br><span class="line">C-y		貼上保存在 kill ring 的文字	通常搭配 C-k 或 C-w 使用，來達成剪下貼上等功能</span><br><span class="line">C-b		切換 Buffers	</span><br><span class="line">C-x k	殺掉 Buffer	</span><br><span class="line">M-&lt;		移動游標到 Buffer 最前面	</span><br><span class="line">M-&gt;		移動游標到 Buffer 最後面	</span><br><span class="line">C-x C-s	存檔	</span><br><span class="line">C-x C-c	關閉 Emacs	</span><br></pre></td></tr></table></figure></li>
+<li><p>  command<br>  M-x        :執行一個emacs命令<br>  C-g        :離開一個emacs命令</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">help 		help</span><br><span class="line"> M-x shell	shell</span><br></pre></td></tr></table></figure></li>
+<li><p> remote file control<br>  使用方法</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;method:host:filename</span><br><span class="line">&#x2F;method:user@host:filename</span><br><span class="line">&#x2F;method:user@host#port:filename</span><br></pre></td></tr></table></figure>
+<p>  ssh example</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;ssh:myuser@myhost:~&#x2F;hello.rb</span><br></pre></td></tr></table></figure></li>
+<li><p> magit<br>  magit-status    看git當前狀態</p>
+<pre><code>  ? 可看command
+  table 隱藏/顯示 內容
+  CR 看 item 內容
+</code></pre>
+</li>
+</ul>
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">magit-status	看git當前狀態(? 可看command)</span><br></pre></td></tr></table></figure>
+</code></pre>
+<ul>
+<li> helm-projectile  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; search file (pattern)</span><br><span class="line">helm-projectile</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; helm for M-x</span><br><span class="line">helm-M-x</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/flow-guide/tags/sub-tool/" rel="tag"># sub-tool</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/flow-guide/2021/03/23/tool-mathematic/" rel="prev" title="數學">
+                  <i class="fa fa-chevron-left"></i> 數學
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/flow-guide/2021/03/23/node-record/" rel="next" title="Node.js record">
+                  Node.js record <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Robert Kao</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 強力驅動
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/flow-guide/js/utils.js"></script><script src="/flow-guide/js/motion.js"></script><script src="/flow-guide/js/next-boot.js"></script>
+
+  
+<script src="/flow-guide/js/local-search.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

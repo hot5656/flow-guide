@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/flow-guide/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/flow-guide/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/flow-guide/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/flow-guide/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/flow-guide/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"hot5656.github.io","root":"/flow-guide/","images":"/flow-guide/images","scheme":"Gemini","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/flow-guide/search.json","localsearch":{"enable":"enable","trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="Root  快捷鍵-    hot key    ctrl-shift-p(or F1) : to command line     F11 : 全螢幕切換   open git : code .&#x2F;GitDir          code . : open current directory          code -n : open a new window          code">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VSCode">
+<meta property="og:url" content="https://hot5656.github.io/flow-guide/2021/03/23/tool-vscode/index.html">
+<meta property="og:site_name" content="Robert Flow Guide">
+<meta property="og:description" content="Root  快捷鍵-    hot key    ctrl-shift-p(or F1) : to command line     F11 : 全螢幕切換   open git : code .&#x2F;GitDir          code . : open current directory          code -n : open a new window          code">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2021-03-23T07:44:37.000Z">
+<meta property="article:modified_time" content="2021-03-23T08:22:58.509Z">
+<meta property="article:author" content="Robert Kao">
+<meta property="article:tag" content="sub-tool">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://hot5656.github.io/flow-guide/2021/03/23/tool-vscode/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+<title>VSCode | Robert Flow Guide</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/flow-guide/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Robert Flow Guide</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/flow-guide/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li>
+        <li class="menu-item menu-item-tags"><a href="/flow-guide/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li>
+        <li class="menu-item menu-item-categories"><a href="/flow-guide/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li>
+        <li class="menu-item menu-item-archives"><a href="/flow-guide/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%AB%E6%8D%B7%E9%8D%B5-hot-key"><span class="nav-number">1.</span> <span class="nav-text">快捷鍵-    hot key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#issue"><span class="nav-number">2.</span> <span class="nav-text">issue</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#plug-package"><span class="nav-number">3.</span> <span class="nav-text">plug package</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#configuration-setting"><span class="nav-number">4.</span> <span class="nav-text">configuration setting</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Other"><span class="nav-number">5.</span> <span class="nav-text">Other</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Edit-command"><span class="nav-number">6.</span> <span class="nav-text">Edit command</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Robert Kao</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/flow-guide/archives/">
+        
+          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/flow-guide/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/flow-guide/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/tool-vscode/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/flow-guide/images/avatar.gif">
+      <meta itemprop="name" content="Robert Kao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Robert Flow Guide">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          VSCode
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2021-03-23 15:44:37 / 修改時間：16:22:58" itemprop="dateCreated datePublished" datetime="2021-03-23T15:44:37+08:00">2021-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/flow-guide/categories/tool/" itemprop="url" rel="index"><span itemprop="name">tool</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <ul>
+<li>  <a href="../README.md">Root</a></li>
+</ul>
+<h3 id="快捷鍵-hot-key"><a href="#快捷鍵-hot-key" class="headerlink" title="快捷鍵-    hot key"></a>快捷鍵-    <a target="_blank" rel="noopener" href="https://poychang.github.io/vscode-shortcuts/">hot key</a></h3><ul>
+<li><p>   ctrl-shift-p(or F1) : to command line</p>
+</li>
+<li><p>   F11 : 全螢幕切換</p>
+</li>
+<li><p> open git : code ./GitDir</p>
+<pre><code>         code . : open current directory
+         code -n : open a new window
+         code --help :Lsee help option
+         code --disable-extensions . : disable all extensions
+</code></pre>
+</li>
+<li><p> Ctrl+Shift+M : toggle Errors/Warning windows</p>
+<pre><code>             --&gt; F8/Shift+F8 : cycle through error
+</code></pre>
+</li>
+<li><p>   Ctrl+B        : toggle side bar</p>
+</li>
+<li><p>   Ctrl+\        : one file slip to two window</p>
+</li>
+<li><p>   Alt+(up/down) : move line up/down</p>
+</li>
+<li><p>   Ctrl+shift+F : search multiple file</p>
+</li>
+<li><p>   Ctrl+K Ctrl+F - Format the selected text.</p>
+</li>
+<li><p>   F7            : show diff</p>
+</li>
+<li><p>   show git output(for git process)</p>
+</li>
+<li><p> change language mode : C, C#….<br>  confingure display language : english, chinese</p>
+</li>
+<li><p> Open Settings (JSON) : for change setting<br>  Toggle Side By Side(one/two line)</p>
+</li>
+</ul>
+<ul>
+<li><p> Ctl+P : open file –&gt;? :show help</p>
+<pre><code>                --&gt;[right] open file
+</code></pre>
+</li>
+<li><pre><code>Ctrl+Shift+o : go to symble
+</code></pre>
+</li>
+<li><p>   Ctrl+G : go to a line</p>
+</li>
+<li><p>   Ctl-r : select directory</p>
+</li>
+<li><p>   Ctrl-Shift-N : open new frame</p>
+</li>
+<li><p>   Ctl+\ : open new windows(show the file)</p>
+</li>
+<li><p> Alt+n : switch file number<br>  ctrl+/ : add comment<br>  ctrl-p : search file name<br>  ctl-enter : add next line<br>  shift-alt-f : align code<br>  ctl-w : close file<br>  ctl-2/ctl-3 : open 2nd window/open 3rd window</p>
+</li>
+<li><p> ctl-` : open termernal/other windows<br>  ctl-d : 選擇下一個相同string共同編輯<br>  alt-(mouse-l) : select 共同編輯<br>  選擇多行–&gt;shift+alt+(mouse-l) : 多行編輯<br>  alt+^/alt- : select up/down<br>  F1 : select command<br>  Ctrl +/- : 字型大小<br>  Ctrl mouse-left : open reference file<br>  Ctrl + W 關閉檔案<br>  Ctrl + K Ctrl + W 關閉所有檔案</p>
+</li>
+</ul>
+<h3 id="issue"><a href="#issue" class="headerlink" title="issue"></a>issue</h3><ul>
+<li><p>show manu bar<br>  F1 -&gt; toggle manu bar<br>  F11 toogle full screen</p>
+</li>
+<li><p>sass –&gt; css (sometime error, need re-do)</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&lt;&lt;error message&gt;</span><br><span class="line">Error in plugin &quot;sass&quot;</span><br><span class="line">Message:</span><br><span class="line">    source\sass\all.sass</span><br><span class="line">Error: File to import not found or unreadable: page&#x2F;checkout.</span><br><span class="line">        on line 21 of source&#x2F;sass&#x2F;all.sass</span><br><span class="line">&gt;&gt; @import &quot;page&#x2F;checkout&quot;;</span><br><span class="line"></span><br><span class="line">*** npm install gulp-wait --save-dev ***</span><br><span class="line">try add delay at sass flow(.pipe($wait(200)))</span><br><span class="line">&#x2F;&#x2F; sass process</span><br><span class="line">gulp.task(&#39;sass&#39;, () &#x3D;&gt; &#123;</span><br><span class="line">  &#x2F;&#x2F; PostCSS AutoPrefixer</span><br><span class="line">  const processors &#x3D; [</span><br><span class="line">    autoprefixer(&#123;</span><br><span class="line">      browsers: [&#39;last 5 version&#39;],</span><br><span class="line">    &#125;),</span><br><span class="line">  ];</span><br><span class="line"></span><br><span class="line">  return gulp</span><br><span class="line">    .src([&#39;.&#x2F;source&#x2F;sass&#x2F;**&#x2F;*.sass&#39;, &#39;.&#x2F;source&#x2F;sass&#x2F;**&#x2F;*.scss&#39;])</span><br><span class="line">    .pipe($.wait(200))  --&gt; add this flow</span><br><span class="line">    .pipe($.plumber())</span><br><span class="line">    .pipe($.sourcemaps.init())</span><br><span class="line">    .pipe(</span><br><span class="line">      $.sass(&#123;</span><br><span class="line">        outputStyle: &#39;nested&#39;,</span><br><span class="line">        includePaths: [&#39;.&#x2F;node_modules&#x2F;susy&#x2F;sass&#39;],		&#x2F;&#x2F; addition include sass</span><br><span class="line">      &#125;).on(&#39;error&#39;, $.sass.logError),</span><br><span class="line">    )</span><br><span class="line">    .pipe($.postcss(processors))</span><br><span class="line">    .pipe($.if(options.env &#x3D;&#x3D;&#x3D; &#39;production&#39;, $.cleanCss())) &#x2F;&#x2F; 假設開發環境則壓縮 CSS</span><br><span class="line">    .pipe($.sourcemaps.write(&#39;.&#39;))</span><br><span class="line">    .pipe(gulp.dest(&#39;.&#x2F;public&#x2F;css&#39;))</span><br><span class="line">    .pipe(</span><br><span class="line">      browserSync.reload(&#123;</span><br><span class="line">        stream: true,</span><br><span class="line">      &#125;),</span><br><span class="line">    );</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="plug-package"><a href="#plug-package" class="headerlink" title="plug package"></a>plug package</h3><ul>
+<li><p> Git History : see git log<br>  Git: view history</p>
+<pre><code>   view file history
+   view line history
+</code></pre>
+</li>
+<li><p>   Live Server : 網頁自動更新 –&gt; run Go Live</p>
+</li>
+<li><p>   VS Live Share : 兩個人同時編輯</p>
+</li>
+<li><p>   Live Sass Compiler : sass watch</p>
+</li>
+<li><p>   Indent-Rainbow : 縮排採紅色條</p>
+</li>
+<li><p>Sass : Indented Sass syntax highlighting, autocomplete &amp; snippets for VSCode</p>
+</li>
+<li><p>   Favorites : Favorite directory</p>
+</li>
+<li><p> git history diff  (F1 selectt command)<br>  GitHD: View History<br>  GitHD: View Branch History<br>  GitHD: View Entire History<br>  GitHD: View Branch Diff<br>  GitHD: View File History<br>  GitHD: View Line History<br>  GitHD: Input Ref  </p>
+</li>
+<li><p>Monokai Dark Soda : 程式編輯佈景<br>  檔案 –&gt; 喜好設定 –&gt; 色彩佈景主題 –&gt; Monokai Dark Soda</p>
+</li>
+<li><p> vscode-icons<br>  Ctrl+shift+p –&gt; icons: activate VScode icons</p>
+</li>
+<li><p>   AutoFileName : auto detect files</p>
+</li>
+<li><p>EaseServer : web server<br>  ctrl+shift+enter </p>
+</li>
+<li><p>live server : web server     </p>
+</li>
+<li><p>   colorize : look color(scss/sass/color)</p>
+</li>
+<li><p>git history<br>  F1 –&gt; git history(git log) </p>
+</li>
+<li><p>Django<br>  python<br>  Django<br>  Django Template</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Bracket Pair Colorizer : 可以讓不同縮減的括號顯示不同的顏色</li>
+<li>css-auto-prefix : auto insert prefix for css</li>
+<li>Autoprefixer : ctrl-shift-p “Autoprefix css” add prefix for css </li>
+<li>   Git History : see git log </li>
+<li>   github extension</li>
+<li> ESLint/javascript standard style only enable one<br>  ESLint : 檢查程式碼有沒有整齊(node.js need install “npm install -g eslint”)<br>  javascript standard style : <pre><code>  npm install -g eslint
+  npm init
+  eslin init
+      popular--&gt;Airbnb--&gt;javascript
+</code></pre>
+</li>
+<li> perview web server : include live server<pre><code>  ctr-shift-l : open web side
+  ctl-shift-p : open side
+</code></pre>
+</li>
+<li>   sublime keymap: plug for sublime key</li>
+<li>   Highlight Matching Tag : highlight html tag</li>
+</ul>
+<h3 id="configuration-setting"><a href="#configuration-setting" class="headerlink" title="configuration setting"></a>configuration setting</h3><p>Freference–&gt;setting</p>
+<ul>
+<li><p>   VScode Show Full Path in Title Bar</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Window: Title </span><br><span class="line">	default :</span><br><span class="line">		$&#123;dirty&#125;$&#123;activeEditorShort&#125;$&#123;separator&#125;$&#123;rootName&#125;$&#123;separator&#125;$&#123;appName&#125;</span><br><span class="line">	full fath:</span><br><span class="line">		$&#123;activeEditorLong&#125;$&#123;separator&#125;$&#123;rootName&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>show CR/tab/space</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Editor: Render Whitespace</span><br><span class="line">	none : no show</span><br><span class="line">	all  : show</span><br></pre></td></tr></table></figure></li>
+<li><p>table size : “editor.tabSize”: 4,</p>
+</li>
+<li><p>tab to space(no) :  “editor.insertSpaces”: false,</p>
+</li>
+<li><p>切成中文版  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">install chinese(Traditional) Languale Pack</span><br><span class="line">ctrl+shift+p --&gt; configure Display Language</span><br><span class="line">   locale 中的 en 改成 zh-TW</span><br><span class="line">從新啟動</span><br></pre></td></tr></table></figure></li>
+<li><p>liveSassCompile settings autoprefix  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&quot;liveSassCompile.settings.autoprefix&quot;: [</span><br><span class="line">  &quot;&gt; 1%&quot;,</span><br><span class="line">  &quot;last 5 versions&quot;,</span><br><span class="line">  &quot;Firefox &gt;&#x3D; 45&quot;,</span><br><span class="line">  &quot;iOS &gt;&#x3D;8&quot;,</span><br><span class="line">  &quot;Safari &gt;&#x3D;8&quot;,</span><br><span class="line">  &quot;ie &gt;&#x3D; 10&quot;</span><br><span class="line">]</span><br></pre></td></tr></table></figure></li>
+<li><p>自動換行  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Editor: Word Wrap(控制如何換行)</span><br><span class="line">&gt;&gt; &quot;editor.wordWrap&quot;: &quot;on&quot;,  </span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h3><ul>
+<li><p>run Django  </p>
+<ul>
+<li>Python Interpreter<br>Ctrl+Shift+P –&gt;  Python: Select Interpreter<br>F5 –&gt; Python –&gt; Django  </li>
+</ul>
+</li>
+<li><p>error </p>
+<ul>
+<li><p>no objects member<br>settings(vscode)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;python.linting.pylintArgs&quot;: [</span><br><span class="line">       &quot;--load-plugins&quot;,</span><br><span class="line">   ]</span><br></pre></td></tr></table></figure></li>
+<li><p>Django template 不能自動偵測HTML輸入<br>settings(vscode)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;emmet.includeLanguages&quot;: &#123;&quot;django-html&quot;: &quot;html&quot;&#125;,</span><br></pre></td></tr></table></figure></li>
+<li><p>conda : 無法辨識  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">add path for Anaconda3 - add * point enough  </span><br><span class="line">* C:\Users\win10\Anaconda3</span><br><span class="line">C:\Users\win10\Anaconda3\Library\mingw-w64\bin</span><br><span class="line">C:\Users\win10\Anaconda3\Library\usr\bin</span><br><span class="line">* C:\Users\win10\Anaconda3\Library\bin</span><br><span class="line">* C:\Users\win10\Anaconda3\Scripts</span><br><span class="line">* C:\Users\win10\Anaconda3\bin</span><br><span class="line">* C:\Users\win10\Anaconda3\condabin</span><br></pre></td></tr></table></figure></li>
+<li><p>some code error indicate<br>// select env<br>ctrl-shift-p –&gt; Python: Select Interpreter</p>
+</li>
+<li><p>class ‘Post’ has no ‘objects’ member pylint(no-member)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;python.linting.pylintArgs&quot;: [</span><br><span class="line">	&quot;--load-plugins&#x3D;pylint_django&quot;</span><br><span class="line">],</span><br></pre></td></tr></table></figure></li>
+<li><p>IndentationError: unindent does not match any outer indentation level<br>縮排不一致  </p>
+</li>
+<li><p>Go Live not found(found after update vscode)  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; live serevr also cannot uninstall </span><br><span class="line">&gt;&gt; remove live serevr directory then install</span><br><span class="line">C:\Users\&lt;USERNAME&gt;\.vscode\extensions</span><br><span class="line">&gt;&gt; close vscode --&gt; run vscode</span><br><span class="line">instlall live server</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h3 id="Edit-command"><a href="#Edit-command" class="headerlink" title="Edit command"></a>Edit command</h3><p>Alt + ↑ 或 Alt + ↓ 快速移動整行程式碼<br>選擇多行–&gt;shift+alt+(mouse-l) : 多行編輯<br>alt+(mouse-l) : 選擇多行編輯  </p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/flow-guide/tags/sub-tool/" rel="tag"># sub-tool</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/flow-guide/2021/03/23/node-record/" rel="prev" title="Node.js record">
+                  <i class="fa fa-chevron-left"></i> Node.js record
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/flow-guide/2021/03/23/tool-sublime/" rel="next" title="Sublime">
+                  Sublime <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Robert Kao</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 強力驅動
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/flow-guide/js/utils.js"></script><script src="/flow-guide/js/motion.js"></script><script src="/flow-guide/js/next-boot.js"></script>
+
+  
+<script src="/flow-guide/js/local-search.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

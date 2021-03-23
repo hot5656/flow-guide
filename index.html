@@ -139,15 +139,19 @@
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
-  <div class="search-input-container"></div>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
   <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div class="search-result-container">
-  <div class="algolia-stats"><hr></div>
-  <div class="algolia-hits"></div>
-  <div class="algolia-pagination"></div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
 </div>
 
     </div>
@@ -190,9 +194,21 @@
       <div class="site-state-item site-state-posts">
           <a href="/flow-guide/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">18</span>
           <span class="site-state-item-name">文章</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/flow-guide/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/flow-guide/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
 </div>
@@ -229,7 +245,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/tool-1/">
+    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/resource-record/fontawesome/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/flow-guide/images/avatar.gif">
@@ -242,7 +258,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/flow-guide/2021/03/23/tool-1/" class="post-title-link" itemprop="url">tool-1</a>
+          <a href="/flow-guide/2021/03/23/resource-record/fontawesome/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta-container">
@@ -253,8 +269,15 @@
       </span>
       <span class="post-meta-item-text">發表於</span>
 
-      <time title="創建時間：2021-03-23 15:44:37" itemprop="dateCreated datePublished" datetime="2021-03-23T15:44:37+08:00">2021-03-23</time>
+      <time title="創建時間：2021-03-23 17:04:05" itemprop="dateCreated datePublished" datetime="2021-03-23T17:04:05+08:00">2021-03-23</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新於</span>
+        <time title="修改時間：2018-09-25 17:24:21" itemprop="dateModified" datetime="2018-09-25T17:24:21+08:00">2018-09-25</time>
+      </span>
 
   
 </div>
@@ -266,7 +289,74 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+	<style>
+		body {
+			margin-left: 100px;
+			font-size: 24px;
+		}
+	</style>
+</head>
+<body>
+	<!-- <link rel="stylesheet" href="#" value="Resource"> -->
+	<a href="flow.md">Resource</a>
+	<table>
+		<tr>
+			<td><i class="fas fa-map-marker-alt"></i></td>
+			<td>&lti class="fas fa-map-marker-alt">&lt/i></td>
+		</tr>
+		<tr>
+			<td><i class="far fa-calendar-alt"></i></td>
+			<td>&lti class="far fa-calendar-alt">&lt/i></td>
+		</tr>
+		<tr>
+			<td><i class="far fa-times-circle"></i></td>
+			<td>&lti class="far fa-times-circle">&lt/i></td>
+		</tr>
+		<tr>
+			<td><i class="fas fa-search"></i></td>
+			<td>&lti class="fas fa-search">&lt/i></td>
+		</tr>
+		<tr>
+			<td><i class="fas fa-square"></i></td>
+			<td>&lti class="fas fa-square">&lt/i></td>
+		</tr>
+		<tr>
+			<td><i class="fas fa-check-square"></i></td>
+			<td>&lti class="fas fa-check-square">&lt/i></td>
+		</tr>
+		<tr>
+			<td><i class="fas fa-dollar-sign"></i></td>
+			<td>&lti class="fas fa-dollar-sign">&lt/i></td>
+		</tr>
+		<tr>
+			<td><i class="fas fa-address-card"></i></td>
+			<td>&lti class="fas fa-address-card">&lt/i></td>
+		</tr>
+		<tr>
+			<td><i class="fas fa-plus"></i></td>
+			<td>&lti class="fas fa-plus">&lt/i></td>
+		</tr>
+		<tr>
+			<td><i class="fas fa-shopping-cart"></i></td>
+			<td>&lti class="fas fa-shopping-cart">&lt/i></td>
+		</tr>
+		<tr>
+			<td><i class="fas fa-minus"></i></td>
+			<td>&lti class="fas fa-minus">&lt/i></td>
+		</tr>
+	</table>
+</body>
+</html>
+
       
     </div>
 
@@ -292,7 +382,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/github-record/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/flow-guide/images/avatar.gif">
@@ -305,7 +395,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/flow-guide/2021/03/23/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+          <a href="/flow-guide/2021/03/23/github-record/" class="post-title-link" itemprop="url">GitHub record</a>
         </h2>
 
         <div class="post-meta-container">
@@ -315,8 +405,18 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
+      
 
-      <time title="創建時間：2021-03-23 15:39:13" itemprop="dateCreated datePublished" datetime="2021-03-23T15:39:13+08:00">2021-03-23</time>
+      <time title="創建時間：2021-03-23 15:44:37 / 修改時間：16:44:37" itemprop="dateCreated datePublished" datetime="2021-03-23T15:44:37+08:00">2021-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/flow-guide/categories/GitHub/" itemprop="url" rel="index"><span itemprop="name">GitHub</span></a>
+        </span>
     </span>
 
   
@@ -329,19 +429,22 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+          <ul>
+<li>  <a href="../README.md">Root</a></li>
+<li>  <a href="#a1">1. Add new repository</a></li>
+</ul>
+<h2 id="a1">1. Add new repository</h2>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="gitHub-–-gt-new-repository"><a href="#gitHub-–-gt-new-repository" class="headerlink" title="gitHub –&gt; new repository"></a>gitHub –&gt; new repository</h3><h3 id="locale-add-git-repository-then-push-to-github"><a href="#locale-add-git-repository-then-push-to-github" class="headerlink" title="locale add git repository then push to github"></a>locale add git repository then push to github</h3><pre><code>git init
+git add *.*
+git commit -m &quot;first commit&quot;
+git remote add origin https://github.com/hot5656/ajaxF2eCheckRegister.git
+git push -u origin master
+</code></pre>
+<h3 id="set-github-support-by-web-browser-access"><a href="#set-github-support-by-web-browser-access" class="headerlink" title="set github support by web browser access"></a>set github support by web browser access</h3><pre><code>setting --&gt; GitHub Pages --&gt; source --&gt; master branch --&gt; Save
+</code></pre>
+<h3 id="web-browser-access"><a href="#web-browser-access" class="headerlink" title="web browser access"></a>web browser access</h3><pre><code>https://hot5656.github.io/ajaxF2eCheckRegister
+</code></pre>
 
       
     </div>
@@ -360,6 +463,1710 @@
 
 
 
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/github-issue/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/flow-guide/images/avatar.gif">
+      <meta itemprop="name" content="Robert Kao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Robert Flow Guide">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/flow-guide/2021/03/23/github-issue/" class="post-title-link" itemprop="url">GitHub issue</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2021-03-23 15:44:37 / 修改時間：16:44:37" itemprop="dateCreated datePublished" datetime="2021-03-23T15:44:37+08:00">2021-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/flow-guide/categories/GitHub/" itemprop="url" rel="index"><span itemprop="name">GitHub</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <ul>
+<li>  <a href="../README.md">Root</a></li>
+<li>  <a href="#a1">1. A dependency defined in package-lock.json has known security vulnerabilities and should be updated</a></li>
+</ul>
+<h2 id="a1">1. A dependency defined in package-lock.json has known security vulnerabilities and should be updated</h2>
+
+<blockquote>
+<p>   package-lock.json hoek known security vulnerabilities 2.16.3  </p>
+</blockquote>
+<p><strong>npm ls hoek</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">C:\work\git\html\github\bootstrap-custom-build&gt;npm ls hoek</span><br><span class="line">customize@1.0.0 C:\work\git\html\github\bootstrap-custom-build</span><br><span class="line">&#96;-- node-sass@4.9.1</span><br><span class="line">  &#96;-- node-gyp@3.7.0</span><br><span class="line">    &#96;-- request@2.81.0</span><br><span class="line">      &#96;-- hawk@3.1.3</span><br><span class="line">        +-- boom@2.10.1</span><br><span class="line">        | &#96;-- hoek@2.16.3  deduped</span><br><span class="line">        +-- hoek@2.16.3</span><br><span class="line">        &#96;-- sntp@1.0.9</span><br><span class="line">          &#96;-- hoek@2.16.3  deduped</span><br></pre></td></tr></table></figure>
+<p><strong>npm install node-sass@latest</strong></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/markdown-record/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/flow-guide/images/avatar.gif">
+      <meta itemprop="name" content="Robert Kao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Robert Flow Guide">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/flow-guide/2021/03/23/markdown-record/" class="post-title-link" itemprop="url">Markdown record</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2021-03-23 15:44:37 / 修改時間：16:44:37" itemprop="dateCreated datePublished" datetime="2021-03-23T15:44:37+08:00">2021-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/flow-guide/categories/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <ul>
+<li>  <a href="../README.md">Root</a></li>
+</ul>
+<h2 id="標題-1-6"><a href="#標題-1-6" class="headerlink" title="標題 1~6"></a>標題 1~6</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#  A</span><br><span class="line">## A1</span><br><span class="line">### A23</span><br></pre></td></tr></table></figure>
+<h1 id="A"><a href="#A" class="headerlink" title="A"></a>A</h1><h2 id="A1"><a href="#A1" class="headerlink" title="A1"></a>A1</h2><h3 id="A23"><a href="#A23" class="headerlink" title="A23"></a>A23</h3><h2 id="粗體-強調"><a href="#粗體-強調" class="headerlink" title="粗體/強調"></a>粗體/強調</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**asdfasf**</span><br><span class="line">asdfasf</span><br><span class="line">*asdfasf* </span><br><span class="line">asdfasf</span><br></pre></td></tr></table></figure>
+<p><strong>asdfasf</strong><br>asdfasf<br><em>asdfasf</em><br>asdfasf</p>
+<h2 id="刪除"><a href="#刪除" class="headerlink" title="刪除"></a>刪除</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~wqfwa~~</span><br></pre></td></tr></table></figure>
+<p><del>wqfwa</del></p>
+<h2 id="加背景色"><a href="#加背景色" class="headerlink" title="加背景色"></a>加背景色</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#96;abd&#96;</span><br></pre></td></tr></table></figure>
+<p><code>abd</code></p>
+<h2 id="特殊字元"><a href="#特殊字元" class="headerlink" title="特殊字元"></a>特殊字元</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt; &lt;</span><br><span class="line">&amp; &amp;</span><br></pre></td></tr></table></figure>
+<p>&lt;<br>&amp;</p>
+<h2 id="換行"><a href="#換行" class="headerlink" title="換行"></a>換行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">行尾加上兩個以上的空白，然後按enter</span><br></pre></td></tr></table></figure>
+
+<h2 id="分隔線"><a href="#分隔線" class="headerlink" title="分隔線"></a>分隔線</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">***</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="清單-分層"><a href="#清單-分層" class="headerlink" title="清單+分層"></a>清單+分層</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">* Yahoo!奇摩股市提供您當日行情、大盤走勢、類股走勢、期貨及</span><br><span class="line">	* 選擇權分類報價、港滬深股、美股、財經新聞等資訊。</span><br><span class="line">		* 財經新聞等資訊。</span><br><span class="line"></span><br><span class="line">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span><br><span class="line">    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,</span><br><span class="line">    viverra nec, fringilla in, laoreet vitae, risus.</span><br><span class="line">&lt;br&gt;	</span><br><span class="line">	Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span><br><span class="line">    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,</span><br><span class="line">    viverra nec, fringilla in, laoreet vitae, risus.</span><br><span class="line">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span><br><span class="line">Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,</span><br><span class="line">viverra nec, fringilla in, laoreet vitae, risus.</span><br><span class="line">    &gt; This is a blockquote</span><br><span class="line">    &gt; inside a list item.</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>Yahoo!奇摩股市提供您當日行情、大盤走勢、類股走勢、期貨及</p>
+<ul>
+<li>選擇權分類報價、港滬深股、美股、財經新聞等資訊。<ul>
+<li>財經新聞等資訊。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>  Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,<br>  viverra nec, fringilla in, laoreet vitae, risus.</p>
+<br>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+  viverra nec, fringilla in, laoreet vitae, risus.</li>
+<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,<br>viverra nec, fringilla in, laoreet vitae, risus.</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">console</span>.log()</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>This is a blockquote<br>inside a list item.</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">console</span>.log()</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+</ul>
+<h2 id="無序清單-same"><a href="#無序清單-same" class="headerlink" title="無序清單(* + -)-same"></a>無序清單(* + -)-same</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* 1st</span><br><span class="line">	* the 1-1</span><br><span class="line">	* the 1-2</span><br><span class="line">	+ the 1-3</span><br><span class="line">	- the 1-4</span><br></pre></td></tr></table></figure>
+<ul>
+<li>1st<ul>
+<li>the 1-1</li>
+<li>the 1-2</li>
+</ul>
+<ul>
+<li>the 1-3</li>
+</ul>
+<ul>
+<li>the 1-4</li>
+</ul>
+</li>
+</ul>
+<h2 id="有序清單"><a href="#有序清單" class="headerlink" title="有序清單"></a>有序清單</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. Yahoo 股市 </span><br><span class="line">2. Yahoo!奇摩股市</span><br></pre></td></tr></table></figure>
+<ol>
+<li>Yahoo 股市 </li>
+<li>Yahoo!奇摩股市</li>
+</ol>
+<h2 id="超連結"><a href="#超連結" class="headerlink" title="超連結"></a>超連結</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[goole](https://www.google.com/ &quot;Google&quot;)</span><br><span class="line"><span class="comment">&lt;!-- md link to id--&gt;</span></span><br><span class="line">[Django project](#django_project)  </span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">&quot;django_ref&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- md link to top--&gt;</span></span><br><span class="line">[[Home]](#)</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://www.google.com/" title="Google">goole</a></p>
+<h2 id="圖片"><a href="#圖片" class="headerlink" title="圖片"></a>圖片</h2><p>一個驚嘆號!<br>接著一個方括號，裡面放上圖片的替代文字<br>接著一個普通括號，裡面放上圖片的網址，最後還可以用引號包住並加上 選擇性的’title’文字。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![flower](flower.jpeg &quot;pic title&quot;)</span><br></pre></td></tr></table></figure>
+<p><img src="flower.jpeg" alt="flower" title="pic title"></p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>表格的欄位數以標題列的欄位數作為基準，有少則補。有多的，PHP 是直接判斷為文字，GFM 則是隱藏。<br>分隔列每欄至少要有三個 - (dash)，可在 - 的最左最右插入 : 指定文字對齊方式， : 也算在最少三個 - 的數量裡<br>欄位以 | (pipe) 劃分，表格外側可有可不有，但若只有單一欄位，則每欄至少要有一個 |<br>欄位裡，文字與 | 之間的空白符號對程式來說無意義，但對於編寫者能加強可讀性。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">|奇摩股市提供您當|大盤走勢、類股走及|選擇權分|</span><br><span class="line">|--|:--:|--:|</span><br><span class="line">|abc|def|123|</span><br><span class="line">|eeeeee|eeee|21312|</span><br><span class="line"></span><br><span class="line">Age           | Time  | Food | Gold | Requirement</span><br><span class="line">--------------|:-----:|-----:| ----:|------------------------</span><br><span class="line">Feudal Age    | 02:10 |  500 |    0 | Dark Age building x 2</span><br><span class="line">Castle Age    | 02:40 |  800 |  200 | Feudal Age building x 2</span><br><span class="line">Imperial Age  | 03:30 | 1000 |  800 | Castle Age building x 2 </span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>奇摩股市提供您當</th>
+<th align="center">大盤走勢、類股走及</th>
+<th align="right">選擇權分</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>abc</td>
+<td align="center">def</td>
+<td align="right">123</td>
+</tr>
+<tr>
+<td>eeeeee</td>
+<td align="center">eeee</td>
+<td align="right">21312</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Age</th>
+<th align="center">Time</th>
+<th align="right">Food</th>
+<th align="right">Gold</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Feudal Age</td>
+<td align="center">02:10</td>
+<td align="right">500</td>
+<td align="right">0</td>
+<td>Dark Age building x 2</td>
+</tr>
+<tr>
+<td>Castle Age</td>
+<td align="center">02:40</td>
+<td align="right">800</td>
+<td align="right">200</td>
+<td>Feudal Age building x 2</td>
+</tr>
+<tr>
+<td>Imperial Age</td>
+<td align="center">03:30</td>
+<td align="right">1000</td>
+<td align="right">800</td>
+<td>Castle Age building x 2</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|預設|靠右對齊|靠左對齊|置中對齊|</span><br><span class="line">|---|------:|:-----|:-----:|</span><br><span class="line">|12 |12     |12    |12     |</span><br><span class="line">|123|123    |123   |123    |</span><br><span class="line">|1  |1      |1     |1      |</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>預設</th>
+<th align="right">靠右對齊</th>
+<th align="left">靠左對齊</th>
+<th align="center">置中對齊</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>12</td>
+<td align="right">12</td>
+<td align="left">12</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td>123</td>
+<td align="right">123</td>
+<td align="left">123</td>
+<td align="center">123</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">1</td>
+<td align="left">1</td>
+<td align="center">1</td>
+</tr>
+</tbody></table>
+<h2 id="區塊元素-程式碼"><a href="#區塊元素-程式碼" class="headerlink" title="區塊元素(程式碼)"></a>區塊元素(程式碼)</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">console</span>.log()</span><br></pre></td></tr></table></figure>
+
+<h2 id="區塊引言"><a href="#區塊引言" class="headerlink" title="區塊引言"></a>區塊引言</h2><blockquote>
+<p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,<br>consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.<br>Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse<br>id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
+<h2 id="區塊引言-階層"><a href="#區塊引言-階層" class="headerlink" title="區塊引言(階層)"></a>區塊引言(階層)</h2><blockquote>
+<p>This is the first level of quoting.</p>
+<blockquote>
+<p>This is nested blockquote.</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>Back to the first level.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="引言的區塊內也可以使用其他的Markdown語法，包括標題、清單、程式碼區塊等："><a href="#引言的區塊內也可以使用其他的Markdown語法，包括標題、清單、程式碼區塊等：" class="headerlink" title="引言的區塊內也可以使用其他的Markdown語法，包括標題、清單、程式碼區塊等："></a>引言的區塊內也可以使用其他的Markdown語法，包括標題、清單、程式碼區塊等：</h2><blockquote>
+<h2 id="This-is-a-header"><a href="#This-is-a-header" class="headerlink" title="This is a header."></a>This is a header.</h2><ol>
+<li>This is the first list item.</li>
+<li>This is the second list item.</li>
+</ol>
+<p>Here’s some example code:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">return shell_exec(&quot;echo $input | $markdown_script&quot;);</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="水平分隔線"><a href="#水平分隔線" class="headerlink" title="水平分隔線"></a>水平分隔線</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">第一個水平分隔線：</span><br><span class="line">***</span><br><span class="line">第二個水平分隔線：</span><br><span class="line">---</span><br><span class="line">第三個水平分隔線：</span><br><span class="line">___</span><br></pre></td></tr></table></figure>
+<p>第一個水平分隔線：</p>
+<hr>
+<h2 id="第二個水平分隔線："><a href="#第二個水平分隔線：" class="headerlink" title="第二個水平分隔線："></a>第二個水平分隔線：</h2><p>第三個水平分隔線：</p>
+<hr>
+<h2 id="數學公式"><a href="#數學公式" class="headerlink" title="數學公式"></a>數學公式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"># 行內公式</span><br><span class="line">質能方程式$E &#x3D; mc^2$</span><br><span class="line"># 獨立公式</span><br><span class="line">質能方程式$$E &#x3D; mc^2$$</span><br><span class="line"># ^ 上標, _ 下標</span><br><span class="line">$$x &#x3D; a _&#123;1&#125;^n + a_ &#123;2&#125;^n + a_&#123;3&#125;^n$$</span><br><span class="line"># 分數使用\frac&#123;分母&#125;&#123;分子&#125; 不過推薦使用\cfrac來代替\frac，顯示公式不會太擠</span><br><span class="line">$$\frac&#123;1&#125;&#123;3&#125; 與\cfrac&#123;1&#125;&#123;3&#125;$$</span><br><span class="line"># &#123;&#125;因為有特殊作用因此當需要顯示大括號時一般使用\lbrace \rbrace來表示</span><br><span class="line">$$f(x, y) &#x3D; 100 * \lbrace[(x + y) * 3] - 5\rbrace$$</span><br><span class="line"># 開根號 \sqrt[次数]&#123;被开方数&#125;</span><br><span class="line">$$\sqrt[3]&#123;X&#125; \sqrt&#123;5 - x&#125;$$ </span><br><span class="line"># 極限</span><br><span class="line">$g. \lim\limits_&#123;n \rightarrow a&#125; [f(x)&#x2F;g(x)]&#x3D;L&#x2F;M$</span><br><span class="line"># 條件表達式</span><br><span class="line">\[</span><br><span class="line">y&#x3D;</span><br><span class="line">\begin&#123;cases&#125;</span><br><span class="line">-x,\quad x\leq 0 \\</span><br><span class="line">x,\quad x&gt;0</span><br><span class="line">\end&#123;cases&#125;</span><br><span class="line">\]</span><br><span class="line">\begin&#123;equation&#125;</span><br><span class="line">    f(n) &#x3D;</span><br><span class="line">    \begin&#123;cases&#125;</span><br><span class="line">    n&#x2F;2, &amp; \text&#123;if $n$ is even&#125; \\</span><br><span class="line">    3n+1, &amp; \text&#123;if $n$ is odd&#125;</span><br><span class="line">    \end&#123;cases&#125;</span><br><span class="line">\end&#123;equation&#125;</span><br></pre></td></tr></table></figure>
+<p>質能方程式$E = mc^2$<br>質能方程式$$E = mc^2$$<br>上標,下標<br>$$x = a <em>{1}^n + a</em> {2}^n + a_{3}^n$$<br>分數使用<br>$$\frac{1}{3} 與\cfrac{1}{3}$$<br>開根號<br>$$f(x, y) = 100 * \lbrace[(x + y) * 3] - 5\rbrace$$<br>$$\frac{1}{3} 與\cfrac{1}{3}$$<br>$$\sqrt[3]{X} \sqrt{5 - x}$$<br>極限<br>$\lim\limits_{n \rightarrow a} [f(x)/g(x)]=L/M$<br>條件表達式<br>[<br>y=<br>\begin{cases}<br>-x,\quad x\leq 0 \<br>x,\quad x&gt;0<br>\end{cases}<br>]<br>\begin{equation}<br>    f(n) =<br>    \begin{cases}<br>    n/2, &amp; \text{if $n$ is even} \<br>    3n+1, &amp; \text{if $n$ is odd}<br>    \end{cases}<br>\end{equation}</p>
+<p><strong>希臘字母</strong></p>
+<table>
+<thead>
+<tr>
+<th>代碼</th>
+<th>大寫</th>
+<th>代碼</th>
+<th>小寫</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>$A$</td>
+<td>\alpha</td>
+<td>$\alpha$</td>
+</tr>
+<tr>
+<td>B</td>
+<td>$B$</td>
+<td>\beta</td>
+<td>$\beta$</td>
+</tr>
+<tr>
+<td>\Gamma</td>
+<td>$\Gamma$</td>
+<td>\gamma</td>
+<td>$\gamma$</td>
+</tr>
+<tr>
+<td>\Delta</td>
+<td>$\Delta$</td>
+<td>\delta</td>
+<td>$\delta$</td>
+</tr>
+<tr>
+<td>E</td>
+<td>$E$</td>
+<td>\epsilon</td>
+<td>$\epsilon$</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>$Z$</td>
+<td>\zeta</td>
+<td>$\zeta$</td>
+</tr>
+<tr>
+<td>H</td>
+<td>$H$</td>
+<td>\eta</td>
+<td>$\eta$</td>
+</tr>
+<tr>
+<td>\Theta</td>
+<td>$\Theta$</td>
+<td>\theta</td>
+<td>$\theta$</td>
+</tr>
+<tr>
+<td>I</td>
+<td>$I$</td>
+<td>\iota</td>
+<td>$\iota$</td>
+</tr>
+<tr>
+<td>K</td>
+<td>$K$</td>
+<td>\kappa</td>
+<td>$\kappa$</td>
+</tr>
+<tr>
+<td>\Lambda</td>
+<td>$\Lambda$</td>
+<td>\lambda</td>
+<td>$\lambda$</td>
+</tr>
+<tr>
+<td>M</td>
+<td>$M$</td>
+<td>\mu</td>
+<td>$\mu$</td>
+</tr>
+<tr>
+<td>N</td>
+<td>$N$</td>
+<td>\nu</td>
+<td>$\nu$</td>
+</tr>
+<tr>
+<td>\Xi</td>
+<td>$\Xi$</td>
+<td>\xi</td>
+<td>$\xi$</td>
+</tr>
+<tr>
+<td>O</td>
+<td>$O$</td>
+<td>\omicron</td>
+<td>$\omicron$</td>
+</tr>
+<tr>
+<td>\Pi</td>
+<td>$\Pi$</td>
+<td>\pi</td>
+<td>$\pi$</td>
+</tr>
+<tr>
+<td>P</td>
+<td>$P$</td>
+<td>\rho</td>
+<td>$\rho$</td>
+</tr>
+<tr>
+<td>\Sigma</td>
+<td>$\Sigma$</td>
+<td>\sigma</td>
+<td>$\sigma$</td>
+</tr>
+<tr>
+<td>T</td>
+<td>$T$</td>
+<td>\tau</td>
+<td>$\tau$</td>
+</tr>
+<tr>
+<td>\Upsilon</td>
+<td>$\Upsilon$</td>
+<td>\upsilon</td>
+<td>$\upsilon$</td>
+</tr>
+<tr>
+<td>\Phi</td>
+<td>$\Phi$</td>
+<td>\phi</td>
+<td>$\phi$</td>
+</tr>
+<tr>
+<td>X</td>
+<td>$X$</td>
+<td>\chi</td>
+<td>$\chi$</td>
+</tr>
+<tr>
+<td>\Psi</td>
+<td>$\Psi$</td>
+<td>\psi</td>
+<td>$\psi$</td>
+</tr>
+<tr>
+<td>\Omega</td>
+<td>$\Omega$</td>
+<td>\omega</td>
+<td>$\omega$</td>
+</tr>
+</tbody></table>
+<p><strong>關係運算符</strong></p>
+<table>
+<thead>
+<tr>
+<th>符號</th>
+<th>代碼</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\pm$</td>
+<td>\pm</td>
+</tr>
+<tr>
+<td>$\times$</td>
+<td>\times</td>
+</tr>
+<tr>
+<td>$\div$</td>
+<td>\div</td>
+</tr>
+<tr>
+<td>$\mid$</td>
+<td>\mid</td>
+</tr>
+<tr>
+<td>$\nmid$</td>
+<td>\nmid</td>
+</tr>
+<tr>
+<td>$\cdot$</td>
+<td>\cdot</td>
+</tr>
+<tr>
+<td>$\circ$</td>
+<td>\circ</td>
+</tr>
+<tr>
+<td>$\ast$</td>
+<td>\ast</td>
+</tr>
+<tr>
+<td>$\bigodot$</td>
+<td>\bigodot</td>
+</tr>
+<tr>
+<td>$\bigotimes$</td>
+<td>\bigotimes</td>
+</tr>
+<tr>
+<td>$\bigoplus$</td>
+<td>\bigoplus</td>
+</tr>
+<tr>
+<td>$\leq$</td>
+<td>\leq</td>
+</tr>
+<tr>
+<td>$\geq$</td>
+<td>\geq</td>
+</tr>
+<tr>
+<td>$\neq$</td>
+<td>\neq</td>
+</tr>
+<tr>
+<td>$\approx$</td>
+<td>\approx</td>
+</tr>
+<tr>
+<td>$\equiv$</td>
+<td>\equiv</td>
+</tr>
+<tr>
+<td>$\sum$</td>
+<td>\sum</td>
+</tr>
+<tr>
+<td>$\prod$</td>
+<td>\prod</td>
+</tr>
+<tr>
+<td>$\coprod$</td>
+<td>\coprod</td>
+</tr>
+</tbody></table>
+<p><strong>集合運算符</strong></p>
+<table>
+<thead>
+<tr>
+<th>符號</th>
+<th>代碼</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\emptyset$</td>
+<td>\emptyset</td>
+</tr>
+<tr>
+<td>$\in$</td>
+<td>\in</td>
+</tr>
+<tr>
+<td>$\notin$</td>
+<td>\notin</td>
+</tr>
+<tr>
+<td>$\subset$</td>
+<td>\subset</td>
+</tr>
+<tr>
+<td>$\supset$</td>
+<td>\supset</td>
+</tr>
+<tr>
+<td>$\subseteq$</td>
+<td>\subseteq</td>
+</tr>
+<tr>
+<td>$\supseteq$</td>
+<td>\supseteq</td>
+</tr>
+<tr>
+<td>$\bigcap$</td>
+<td>\bigcap</td>
+</tr>
+<tr>
+<td>$\bigcup$</td>
+<td>\bigcup</td>
+</tr>
+<tr>
+<td>$\bigvee$</td>
+<td>\bigvee</td>
+</tr>
+<tr>
+<td>$\bigwedge$</td>
+<td>\bigwedge</td>
+</tr>
+<tr>
+<td>$\biguplus$</td>
+<td>\biguplus</td>
+</tr>
+<tr>
+<td>$\bigsqcup$</td>
+<td>\bigsqcup</td>
+</tr>
+</tbody></table>
+<p><strong>對數運算符</strong></p>
+<table>
+<thead>
+<tr>
+<th>符號</th>
+<th>代碼</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\log$</td>
+<td>\log</td>
+</tr>
+<tr>
+<td>$\lg$</td>
+<td>\lg</td>
+</tr>
+<tr>
+<td>$\ln$</td>
+<td>\ln</td>
+</tr>
+</tbody></table>
+<p><strong>三角運算符</strong></p>
+<table>
+<thead>
+<tr>
+<th>符號</th>
+<th>代碼</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\bot$</td>
+<td>\bot</td>
+</tr>
+<tr>
+<td>$\angle$</td>
+<td>\angle</td>
+</tr>
+<tr>
+<td>$\sin$</td>
+<td>\sin</td>
+</tr>
+<tr>
+<td>$\cos$</td>
+<td>\cos</td>
+</tr>
+<tr>
+<td>$\tan$</td>
+<td>\tan</td>
+</tr>
+<tr>
+<td>$\cot$</td>
+<td>\cot</td>
+</tr>
+<tr>
+<td>$\sec$</td>
+<td>\sec</td>
+</tr>
+<tr>
+<td>$\csc$</td>
+<td>\csc</td>
+</tr>
+</tbody></table>
+<p><strong>微積分運算符</strong></p>
+<table>
+<thead>
+<tr>
+<th>符號</th>
+<th>代碼</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\prime$</td>
+<td>\prime</td>
+</tr>
+<tr>
+<td>$\int$</td>
+<td>\int</td>
+</tr>
+<tr>
+<td>$\iint$</td>
+<td>\iint</td>
+</tr>
+<tr>
+<td>$\iiint$</td>
+<td>\iiint</td>
+</tr>
+<tr>
+<td>$\iiiint$</td>
+<td>\iiiint</td>
+</tr>
+<tr>
+<td>$\oint$</td>
+<td>\oint</td>
+</tr>
+<tr>
+<td>$\lim$</td>
+<td>\lim</td>
+</tr>
+<tr>
+<td>$\infty$</td>
+<td>\infty</td>
+</tr>
+<tr>
+<td>$\nabla$</td>
+<td>\nabla</td>
+</tr>
+<tr>
+<td>$\mathrm{d}$</td>
+<td>\mathrm{d}</td>
+</tr>
+</tbody></table>
+<p><strong>其他</strong></p>
+<table>
+<thead>
+<tr>
+<th>符號</th>
+<th>代碼</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\rightarrow$</td>
+<td>\rightarrow</td>
+</tr>
+<tr>
+<td>$\uparrow$</td>
+<td>\uparrow</td>
+</tr>
+<tr>
+<td>$\nearrow$</td>
+<td>\nearrow</td>
+</tr>
+<tr>
+<td>$\searrow$</td>
+<td>\searrow</td>
+</tr>
+<tr>
+<td>普通空格$\space$空格</td>
+<td>\space</td>
+</tr>
+<tr>
+<td>字符空格$\quad$空格</td>
+<td>\quad</td>
+</tr>
+<tr>
+<td>$\cdot$</td>
+<td>\cdot</td>
+</tr>
+<tr>
+<td>$\approx$</td>
+<td>\approx</td>
+</tr>
+<tr>
+<td>顯示公式較好看$\displaystyle \sum_{n=1}^{10} n^2$</td>
+<td>\displaystyle “\displaystyle \sum_{n=1}^{10} n^2”</td>
+</tr>
+<tr>
+<td>$\overline{x+1}$</td>
+<td>\overline 能覆蓋所有括號中的文本</td>
+</tr>
+<tr>
+<td>$\bar x$</td>
+<td>\bar 長度只能覆蓋一個字母</td>
+</tr>
+<tr>
+<td>$\displaystyle \sum_{i=1}^n$</td>
+<td>\sum_{i=1}^n 總和</td>
+</tr>
+<tr>
+<td>$\frac{1}{3}$</td>
+<td>\frac{1}{3}</td>
+</tr>
+<tr>
+<td>$\sqrt[3]{X}$</td>
+<td>\sqrt[3]{X}</td>
+</tr>
+<tr>
+<td>$\sqrt{5 - x}$</td>
+<td>\sqrt{5 - x}</td>
+</tr>
+<tr>
+<td>$\int^1_{-1}$</td>
+<td>\int^1_{-1}</td>
+</tr>
+<tr>
+<td>$\pm$</td>
+<td>\pm</td>
+</tr>
+<tr>
+<td>$\lim\limits_{n \rightarrow \infty}$</td>
+<td>\lim\limits_{n \rightarrow \infty}</td>
+</tr>
+<tr>
+<td>\begin{cases} -x,\quad x\leq 0 \x,\quad x&gt;0 \end{cases}</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="自動連結"><a href="#自動連結" class="headerlink" title="自動連結"></a>自動連結</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;http:&#x2F;&#x2F;example.com&#x2F;&gt;  </span><br><span class="line">&lt;address@example.com&gt;</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="http://example.com/">http://example.com/</a><br><a href="mailto:&#97;&#x64;&#100;&#114;&#x65;&#115;&#x73;&#x40;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;">&#97;&#x64;&#100;&#114;&#x65;&#115;&#x73;&#x40;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<h2 id="跳脫字元"><a href="#跳脫字元" class="headerlink" title="跳脫字元"></a>跳脫字元</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Markdown可以利用反斜線來插入一些在語法中有其他意義的符號，例如：如果你想要用星號加在文字旁邊的方式來做出強調效果（但不用&lt;em&gt;標籤），你可以在星號的前面加上反斜線：</span><br><span class="line">\*literal asterisks\*</span><br></pre></td></tr></table></figure>
+<p>*literal asterisks*</p>
+<p>Markdown支援在下面這些符號前面加上反斜線來幫助插入普通的符號：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\   反斜線</span><br><span class="line">&#96;   反引號</span><br><span class="line">*   星號</span><br><span class="line">_   底線</span><br><span class="line">&#123;&#125;  大括號</span><br><span class="line">[]  方括號</span><br><span class="line">()  括號</span><br><span class="line">#   井字號</span><br><span class="line">+   加號</span><br><span class="line">-   減號</span><br><span class="line">.   英文句點</span><br><span class="line">!   驚嘆號</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/node-issue/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/flow-guide/images/avatar.gif">
+      <meta itemprop="name" content="Robert Kao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Robert Flow Guide">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/flow-guide/2021/03/23/node-issue/" class="post-title-link" itemprop="url">Node.js issue</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2021-03-23 15:44:37 / 修改時間：16:44:37" itemprop="dateCreated datePublished" datetime="2021-03-23T15:44:37+08:00">2021-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/flow-guide/categories/Node-js/" itemprop="url" rel="index"><span itemprop="name">Node.js</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <ul>
+<li>  <a href="../README.md">Root</a></li>
+<li>  <a href="#a1">1. Unsupported platform for fsevents@1.2.4: wanted {“os”:”darwin”,”arch”:”any”} (current: {“os”:”win32”,”arch”:”x64”}</a></li>
+<li>  <a href="#a2">2. install browser-sync issue</a></li>
+<li>  <a href="#a3">3. run gulp -&gt; Failed to load external module @babel/register</a></li>
+<li>  <a href="#a4">4. run gulp -&gt; some WARN</a></li>
+<li>  <a href="#a5">5. Failed to load external module @babel/register</a></li>
+<li>  <a href="#a6">6. run gulp –&gt; AssertionError [ERR_ASSERTION]</a></li>
+</ul>
+<h2 id="a1">1. Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"}</h2>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm WARN week2_filter_2nd@1.0.0 No repository field.</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@</span><br><span class="line">1.2.4: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><strong>fsevent是mac osx系統的東西，在win或者Linux下使用了會有警告，忽略即可。意思就是你已經安裝成功了…</strong></p>
+<h2 id="a2">2. install browser-sync issu</h2>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">npm audit</span><br><span class="line"></span><br><span class="line">                       &#x3D;&#x3D;&#x3D; npm audit security report &#x3D;&#x3D;&#x3D;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                                 Manual Review</span><br><span class="line">             Some vulnerabilities require your attention to resolve</span><br><span class="line"></span><br><span class="line">          Visit https:&#x2F;&#x2F;go.npm.me&#x2F;audit-guide for additional guidance</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  Low             Regular Expression Denial of Service</span><br><span class="line"></span><br><span class="line">  Package         debug</span><br><span class="line"></span><br><span class="line">  Patched in      &gt;&#x3D; 2.6.9 &lt; 3.0.0 || &gt;&#x3D; 3.1.0</span><br><span class="line"></span><br><span class="line">  Dependency of   browser-sync [dev]</span><br><span class="line"></span><br><span class="line">  Path            browser-sync &gt; localtunnel &gt; debug</span><br><span class="line"></span><br><span class="line">  More info       https:&#x2F;&#x2F;nodesecurity.io&#x2F;advisories&#x2F;534</span><br><span class="line"></span><br><span class="line">found 1 low severity vulnerability in 5248 scanned packages</span><br><span class="line">  1 vulnerability requires manual review. See the full report for details.</span><br></pre></td></tr></table></figure>
+<p><strong>browser-sync僅為development使用,upgrade debug package 還是會發生故不處理</strong></p>
+<h2 id="a3">3. run gulp -> Failed to load external module @babel/register</h2>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">solved it by downgrading the gulp version from 3.9.1 to 3.9.0. Looks like 3.9.1 is buggy.</span><br></pre></td></tr></table></figure>
+
+<h2 id="a4">4. run gulp -> some WARN</h2>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">* npm WARN deprecated gulp-util@3.0.8: gulp-util is deprecated - replace it,following the guidelines at https:&#x2F;&#x2F;medium.com&#x2F;gulpjs&#x2F;gulp-util-ca3b1f9f9ac5</span><br><span class="line">* npm WARN deprecated graceful-fs@3.0.11: please upgrade to graceful-fs 4 for compatibility with current and future versions of Node.js</span><br><span class="line">* npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue</span><br><span class="line">* npm WARN deprecated minimatch@0.2.14: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue</span><br><span class="line">* npm WARN deprecated graceful-fs@1.2.3: please upgrade to graceful-fs 4 for compatibility with current and future versions of Node.js</span><br><span class="line"></span><br><span class="line">WARN 1 : not use gulp-util and use below API</span><br><span class="line">	gutil.File &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;vinyl</span><br><span class="line">	gutil.replaceExtension &#x3D;&gt; The .extname property on Vinyl objects or https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;replace-ext</span><br><span class="line">	gutil.colors &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;ansi-colors</span><br><span class="line">	gutil.date &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;date-format</span><br><span class="line">	gutil.log &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;fancy-log</span><br><span class="line">	gutil.template &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;lodash.template</span><br><span class="line">	gutil.env &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;minimist</span><br><span class="line">	gutil.beep &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;beeper</span><br><span class="line">	gutil.noop &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;through2</span><br><span class="line">	gutil.isStream &#x3D;&gt; Use the .isStream() method on Vinyl objects</span><br><span class="line">	gutil.isBuffer &#x3D;&gt; Use the .isBuffer() method on Vinyl objects</span><br><span class="line">	gutil.isNull &#x3D;&gt; Use the .isNull() method on Vinyl objects</span><br><span class="line">	gutil.linefeed &#x3D;&gt; Use the string &#39;\n&#39; in your code</span><br><span class="line">	gutil.combine &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;multipipe</span><br><span class="line">	gutil.buffer &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;list-stream</span><br><span class="line">	gutil.PluginError &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;plugin-error</span><br><span class="line">WARN 2~5 僅為提示且在其他module內,不處理</span><br></pre></td></tr></table></figure>
+
+<h2 id="a5">5. Failed to load external module @babel/register</h2>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; [17:06:58] Failed to load external module @babel&#x2F;register</span><br><span class="line">&#x2F;&#x2F; [17:06:58] Requiring external module babel-register</span><br><span class="line">This is just a warning that Gulp failed to load @babel&#x2F;register but on the next line it successfully loaded the fallback module: babel-register</span><br><span class="line">https:&#x2F;&#x2F;github.com&#x2F;gulpjs&#x2F;gulp&#x2F;issues&#x2F;1631</span><br><span class="line">You could install the babel-core&#x2F;register module to remove the warning, but it&#39;s not necessary.</span><br></pre></td></tr></table></figure>
+
+<h2 id="a6">6. run gulp --> AssertionError [ERR_ASSERTION]</h2>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">AssertionError [ERR_ASSERTION]: Task function must be specified</span><br><span class="line">at Gulp.set [as _setTask] (C:\work\git\html\hexschool_html\clone\twitch_clone\node_modules\undertaker\lib\set-task.js:10:3)  </span><br><span class="line"></span><br><span class="line">--&gt; gulp@4.0.0 have this issue ,change to gulp@3.9.1 ok</span><br><span class="line">npm install gulp@3.9.1 --save-dev</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/resource-link/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/flow-guide/images/avatar.gif">
+      <meta itemprop="name" content="Robert Kao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Robert Flow Guide">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/flow-guide/2021/03/23/resource-link/" class="post-title-link" itemprop="url">Resource reference site</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2021-03-23 15:44:37 / 修改時間：16:44:37" itemprop="dateCreated datePublished" datetime="2021-03-23T15:44:37+08:00">2021-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/flow-guide/categories/Resource/" itemprop="url" rel="index"><span itemprop="name">Resource</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <ul>
+<li>  <a href="../README.md">Root</a></li>
+</ul>
+<h3 id="issue"><a href="#issue" class="headerlink" title="issue"></a>issue</h3><ul>
+<li><pre><code> [Flex bugs](https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers)
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">某些地方不可使用</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+<h3 id="Ebook"><a href="#Ebook" class="headerlink" title="Ebook"></a>Ebook</h3><ul>
+<li>   <a target="_blank" rel="noopener" href="https://cdn.kalob.io/books/CSSMasterclassBook.pdf?year=2018">Kalob CSS/CSS3</a></li>
+</ul>
+<h3 id="Font"><a href="#Font" class="headerlink" title="Font"></a>Font</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="http://allfont.net/free/">Free Font</a></li>
+</ul>
+<h3 id="icon"><a href="#icon" class="headerlink" title="icon"></a>icon</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://material.io/tools/icons/">material.io</a>  </li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;</span><br><span class="line">      rel=&quot;stylesheet&quot;&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Rules for sizing the icon. */</span></span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-18</span> &#123; <span class="attribute">font-size</span>: <span class="number">18px</span>; &#125;</span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-24</span> &#123; <span class="attribute">font-size</span>: <span class="number">24px</span>; &#125;</span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-36</span> &#123; <span class="attribute">font-size</span>: <span class="number">36px</span>; &#125;</span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-48</span> &#123; <span class="attribute">font-size</span>: <span class="number">48px</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Rules for using icons as black on a light background. */</span></span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-dark</span> &#123; <span class="attribute">color</span>: <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.54</span>); &#125;</span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-dark</span><span class="selector-class">.md-inactive</span> &#123; <span class="attribute">color</span>: <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.26</span>); &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Rules for using icons as white on a dark background. */</span></span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-light</span> &#123; <span class="attribute">color</span>: <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">1</span>); &#125;</span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-light</span><span class="selector-class">.md-inactive</span> &#123; <span class="attribute">color</span>: <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.3</span>); &#125;</span><br><span class="line"></span><br><span class="line">&lt;i class=&quot;material-icons&quot;&gt;face&lt;/i&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>  <a target="_blank" rel="noopener" href="https://www.flaticon.com/free-icons/up-down">up-down</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.flaticon.com/">flaticon</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://spritegen.website-performance.org/">CSS Sprite</a></li>
+<li>  <a target="_blank" rel="noopener" href="http://www.spritecow.com/">spritecow-find icon position</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.freeiconspng.com/images/borders-png">free border png</a></li>
+</ul>
+<h3 id="video"><a href="#video" class="headerlink" title="video"></a>video</h3><ul>
+<li><pre><code>   [12 Sites to Find High Quality Free Stock Videos](https://superdevresources.com/free-stock-videos-footages/)
+</code></pre>
+</li>
+</ul>
+<h3 id="image"><a href="#image" class="headerlink" title="image"></a>image</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://medium.com/as-a-product-designer/%E5%8D%81%E5%80%8B%E5%B8%B8%E7%94%A8%E7%9A%84ui%E9%9D%88%E6%84%9F%E5%8F%8A%E5%B7%A5%E5%85%B7%E7%B6%B2%E7%AB%99-4b21d4c0a5ac">十個常用的UI靈感及工具網站</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.templatemonster.com/free-templates.php">TemplateMonster(free psd)</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://pixabay.com/">pixabay</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.base64-image.de/">Base64 Image Encoder</a></li>
+</ul>
+<h3 id="youtube"><a href="#youtube" class="headerlink" title="youtube"></a>youtube</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://www.youtube.com/user/polo13999/feed">線上讀書會</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.youtube.com/user/LevelUpTuts/playlists">Web design 教學</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Kp7B_3TrQjg">SASS超入門與RWD</a></li>
+</ul>
+<h3 id="performance"><a href="#performance" class="headerlink" title="performance"></a>performance</h3><ul>
+<li>   <a target="_blank" rel="noopener" href="https://developers.google.com/web/fundamentals/performance/rendering/">轉譯效能</a></li>
+<li>   <a target="_blank" rel="noopener" href="https://www.udacity.com/course/browser-rendering-optimization--ud860">轉譯效能-course</a></li>
+</ul>
+<h3 id="cource"><a href="#cource" class="headerlink" title="cource"></a>cource</h3><ul>
+<li>   <a target="_blank" rel="noopener" href="https://moderndevtools.com/lessons/14">Accessibility debugging with DevTools</a></li>
+</ul>
+<h3 id="code"><a href="#code" class="headerlink" title="code"></a>code</h3><ul>
+<li><pre><code>   [codepen](https://codepen.io/)
+</code></pre>
+</li>
+</ul>
+<h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><ul>
+<li><pre><code>   [公車動態 API](http://ptx.transportdata.tw/MOTC)
+</code></pre>
+</li>
+<li><pre><code>   [Google Map API](https://developers.google.com/maps/documentation/javascript/tutorial?hl=zh-tw)
+</code></pre>
+</li>
+<li><pre><code>   [高雄市政府](https://data.kcg.gov.tw/)
+</code></pre>
+</li>
+</ul>
+<h3 id="F2E-personal"><a href="#F2E-personal" class="headerlink" title="F2E personal"></a>F2E personal</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://www.cakeresume.com/search?query=%E5%89%8D%E7%AB%AF&page=1">CakeResume</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.toptal.com/front-end">Toptal </a></li>
+</ul>
+<h3 id="F2E-Job"><a href="#F2E-Job" class="headerlink" title="F2E Job"></a>F2E Job</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://github.com/f2etw/jobs/issues">F2E TW</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.yourator.co/">yourator</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.104.com.tw/jobs/main/">104</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://mit.jobs/jobs?utf8=%E2%9C%93&search=%E5%89%8D%E7%AB%AF&c=">mit.Jobs</a></li>
+</ul>
+<h3 id="tool"><a href="#tool" class="headerlink" title="tool"></a>tool</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://trello.com/">線上筆記本</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://todoist.com/">Todolist</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://evernote.com/intl/zh-tw">Evernote筆記App-include 網頁收錄</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.google.com.tw/intl/zh-TW/docs/about/">Google Docs</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.aconvert.com/icon/svg-to-ico/">svg-to-ico</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://encycolorpedia.cn/3f5d45">#3f5d45 互補色</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.toolskk.com/color?color=%23123456">色環</a></li>
+</ul>
+<h3 id="slide"><a href="#slide" class="headerlink" title="slide"></a>slide</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://www.slideshare.net/">Slideshare</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://speakerdeck.com/">Speakerdeck</a></li>
+</ul>
+<h3 id="reference"><a href="#reference" class="headerlink" title="reference"></a>reference</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="http://tutorials.jenkov.com/">Jenkov(Web design guide)</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-TW/">WDN(Wage Dynamics Network) web docs</a></li>
+<li>  <a target="_blank" rel="noopener" href="http://www.wibibi.com/">Wibibi 網頁設計教學百科</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://backlog.com/git-tutorial/tw/">連猴子都懂的 Git 入門</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://github.com/doggy8088/Learn-Git-in-30-days">30 天精通 Git 版本控管</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://gitbook.tw/?utm_source=hexschool&utm_campaign=IT">為你自己學 Git</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://medium.com/">medium部落格</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/index.html">Hexo部落格框架</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.linkedin.com/">LinkedIn</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://caniuse.com/#tables">Can I use</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.w3schools.com/colors/colors_names.asp">Color select #1</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.w3schools.com/colors/colors_picker.asp">Color select #2</a></li>
+<li>  <a target="_blank" rel="noopener" href="http://jim-nielsen.com/sassme/">Sass Color alignment</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://line25.com/">Line25 Web Design Idea</a></li>
+</ul>
+<h3 id="issue-1"><a href="#issue-1" class="headerlink" title="issue"></a>issue</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://stackoverflow.com/">stackoverflow</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way#%E5%9C%A8%E6%8F%90%E5%95%8F%E4%B9%8B%E5%89%8D">提問的智慧</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://caniuse.com/">can i use</a></li>
+</ul>
+<h3 id="雜項"><a href="#雜項" class="headerlink" title="雜項"></a>雜項</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://www.airbnb.com.tw/">Airbnb</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/resource-list/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/flow-guide/images/avatar.gif">
+      <meta itemprop="name" content="Robert Kao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Robert Flow Guide">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/flow-guide/2021/03/23/resource-list/" class="post-title-link" itemprop="url">Resource List</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2021-03-23 15:44:37 / 修改時間：16:50:15" itemprop="dateCreated datePublished" datetime="2021-03-23T15:44:37+08:00">2021-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/flow-guide/categories/Resource/" itemprop="url" rel="index"><span itemprop="name">Resource</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <ul>
+<li>  <a href="../README.md">Root</a></li>
+</ul>
+<h3 id="document"><a href="#document" class="headerlink" title="document"></a>document</h3><ul>
+<li>   <a target="_blank" rel="noopener" href="https://blog.techbridge.cc/2017/04/29/css-methodology-atomiccss/">淺談 CSS 方法論與 Atomic CSS</a></li>
+</ul>
+<h3 id="1-google-key"><a href="#1-google-key" class="headerlink" title="1.google key"></a>1.google key</h3><ul>
+<li>   website template</li>
+<li>   網頁版型</li>
+<li>   github search </li>
+</ul>
+<h3 id="some-key"><a href="#some-key" class="headerlink" title="some key"></a>some key</h3><ul>
+<li>   transition  </li>
+<li>   animation  </li>
+<li>   jQuery  </li>
+<li>   JavaScript : 懂陣列、函數、物件操作後，就會再進一步投入中階語法  </li>
+<li>   HTML、CSS 還沒實際做出一個版型就想直接用 Bootstrap  </li>
+<li>   JavaScript 才剛會 變數、if、for 等基本語法，就想直接學 SPA 框架 (vue、react、angular)  </li>
+<li>   AJAX  </li>
+<li>   API 整合  </li>
+<li>   在瀏覽器的網頁上設計 2、3D 圖形動畫  </li>
+<li>   將訪客資訊記錄到瀏覽器上的資料庫  </li>
+<li>   Firebase‍   </li>
+<li>   D3、C3.JS  </li>
+<li>   Frontend Single Page Application（SPA）  </li>
+<li>   整合第三方 API、生命週期 (init、offline)  </li>
+<li>   共用的版型獨立成一個檔案，例如叫做 layout.php  </li>
+<li>   gulp 學一個樣版語言 -   </li>
+<li>   要用 CSS 框架，至少底層的 CSS3 media queries 瞭解響應式原理，你才知道當版型有超出預期的調整時，自己也能寫 CSS 去客製  </li>
+<li>   想學 JS SPA 框架，至少先把 AJAX 原理搞熟、知道網址 router 邏輯、JS執行生命週期再去碰才不會覺得各種觀念卡卡  </li>
+<li>   HTML、CSS 網頁版型是基礎功  </li>
+<li>   MVC 的抽象觀念  </li>
+<li>   D3 讓我對 SVG 底層更加透徹  </li>
+<li>   WebVR 使我對 WebGL、three.js 有更深入的瞭解  </li>
+<li>Ajax</li>
+<li>程式語言進行優化 (gulp、Webpack、CSS 預處理器、NPM)</li>
+<li>網頁元素的設計細節，例如 web font、image、loading、文字設定(行距、字距、粗細、字形大小、標題權重)</li>
+</ul>
+<h3 id="名詞"><a href="#名詞" class="headerlink" title="名詞"></a>名詞</h3><ul>
+<li> 常見的framework  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">bootstrap，CSS，快速建造一個網站的畫面配置</span><br><span class="line">Ruby on Rails，Ruby，全端framework</span><br><span class="line">Nodejs+Express，Javascript，後端framework</span><br><span class="line">AngularJs，Javascript，前端framework</span><br><span class="line">Laravel，PHP，前後端framework</span><br></pre></td></tr></table></figure></li>
+<li>Restful API  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">REST : Resource Representational State Transfer</span><br><span class="line">如果我們在寫一隻商品的WebAPI，讓工程師隨便寫可能會有以下方式來作interface：</span><br><span class="line">獲得商品資料 GET   &#x2F;getAllItems</span><br><span class="line">獲得商品資料 GET   &#x2F;getItem&#x2F;11</span><br><span class="line">新增商品資料 POST &#x2F;createItem</span><br><span class="line">更新商品資料 POST  &#x2F;updateItem&#x2F;</span><br><span class="line">刪除商品資料 POST  &#x2F;deleteItem&#x2F;</span><br><span class="line"></span><br><span class="line">若是以使用 RESTful API 開發的話:</span><br><span class="line">獲取商品資料 &#x2F;GET     &#x2F;items</span><br><span class="line">獲取商品資料 &#x2F;GET     &#x2F;items&#x2F;1</span><br><span class="line">新增商品資料 &#x2F;POST   &#x2F;items</span><br><span class="line">更新商品資料 &#x2F;PATCH &#x2F;items&#x2F;1 </span><br><span class="line">刪除商品資料 &#x2F;DELETE &#x2F;items&#x2F;1</span><br><span class="line"></span><br><span class="line">GET：取得(想要的服務)的資料或是狀態。（safe &amp; idempotent）</span><br><span class="line">POST：新增一項資料。</span><br><span class="line">PUT：利用更新的方式於&quot;指定位置&quot;新增一項資料。 （idempotent）</span><br><span class="line">PATCH：在現有的資料欄位中，增加或部分更新一筆新的資料。</span><br><span class="line">DELETE：指定資料刪除。 （idempotent）</span><br></pre></td></tr></table></figure></li>
+<li>   Template Language(jade、slim、ejs)</li>
+<li>   boilerplate : 乾淨的開發環境</li>
+<li> emmet : 一套面向文字編輯器的外掛程式，它允許通過內容輔助高速度的編寫和編輯HTML、XML、XSL和其他結構化的程式碼格式。  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.warp&gt;.menu&gt;ul&gt;li*6&gt;a&#123;hello&#125;</span><br></pre></td></tr></table></figure></li>
+<li><pre><code>snippet : 程式碼片段
+</code></pre>
+</li>
+<li>   WTForms : 一個非常好用而且強大的表單校驗和渲染的庫</li>
+<li>   (Google Tag Manager, GTM）: Google 代碼管理工具</li>
+<li>javascrip application  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">electronjs：寫一個跨平台的桌面應用程式</span><br><span class="line">Node.js：跨足後端，或倚賴核心開發各種應用程式</span><br><span class="line">React Native：設計雙平台 APP</span><br><span class="line">pixijs：透過 WebGL 開發動畫核心，跨足 3D 世界</span><br><span class="line">A-Frame：將 3D 介面以 VR 模式進行運作</span><br></pre></td></tr></table></figure></li>
+<li> WEB Guideline :   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">什麼色碼、尺寸、字體字級、間距…這都還可以算是 VI 的範圍</span><br><span class="line">它能確保不管是誰接手都能有相同的產出，而不至於換個人處理就換了個長相。</span><br><span class="line">也可以把它當成系統規格書、屬於文件的一種，條列式分章節，明確告訴你什麼可以做、什麼不能做、某種特定情況下該怎麼處理。</span><br></pre></td></tr></table></figure></li>
+<li>   COMPASS、Fire.app</li>
+<li>   CSS預處理器(css preprocessor)</li>
+<li>   susy</li>
+<li>compass : Sass 擴充套件</li>
+<li>grid system</li>
+<li>960grid </li>
+<li>   CSS Sprite - 張圖片合併</li>
+<li>   CMS(Content Management System) 內容管理系統</li>
+<li>web-font 雲端字型</li>
+<li>LAMP: Linux + Apache + MySql + PHP</li>
+<li>WAMP: Windows + Apache + MySql + PHP</li>
+<li> XAMPP: XAMPP是一套幫你把LAMP或WAMP環境整合好的安裝程式<br>  <a target="_blank" rel="noopener" href="https://www.apachefriends.org/zh_tw/index.html">XAMPP</a><h3 id="side-project"><a href="#side-project" class="headerlink" title="side project"></a>side project</h3></li>
+<li>   學會新技術，拿舊專案重寫優化</li>
+<li>   臨時需要設計一個平台協助他人時，例如八仙塵爆，那時我也設計一個查詢介面，順便練習從 jQ 轉 NG 。</li>
+<li>   從 OPEN DATA 獲得寶貴數據資料，拿 JSON API 自行介接地圖、圖表資訊</li>
+<li>   思考大眾常遇到的問題，設計一個小服務來解決，當初的求職天演通其實也是從 side project 變成公司創業方向</li>
+<li>   從自己生活周遭不便來想靈感，例如寫一個 Node.js 爬蟲去抓最便宜的機票，若有釋出則發 Mail 通知</li>
+<li>   跟朋友組隊參加技術黑客松，將想練的技術在比賽過程中來發揮得淋漓盡致</li>
+<li>   做自己想做的服務，讓自己具有產品思維來運營它，未來的有一天說不定有機會靠它創業</li>
+<li>JSONP（JSON with Padding)  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">是資料格式JSON的一種「使用模式」，可以讓網頁從別的網域要資料</span><br><span class="line">由於同源策略(CORS)，一般來說位於server1.example.com的網頁無法與 server2.example.com的伺服器溝通，</span><br><span class="line">而HTML的 &lt;script&gt;元素是一個例外。利用 &lt;script&gt;元素的這個開放策略，網頁可以得到從其他來源動態產生的JSON資料，而這種使用模式就是所謂的 JSONP。</span><br><span class="line">用JSONP抓到的資料並不是JSON，而是任意的JavaScript，用 JavaScript直譯器執行而不是用JSON解析器解析。</span><br></pre></td></tr></table></figure></li>
+<li>   Base64是一種基於64個可列印字元來表示二進位資料的表示方法</li>
+<li>   CSP(Content-Security-Policy 內容安全策略)</li>
+<li>React </li>
+<li>   Webpack</li>
+<li>   Axios : Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中</li>
+<li>JSP全稱Java Server Pages，是一種動態網頁開發技術。它使用JSP標籤在HTML網頁中插入Java代碼。 標籤通常以&lt;%開頭以%&gt;結束</li>
+<li>XSS(cross site scripting) : 讓輸入變成程式的一部分  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">過濾&#x2F;解析 使用者符號</span><br><span class="line">輸入 : &lt;h1&gt;Hi&lt;&#x2F;h1&gt; </span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="some-target"><a href="#some-target" class="headerlink" title="some target"></a>some target</h3><ul>
+<li>   增加 localstorage 功能，讓代辦事項紀錄起來，打開瀏覽器也看得到  </li>
+<li>   研究 Firebase database 資料庫功能，用 JS 去設計資料庫邏輯  </li>
+<li>   瞭解 FB API 邏輯，整合 Firebase Auth 功能，設計一個能夠讓綁定會員的 todolist 服務  </li>
+<li>   將程式上傳到 heroku 主機  </li>
+<li>   將程式整到 Electron，設計 Win、Mac 雙平台 APP  </li>
+<li>   介接第三方金流，讓服務能夠進行收款  </li>
+<li>   瞭解 chrome 插件設計邏輯，並讓 插件服務與網頁版能同時整合  </li>
+<li>   成長駭客 (Growth Hacking)</li>
+<li>   區塊鏈</li>
+<li>   WebGL 建置 3D 環境</li>
+<li>   React Native 建置雙平台 APP</li>
+<li>   AR、VR</li>
+<li>   PWA</li>
+<li>   AMP</li>
+<li>電子商務網站</li>
+<li>   B2B 系統</li>
+<li>網頁爬蟲</li>
+<li>瀏覽器的渲染原理</li>
+<li> Google的SpeedTracer<br>  WordPress : 是一個以PHP和MySQL為平台的自由開源的部落格軟體和內容管理系統</li>
+<li> 阻斷服務敢擊 (DOS-denial-of-service)<br>  攻擊者藉由不當方式佔用系統分享資源 ( 例如： CPU 、網路、硬碟等 …) ，達到干擾正常系統運作的進行。不同於一般網路入侵， DoS 不一定需要取得系統使用的權力，即可達到目的。最常見的 DoS 方式即是透過所謂的訊息洪泛 (Message Flood) ，向攻擊對象送出大量且無意義的網路訊息，不管被攻擊對象是否回應，都會因網路頻寬被佔用，而導致服務無法如常運作。</li>
+<li> 分散式阻斷服務攻擊 (DDOS - distributed denial-of-service)<br>  利用網路上因為惡意程式而被控制的電腦作為跳板，集中向某一特定的目標電腦密集的送出大量且無意義的網路訊息，藉以把目標電腦的網路資源及系統資源耗盡。</li>
+<li>   木馬程式</li>
+</ul>
+<h3 id="some-information"><a href="#some-information" class="headerlink" title="some information"></a>some information</h3><ul>
+<li>   謎戀貓</li>
+<li>如何報價  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">有很多廠商都很習慣用「頁數」來訂價，例如一頁五百，十頁五千的算法，如果你真的用這樣來報，肯定會吃大虧</span><br><span class="line">主動提出來瀏覽器規格 : 如果網頁需要支援舊版 IE 時，報價我會提高到1.5~2倍</span><br><span class="line">螢幕解析度部分是否哪幾個版型會需要客製化(響應式網頁)</span><br><span class="line">以功能性來報價</span><br><span class="line">	第一個網站的每個頁面都大致雷同，我將 Layout 開發好後，其它頁面只有中間的文字與圖片進行替換</span><br><span class="line">	第二個網站每個頁面都需要客製化動畫效果，有些甚至必須得用 JS+CSS 輔助才有辦法呈現，而且還必須考慮熱門解析度上呈現也必須ok，而且需要不時地溝通網站細節，確保動態效果符合期待。而且部分頁面還必須接後端 API 。</span><br><span class="line">	我剛成為前端沒多久，一個前端頁面我收一千，過幾年後我開始報一頁一萬，為什麼可以差到那麼多呢？一方面是我的能力提升，所以接的案子的頁面複雜度也比較高，另一方面是我認為自己有值這個價值</span><br><span class="line">依照工作天來推算</span><br><span class="line">	假設一天的工作天價值3000元，同時要記住這個工作天是你休息進修時間抽出來再額外做的，所以價值高一些也 ok</span><br></pre></td></tr></table></figure></li>
+<li>   金錢、成就、技術能量</li>
+<li>   w3c 出了任何的草案、ECMAScript 出了哪些規範時，瀏覽器也會適版本號依序地納入新語法</li>
+</ul>
+<h3 id="name"><a href="#name" class="headerlink" title="name"></a>name</h3><p>banner/hero : 橫幅(版頭)<br>preview : 縮圖<br>avatar : 頭像<br>outline : 外型<br>slide<br>introduce</p>
+<h3 id="book"><a href="#book" class="headerlink" title="book"></a>book</h3><ul>
+<li>   JavaScript &amp; JQuery : 網站互動設計程式進化之道 </li>
+</ul>
+<h3 id="flow"><a href="#flow" class="headerlink" title="flow"></a>flow</h3><ul>
+<li> url   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">get API : https:&#x2F;&#x2F;www.thef2e.com&#x2F;api&#x2F;signUpTotal</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="後端語言"><a href="#後端語言" class="headerlink" title="後端語言"></a>後端語言</h3><ul>
+<li>   Node.js</li>
+<li>   PHP + MySQL</li>
+<li>   RUBY</li>
+<li>   NET + MSSQL</li>
+</ul>
+<h3 id="前端思考"><a href="#前端思考" class="headerlink" title="前端思考"></a>前端思考</h3><ul>
+<li>   瀏覽器原理：你知道瀏覽器的網頁渲染機制嗎？</li>
+<li>   資訊安全：你知道前端要如何寫才能避免 XSS 攻擊？</li>
+<li>   效能優化：當資料量多到無法負荷時，你該如何優化效能呢？</li>
+<li>   程式趨勢：你是否有掌握到目前最新趨勢的寫法，是否有目前雖然是測試階段，但你能預測到他未來有機會成為一個產品服務？</li>
+<li>   網站追蹤：你知道 SEO 嗎？有辦法與行銷部門協作，共同開發 Growth Hack 精神的 Funnel 追蹤呢？</li>
+<li>   WebGL 動態設計：你知道網頁甚至能夠在瀏覽器呈現 3D 介面，要你設計一個互動性線上遊戲你思考得環節夠全面嗎？</li>
+<li>   狀態設計：當網站離線狀態時，你的網站仍然有辦法運作，直到連線又能夠連接到伺服器去嗎？</li>
+<li>   協同開發：你有辦法和其它前端討論模組化概念，讓多位前端加倍開發產能在同一個專案上嗎？</li>
+<li>   無障礙設計：你有想過你的網站是否能讓身障人士都能輕鬆地瀏覽網頁嗎？</li>
+<li>   後端邏輯：你知道後端是如何傳送網頁資訊到瀏覽器的呢？知道什麼是 Header、狀態碼、Session、Cookie 嗎？</li>
+</ul>
+<h3 id="chrome-plug"><a href="#chrome-plug" class="headerlink" title="chrome plug"></a>chrome plug</h3><ul>
+<li>   Life Is Too Short  </li>
+<li> Postman - 測試 API 的好工具 –&gt; need Postman Pro(it’s not free)  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">POST : https:&#x2F;&#x2F;www.thef2e.com&#x2F;api&#x2F;isSignUp</span><br><span class="line">Params-Headers </span><br><span class="line">	Key : Content-Type</span><br><span class="line">	Value : application&#x2F;json</span><br><span class="line">Params-Body-raw</span><br><span class="line">  &#123;</span><br><span class="line">   	&quot;email&quot;: &quot;kyp001@yahoo.com.tw&quot;</span><br><span class="line"> 	&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="record"><a href="#record" class="headerlink" title="record"></a>record</h3><pre><code>1. BEM(Block Element Modifier) : 一種 CSS class 命名的設計模式，將介面切割成許多獨立的區塊，以區塊（Block）、元素（Element）和修飾子（Modifier）來命名
+    __ 區塊
+    _ 狀態
+2. prefix 前綴
+    l - layout
+    e - element (h1, p, ul, button)
+    p - page
+    h - helper
+    col- grid
+    fas、fa - icon
+    m - module (card, pagegrad)
+3. 斷點
+        pc &gt;= 1024
+        pad 768~1023
+        small pad 569~767
+        mobil 320~568
+4. 書 - 使用者介面
+5. 文字
+    //font
+    $font-title: Helvetica Neue, Regular
+    $font-Neue: Helvetica Neue, Regular
+    $font-times: Times, Regular
+6. flexbox
+7. bs4-utility
+8. airbnb(JavaScript Style Guide)
+</code></pre>
+<h3 id="Twitch"><a href="#Twitch" class="headerlink" title="Twitch"></a>Twitch</h3><ul>
+<li>   Get client Id</li>
+</ul>
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1. 登入 Twitch --&gt; 應用程式 </span><br><span class="line">2. 註冊應用程式 </span><br><span class="line">	名稱 : web_test_hot5656 (need unique)</span><br><span class="line">	OAuth: http:&#x2F;&#x2F;localhost (隨意填)</span><br><span class="line">	分類 : Website integration (隨意選)</span><br><span class="line">	--&gt; 建立</span><br><span class="line">3. 管理 --&gt; 查 client ID</span><br></pre></td></tr></table></figure>
+</code></pre>
+<ul>
+<li><p>Use TWitch API v5</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">	All data is sent and received as JSON.</span><br><span class="line">	But support Query String Parameters</span><br><span class="line">	https:&#x2F;&#x2F;api.twitch.tv&#x2F;kraken&#x2F;feed&#x2F;&lt;feed user ID&gt;&#x2F;posts?limit&#x3D;&lt;limit value&gt;&amp;cursor&#x3D;&lt;cursor value&gt;</span><br><span class="line">&amp;comments&#x3D;&lt;comments value&gt;</span><br><span class="line">	&#x2F;&#x2F; get user information</span><br><span class="line">	https:&#x2F;&#x2F;api.twitch.tv&#x2F;kraken?client_id&#x3D;xxx</span><br><span class="line">	&#x2F;&#x2F; Get Live Streams</span><br><span class="line">	https:&#x2F;&#x2F;api.twitch.tv&#x2F;kraken&#x2F;streams&#x2F;?client_id&#x3D;xxx&amp;game&#x3D;League%20of%20Legends&amp;limit&#x3D;20</span><br><span class="line">		_total</span><br><span class="line">		streams -&gt; channel-&gt;_id,channel-&gt;name,channel-&gt;logo,preview-&gt;large</span><br></pre></td></tr></table></figure></li>
+<li><p>   CORS(同源政策)    * access response head</p>
+</li>
+</ul>
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; access message</span><br><span class="line">&#x2F;&#x2F; Request URL: http:&#x2F;&#x2F;odata.tn.edu.tw&#x2F;ebookapi&#x2F;api&#x2F;getOdataJH?level&#x3D;all</span><br><span class="line">Response Headers</span><br><span class="line">	Access-Control-Allow-Origin: *   (*** This access all***)</span><br><span class="line">	Cache-Control: no-cache</span><br><span class="line">	Content-Length: 6921</span><br><span class="line">	Content-Type: application&#x2F;json; charset&#x3D;utf-8</span><br><span class="line">	Date: Mon, 14 Jan 2019 05:53:24 GMT</span><br><span class="line">&#x2F;&#x2F; not access message</span><br><span class="line">&#x2F;&#x2F; Request URL: https:&#x2F;&#x2F;quality.data.gov.tw&#x2F;dq_download_json.php?nid&#x3D;9337&amp;md5_url&#x3D;70c2a41a47853be2e66eef7f3ad74b6a</span><br><span class="line">Response Headers</span><br><span class="line">Connection: Keep-Alive</span><br><span class="line">Content-Disposition: attachment; filename&#x3D;70c2a41a47853be2e66eef7f3ad74b6a_export.json</span><br><span class="line">Content-Length: 506</span><br><span class="line">Content-Type: application&#x2F;json; charset&#x3D;utf-8</span><br><span class="line">Date: Mon, 14 Jan 2019 05:45:25 GMT</span><br></pre></td></tr></table></figure>
+
+* JSON with padding(JSONP) - &lt; script &gt; tag 可以跨網域(server need support JSONP)
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; write at script </span><br><span class="line">&#x2F;&#x2F; html</span><br><span class="line">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;api.twitch.tv&#x2F;kraken?client_id&#x3D;qvtuq71csrlv5ipxo1ljzgbzqn1okh&amp;callback&#x3D;hello&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&#x2F;&#x2F; js</span><br><span class="line">function hello(data) &#123;</span><br><span class="line">	console.log(&quot;hello...&quot;);</span><br><span class="line">	console.log(data);</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; write as script(all js)</span><br><span class="line">sendRequest();</span><br><span class="line">var url &#x3D; &quot;https:&#x2F;&#x2F;api.twitch.tv&#x2F;kraken?client_id&#x3D;qvtuq71csrlv5ipxo1ljzgbzqn1okh&amp;callback&#x3D;hello&quot; ;</span><br><span class="line">function sendRequest() &#123;</span><br><span class="line">  var scriptTag &#x3D; document.createElement(&quot;script&quot;);</span><br><span class="line">  scriptTag.src &#x3D; url;</span><br><span class="line">  document.body.appendChild(scriptTag);</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; ---------</span><br><span class="line">function hello(data) &#123;</span><br><span class="line">	console.log(&quot;hello...&quot;);</span><br><span class="line">	console.log(data);</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; jq</span><br><span class="line">var url &#x3D; &#39;https:&#x2F;&#x2F;api.twitch.tv&#x2F;kraken?client_id&#x3D;qvtuq71csrlv5ipxo1ljzgbzqn1okh&amp;callback&#x3D;hello&#39; ;</span><br><span class="line">var script &#x3D; &#39;&lt;script src&#x3D;&quot;&#39;+ url + &#39;&quot;&gt;&lt;&#x2F;script&gt;&#39;;</span><br><span class="line">function sendRequest() &#123;</span><br><span class="line">	$(&#39;body&#39;).append(script);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+*    Preflight  Request
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. 簡單請求</span><br><span class="line">2. 需預檢的請求(need Preflight  Request)</span><br></pre></td></tr></table></figure>
+</code></pre>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/resource-record/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/flow-guide/images/avatar.gif">
+      <meta itemprop="name" content="Robert Kao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Robert Flow Guide">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/flow-guide/2021/03/23/resource-record/" class="post-title-link" itemprop="url">Resource record</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2021-03-23 15:44:37 / 修改時間：16:44:37" itemprop="dateCreated datePublished" datetime="2021-03-23T15:44:37+08:00">2021-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/flow-guide/categories/Resource/" itemprop="url" rel="index"><span itemprop="name">Resource</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <ul>
+<li>  <a href="../README.md">Root</a></li>
+<li>  <a href="#a1">1. Roboto fonts</a></li>
+<li>  <a href="#a2">2. fontawesome</a></li>
+</ul>
+<h2 id="a1">1. Roboto fonts</h2>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https:&#x2F;&#x2F;fonts.googleapis.com&#x2F;css?family&#x3D;Roboto:regular,italic,bold&quot;&gt;</span><br><span class="line"></span><br><span class="line">body &#123;</span><br><span class="line">	font-family: &#39;Roboto&#39;;</span><br><span class="line">&#125;</span><br><span class="line">h1 &#123;</span><br><span class="line">	font-family: &#39;Roboto&#39;;</span><br><span class="line">	font-weight: 700;</span><br><span class="line">&#125;</span><br><span class="line">p &#123;</span><br><span class="line">	font-family: &#39;Roboto&#39;;</span><br><span class="line">	font-style: italic;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="a2">2. fontawesome</h2>
+
+<p><a target="_blank" rel="noopener" href="https://fontawesome.com/icons?d=gallery&m=free">fontawesome</a><br><a href="fontawesome.html">using icon</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- fontawesome --&gt;</span><br><span class="line">&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https:&#x2F;&#x2F;use.fontawesome.com&#x2F;releases&#x2F;v5.2.0&#x2F;css&#x2F;all.css&quot; integrity&#x3D;&quot;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK&#x2F;iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&quot; crossorigin&#x3D;&quot;anonymous&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;i class&#x3D;&quot;fas fa-map-marker-alt&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">&lt;i class&#x3D;&quot;far fa-calendar-alt&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">&lt;i class&#x3D;&quot;far fa-times-circle&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">&lt;i class&#x3D;&quot;fas fa-search&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">&lt;i class&#x3D;&quot;fas fa-square&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">&lt;i class&#x3D;&quot;fas fa-check-square&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">&lt;i class&#x3D;&quot;fas fa-dollar-sign&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">&lt;i class&#x3D;&quot;fas fa-address-card&quot;&gt;&lt;&#x2F;i&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/tool-ChromePlugin/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/flow-guide/images/avatar.gif">
+      <meta itemprop="name" content="Robert Kao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Robert Flow Guide">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/flow-guide/2021/03/23/tool-ChromePlugin/" class="post-title-link" itemprop="url">Chrome Plugin</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2021-03-23 15:44:37 / 修改時間：16:22:58" itemprop="dateCreated datePublished" datetime="2021-03-23T15:44:37+08:00">2021-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/flow-guide/categories/tool/" itemprop="url" rel="index"><span itemprop="name">tool</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <ul>
+<li>  <a href="../README.md">Root</a></li>
+</ul>
+<h1 id="tool"><a href="#tool" class="headerlink" title="tool"></a>tool</h1><p><strong>Selector Gadget</strong><br>顯示網頁中任意元素的 CSS 選擇器路徑，幫助我們快速擷取網頁上的資料</p>
+<p><strong>XPath Helper(get XPath)</strong><br>Extract, edit, and evaluate XPath queries with ease</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/tool-git/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/flow-guide/images/avatar.gif">
+      <meta itemprop="name" content="Robert Kao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Robert Flow Guide">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/flow-guide/2021/03/23/tool-git/" class="post-title-link" itemprop="url">Git</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2021-03-23 15:44:37 / 修改時間：16:24:18" itemprop="dateCreated datePublished" datetime="2021-03-23T15:44:37+08:00">2021-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/flow-guide/categories/tool/" itemprop="url" rel="index"><span itemprop="name">tool</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <ul>
+<li>  <a href="../README.md">Root</a></li>
+</ul>
+<blockquote>
+<p>   set user</p>
+<blockquote>
+<p>   <strong>git config –global user.name “John Doe”</strong><br>   <strong>git config –global user.email <a href="mailto:&#x6a;&#x6f;&#x68;&#110;&#100;&#x6f;&#101;&#x40;&#x65;&#x78;&#97;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;">&#x6a;&#x6f;&#x68;&#110;&#100;&#x6f;&#101;&#x40;&#x65;&#x78;&#97;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;</a></strong></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>   clone </p>
+<blockquote>
+<p>   <strong>git clone <a target="_blank" rel="noopener" href="https://github.com/hot5656/f2eW2Filter2nd.git">https://github.com/hot5656/f2eW2Filter2nd.git</a></strong></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>   see local branch</p>
+<blockquote>
+<p>   <strong>git branch</strong>  </p>
+<ul>
+<li>master</li>
+</ul>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>   see all brance </p>
+<blockquote>
+<p>   <strong>git branch -a</strong>  </p>
+<ul>
+<li>master<br>remotes/origin/HEAD -&gt; origin/master<br>remotes/origin/develop<br>remotes/origin/master</li>
+</ul>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>   pull remote develop</p>
+<blockquote>
+<p>   <strong>git checkout develop</strong><br>   Switched to a new branch ‘develop’<br>   Branch ‘develop’ set up to track remote branch ‘develop’ from ‘origin’.  </p>
+<p>   <strong>git pull</strong><br>   Already up to date.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>   pull remote branch to local</p>
+<blockquote>
+<p>   <strong>git branch develop origin/develop</strong></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>   remove file</p>
+<blockquote>
+<p>   <strong>git rm xxx.css</strong></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>   reset </p>
+<blockquote>
+<p>   <strong>git reset –hard</strong></p>
+</blockquote>
+</blockquote>
+<p>Discard all local changes to all files permanently</p>
+<blockquote>
+<p>git reset –hard</p>
+</blockquote>
+<h3 id="issue"><a href="#issue" class="headerlink" title="issue"></a>issue</h3><ul>
+<li>   “gulp ghpage” –&gt; Error in plugin ‘gulp-gh-pages’<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; include below message </span><br><span class="line">Details:</span><br><span class="line">    killed: false</span><br><span class="line">    code: 129</span><br><span class="line">    signal: null</span><br><span class="line">    cmd: git rev-list --pretty&#x3D;raw --max-count&#x3D;1</span><br><span class="line">&#x2F;&#x2F; ----------</span><br><span class="line">--&gt; remove floder then redo &quot;gulp ghpage&quot; success</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/flow-guide/page/2/">2</a><a class="extend next" rel="next" href="/flow-guide/page/2/"><i class="fa fa-angle-right" aria-label="下一頁"></i></a>
+  </nav>
 
 
 <script>
@@ -409,8 +2216,7 @@
 <script src="/flow-guide/js/utils.js"></script><script src="/flow-guide/js/motion.js"></script><script src="/flow-guide/js/next-boot.js"></script>
 
   
-<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.8.5/dist/algoliasearch-lite.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.15.0/dist/instantsearch.production.min.js"></script><script src="/flow-guide/js/algolia-search.js"></script>
+<script src="/flow-guide/js/local-search.js"></script>
 
 
 

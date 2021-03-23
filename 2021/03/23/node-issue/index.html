@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/flow-guide/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/flow-guide/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/flow-guide/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/flow-guide/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/flow-guide/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"hot5656.github.io","root":"/flow-guide/","images":"/flow-guide/images","scheme":"Gemini","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/flow-guide/search.json","localsearch":{"enable":"enable","trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="Root   1. Unsupported platform for fsevents@1.2.4: wanted {“os”:”darwin”,”arch”:”any”} (current: {“os”:”win32”,”arch”:”x64”}   2. install browser-sync issue   3. run gulp -&gt; Failed to load exter">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Node.js issue">
+<meta property="og:url" content="https://hot5656.github.io/flow-guide/2021/03/23/node-issue/index.html">
+<meta property="og:site_name" content="Robert Flow Guide">
+<meta property="og:description" content="Root   1. Unsupported platform for fsevents@1.2.4: wanted {“os”:”darwin”,”arch”:”any”} (current: {“os”:”win32”,”arch”:”x64”}   2. install browser-sync issue   3. run gulp -&gt; Failed to load exter">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2021-03-23T07:44:37.000Z">
+<meta property="article:modified_time" content="2021-03-23T08:44:37.680Z">
+<meta property="article:author" content="Robert Kao">
+<meta property="article:tag" content="sub-Nodejs">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://hot5656.github.io/flow-guide/2021/03/23/node-issue/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+<title>Node.js issue | Robert Flow Guide</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/flow-guide/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Robert Flow Guide</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/flow-guide/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li>
+        <li class="menu-item menu-item-tags"><a href="/flow-guide/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li>
+        <li class="menu-item menu-item-categories"><a href="/flow-guide/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li>
+        <li class="menu-item menu-item-archives"><a href="/flow-guide/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#a1"><span class="nav-number">1.</span> <span class="nav-text">1. Unsupported platform for fsevents@1.2.4: wanted {&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;} (current: {&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;}</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#a2"><span class="nav-number">2.</span> <span class="nav-text">2. install browser-sync issu</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#a3"><span class="nav-number">3.</span> <span class="nav-text">3. run gulp -&gt; Failed to load external module @babel&#x2F;register</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#a4"><span class="nav-number">4.</span> <span class="nav-text">4. run gulp -&gt; some WARN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#a5"><span class="nav-number">5.</span> <span class="nav-text">5. Failed to load external module @babel&#x2F;register</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#a6"><span class="nav-number">6.</span> <span class="nav-text">6. run gulp --&gt; AssertionError [ERR_ASSERTION]</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Robert Kao</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/flow-guide/archives/">
+        
+          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/flow-guide/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/flow-guide/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/node-issue/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/flow-guide/images/avatar.gif">
+      <meta itemprop="name" content="Robert Kao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Robert Flow Guide">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Node.js issue
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2021-03-23 15:44:37 / 修改時間：16:44:37" itemprop="dateCreated datePublished" datetime="2021-03-23T15:44:37+08:00">2021-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/flow-guide/categories/Node-js/" itemprop="url" rel="index"><span itemprop="name">Node.js</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <ul>
+<li>  <a href="../README.md">Root</a></li>
+<li>  <a href="#a1">1. Unsupported platform for fsevents@1.2.4: wanted {“os”:”darwin”,”arch”:”any”} (current: {“os”:”win32”,”arch”:”x64”}</a></li>
+<li>  <a href="#a2">2. install browser-sync issue</a></li>
+<li>  <a href="#a3">3. run gulp -&gt; Failed to load external module @babel/register</a></li>
+<li>  <a href="#a4">4. run gulp -&gt; some WARN</a></li>
+<li>  <a href="#a5">5. Failed to load external module @babel/register</a></li>
+<li>  <a href="#a6">6. run gulp –&gt; AssertionError [ERR_ASSERTION]</a></li>
+</ul>
+<h2 id="a1">1. Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"}</h2>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm WARN week2_filter_2nd@1.0.0 No repository field.</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@</span><br><span class="line">1.2.4: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><strong>fsevent是mac osx系統的東西，在win或者Linux下使用了會有警告，忽略即可。意思就是你已經安裝成功了…</strong></p>
+<h2 id="a2">2. install browser-sync issu</h2>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">npm audit</span><br><span class="line"></span><br><span class="line">                       &#x3D;&#x3D;&#x3D; npm audit security report &#x3D;&#x3D;&#x3D;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                                 Manual Review</span><br><span class="line">             Some vulnerabilities require your attention to resolve</span><br><span class="line"></span><br><span class="line">          Visit https:&#x2F;&#x2F;go.npm.me&#x2F;audit-guide for additional guidance</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  Low             Regular Expression Denial of Service</span><br><span class="line"></span><br><span class="line">  Package         debug</span><br><span class="line"></span><br><span class="line">  Patched in      &gt;&#x3D; 2.6.9 &lt; 3.0.0 || &gt;&#x3D; 3.1.0</span><br><span class="line"></span><br><span class="line">  Dependency of   browser-sync [dev]</span><br><span class="line"></span><br><span class="line">  Path            browser-sync &gt; localtunnel &gt; debug</span><br><span class="line"></span><br><span class="line">  More info       https:&#x2F;&#x2F;nodesecurity.io&#x2F;advisories&#x2F;534</span><br><span class="line"></span><br><span class="line">found 1 low severity vulnerability in 5248 scanned packages</span><br><span class="line">  1 vulnerability requires manual review. See the full report for details.</span><br></pre></td></tr></table></figure>
+<p><strong>browser-sync僅為development使用,upgrade debug package 還是會發生故不處理</strong></p>
+<h2 id="a3">3. run gulp -> Failed to load external module @babel/register</h2>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">solved it by downgrading the gulp version from 3.9.1 to 3.9.0. Looks like 3.9.1 is buggy.</span><br></pre></td></tr></table></figure>
+
+<h2 id="a4">4. run gulp -> some WARN</h2>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">* npm WARN deprecated gulp-util@3.0.8: gulp-util is deprecated - replace it,following the guidelines at https:&#x2F;&#x2F;medium.com&#x2F;gulpjs&#x2F;gulp-util-ca3b1f9f9ac5</span><br><span class="line">* npm WARN deprecated graceful-fs@3.0.11: please upgrade to graceful-fs 4 for compatibility with current and future versions of Node.js</span><br><span class="line">* npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue</span><br><span class="line">* npm WARN deprecated minimatch@0.2.14: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue</span><br><span class="line">* npm WARN deprecated graceful-fs@1.2.3: please upgrade to graceful-fs 4 for compatibility with current and future versions of Node.js</span><br><span class="line"></span><br><span class="line">WARN 1 : not use gulp-util and use below API</span><br><span class="line">	gutil.File &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;vinyl</span><br><span class="line">	gutil.replaceExtension &#x3D;&gt; The .extname property on Vinyl objects or https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;replace-ext</span><br><span class="line">	gutil.colors &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;ansi-colors</span><br><span class="line">	gutil.date &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;date-format</span><br><span class="line">	gutil.log &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;fancy-log</span><br><span class="line">	gutil.template &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;lodash.template</span><br><span class="line">	gutil.env &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;minimist</span><br><span class="line">	gutil.beep &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;beeper</span><br><span class="line">	gutil.noop &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;through2</span><br><span class="line">	gutil.isStream &#x3D;&gt; Use the .isStream() method on Vinyl objects</span><br><span class="line">	gutil.isBuffer &#x3D;&gt; Use the .isBuffer() method on Vinyl objects</span><br><span class="line">	gutil.isNull &#x3D;&gt; Use the .isNull() method on Vinyl objects</span><br><span class="line">	gutil.linefeed &#x3D;&gt; Use the string &#39;\n&#39; in your code</span><br><span class="line">	gutil.combine &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;multipipe</span><br><span class="line">	gutil.buffer &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;list-stream</span><br><span class="line">	gutil.PluginError &#x3D;&gt; https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;plugin-error</span><br><span class="line">WARN 2~5 僅為提示且在其他module內,不處理</span><br></pre></td></tr></table></figure>
+
+<h2 id="a5">5. Failed to load external module @babel/register</h2>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; [17:06:58] Failed to load external module @babel&#x2F;register</span><br><span class="line">&#x2F;&#x2F; [17:06:58] Requiring external module babel-register</span><br><span class="line">This is just a warning that Gulp failed to load @babel&#x2F;register but on the next line it successfully loaded the fallback module: babel-register</span><br><span class="line">https:&#x2F;&#x2F;github.com&#x2F;gulpjs&#x2F;gulp&#x2F;issues&#x2F;1631</span><br><span class="line">You could install the babel-core&#x2F;register module to remove the warning, but it&#39;s not necessary.</span><br></pre></td></tr></table></figure>
+
+<h2 id="a6">6. run gulp --> AssertionError [ERR_ASSERTION]</h2>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">AssertionError [ERR_ASSERTION]: Task function must be specified</span><br><span class="line">at Gulp.set [as _setTask] (C:\work\git\html\hexschool_html\clone\twitch_clone\node_modules\undertaker\lib\set-task.js:10:3)  </span><br><span class="line"></span><br><span class="line">--&gt; gulp@4.0.0 have this issue ,change to gulp@3.9.1 ok</span><br><span class="line">npm install gulp@3.9.1 --save-dev</span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/flow-guide/tags/sub-Nodejs/" rel="tag"># sub-Nodejs</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/flow-guide/2021/03/23/resource-link/" rel="prev" title="Resource reference site">
+                  <i class="fa fa-chevron-left"></i> Resource reference site
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/flow-guide/2021/03/23/markdown-record/" rel="next" title="Markdown record">
+                  Markdown record <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Robert Kao</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 強力驅動
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/flow-guide/js/utils.js"></script><script src="/flow-guide/js/motion.js"></script><script src="/flow-guide/js/next-boot.js"></script>
+
+  
+<script src="/flow-guide/js/local-search.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

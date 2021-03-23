@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/flow-guide/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/flow-guide/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/flow-guide/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/flow-guide/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/flow-guide/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"hot5656.github.io","root":"/flow-guide/","images":"/flow-guide/images","scheme":"Gemini","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/flow-guide/search.json","localsearch":{"enable":"enable","trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="Root  標題 1~6123#  A## A1### A23 AA1A23粗體&#x2F;強調1234**asdfasf**asdfasf*asdfasf* asdfasf asdfasfasdfasfasdfasfasdfasf 刪除1~~wqfwa~~ wqfwa 加背景色1&#96;abd&#96; abd 特殊字元12&lt; &lt;&amp; &amp; &lt;&amp; 換行1行尾加">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown record">
+<meta property="og:url" content="https://hot5656.github.io/flow-guide/2021/03/23/markdown-record/index.html">
+<meta property="og:site_name" content="Robert Flow Guide">
+<meta property="og:description" content="Root  標題 1~6123#  A## A1### A23 AA1A23粗體&#x2F;強調1234**asdfasf**asdfasf*asdfasf* asdfasf asdfasfasdfasfasdfasfasdfasf 刪除1~~wqfwa~~ wqfwa 加背景色1&#96;abd&#96; abd 特殊字元12&lt; &lt;&amp; &amp; &lt;&amp; 換行1行尾加">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://hot5656.github.io/flow-guide/2021/03/23/markdown-record/flower.jpeg">
+<meta property="article:published_time" content="2021-03-23T07:44:37.000Z">
+<meta property="article:modified_time" content="2021-03-23T08:44:37.684Z">
+<meta property="article:author" content="Robert Kao">
+<meta property="article:tag" content="sub-Markdown">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hot5656.github.io/flow-guide/2021/03/23/markdown-record/flower.jpeg">
+
+
+<link rel="canonical" href="https://hot5656.github.io/flow-guide/2021/03/23/markdown-record/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+<title>Markdown record | Robert Flow Guide</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/flow-guide/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Robert Flow Guide</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/flow-guide/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li>
+        <li class="menu-item menu-item-tags"><a href="/flow-guide/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li>
+        <li class="menu-item menu-item-categories"><a href="/flow-guide/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li>
+        <li class="menu-item menu-item-archives"><a href="/flow-guide/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A8%99%E9%A1%8C-1-6"><span class="nav-number">1.</span> <span class="nav-text">標題 1~6</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#A"><span class="nav-number"></span> <span class="nav-text">A</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#A1"><span class="nav-number">1.</span> <span class="nav-text">A1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A23"><span class="nav-number">1.1.</span> <span class="nav-text">A23</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B2%97%E9%AB%94-%E5%BC%B7%E8%AA%BF"><span class="nav-number">2.</span> <span class="nav-text">粗體&#x2F;強調</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%AA%E9%99%A4"><span class="nav-number">3.</span> <span class="nav-text">刪除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A0%E8%83%8C%E6%99%AF%E8%89%B2"><span class="nav-number">4.</span> <span class="nav-text">加背景色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%B9%E6%AE%8A%E5%AD%97%E5%85%83"><span class="nav-number">5.</span> <span class="nav-text">特殊字元</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%9B%E8%A1%8C"><span class="nav-number">6.</span> <span class="nav-text">換行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E9%9A%94%E7%B7%9A"><span class="nav-number">7.</span> <span class="nav-text">分隔線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B8%85%E5%96%AE-%E5%88%86%E5%B1%A4"><span class="nav-number">8.</span> <span class="nav-text">清單+分層</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%84%A1%E5%BA%8F%E6%B8%85%E5%96%AE-same"><span class="nav-number">9.</span> <span class="nav-text">無序清單(* + -)-same</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%89%E5%BA%8F%E6%B8%85%E5%96%AE"><span class="nav-number">10.</span> <span class="nav-text">有序清單</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B6%85%E9%80%A3%E7%B5%90"><span class="nav-number">11.</span> <span class="nav-text">超連結</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%96%E7%89%87"><span class="nav-number">12.</span> <span class="nav-text">圖片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A1%A8%E6%A0%BC"><span class="nav-number">13.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%80%E5%A1%8A%E5%85%83%E7%B4%A0-%E7%A8%8B%E5%BC%8F%E7%A2%BC"><span class="nav-number">14.</span> <span class="nav-text">區塊元素(程式碼)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%80%E5%A1%8A%E5%BC%95%E8%A8%80"><span class="nav-number">15.</span> <span class="nav-text">區塊引言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%80%E5%A1%8A%E5%BC%95%E8%A8%80-%E9%9A%8E%E5%B1%A4"><span class="nav-number">16.</span> <span class="nav-text">區塊引言(階層)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E8%A8%80%E7%9A%84%E5%8D%80%E5%A1%8A%E5%85%A7%E4%B9%9F%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%85%B6%E4%BB%96%E7%9A%84Markdown%E8%AA%9E%E6%B3%95%EF%BC%8C%E5%8C%85%E6%8B%AC%E6%A8%99%E9%A1%8C%E3%80%81%E6%B8%85%E5%96%AE%E3%80%81%E7%A8%8B%E5%BC%8F%E7%A2%BC%E5%8D%80%E5%A1%8A%E7%AD%89%EF%BC%9A"><span class="nav-number">17.</span> <span class="nav-text">引言的區塊內也可以使用其他的Markdown語法，包括標題、清單、程式碼區塊等：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#This-is-a-header"><span class="nav-number">18.</span> <span class="nav-text">This is a header.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B0%B4%E5%B9%B3%E5%88%86%E9%9A%94%E7%B7%9A"><span class="nav-number">19.</span> <span class="nav-text">水平分隔線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%80%8B%E6%B0%B4%E5%B9%B3%E5%88%86%E9%9A%94%E7%B7%9A%EF%BC%9A"><span class="nav-number">20.</span> <span class="nav-text">第二個水平分隔線：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B8%E5%AD%B8%E5%85%AC%E5%BC%8F"><span class="nav-number">21.</span> <span class="nav-text">數學公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%8B%95%E9%80%A3%E7%B5%90"><span class="nav-number">22.</span> <span class="nav-text">自動連結</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B7%B3%E8%84%AB%E5%AD%97%E5%85%83"><span class="nav-number">23.</span> <span class="nav-text">跳脫字元</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Robert Kao</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/flow-guide/archives/">
+        
+          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/flow-guide/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/flow-guide/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/markdown-record/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/flow-guide/images/avatar.gif">
+      <meta itemprop="name" content="Robert Kao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Robert Flow Guide">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Markdown record
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2021-03-23 15:44:37 / 修改時間：16:44:37" itemprop="dateCreated datePublished" datetime="2021-03-23T15:44:37+08:00">2021-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/flow-guide/categories/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <ul>
+<li>  <a href="../README.md">Root</a></li>
+</ul>
+<h2 id="標題-1-6"><a href="#標題-1-6" class="headerlink" title="標題 1~6"></a>標題 1~6</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#  A</span><br><span class="line">## A1</span><br><span class="line">### A23</span><br></pre></td></tr></table></figure>
+<h1 id="A"><a href="#A" class="headerlink" title="A"></a>A</h1><h2 id="A1"><a href="#A1" class="headerlink" title="A1"></a>A1</h2><h3 id="A23"><a href="#A23" class="headerlink" title="A23"></a>A23</h3><h2 id="粗體-強調"><a href="#粗體-強調" class="headerlink" title="粗體/強調"></a>粗體/強調</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**asdfasf**</span><br><span class="line">asdfasf</span><br><span class="line">*asdfasf* </span><br><span class="line">asdfasf</span><br></pre></td></tr></table></figure>
+<p><strong>asdfasf</strong><br>asdfasf<br><em>asdfasf</em><br>asdfasf</p>
+<h2 id="刪除"><a href="#刪除" class="headerlink" title="刪除"></a>刪除</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~wqfwa~~</span><br></pre></td></tr></table></figure>
+<p><del>wqfwa</del></p>
+<h2 id="加背景色"><a href="#加背景色" class="headerlink" title="加背景色"></a>加背景色</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#96;abd&#96;</span><br></pre></td></tr></table></figure>
+<p><code>abd</code></p>
+<h2 id="特殊字元"><a href="#特殊字元" class="headerlink" title="特殊字元"></a>特殊字元</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt; &lt;</span><br><span class="line">&amp; &amp;</span><br></pre></td></tr></table></figure>
+<p>&lt;<br>&amp;</p>
+<h2 id="換行"><a href="#換行" class="headerlink" title="換行"></a>換行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">行尾加上兩個以上的空白，然後按enter</span><br></pre></td></tr></table></figure>
+
+<h2 id="分隔線"><a href="#分隔線" class="headerlink" title="分隔線"></a>分隔線</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">***</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="清單-分層"><a href="#清單-分層" class="headerlink" title="清單+分層"></a>清單+分層</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">* Yahoo!奇摩股市提供您當日行情、大盤走勢、類股走勢、期貨及</span><br><span class="line">	* 選擇權分類報價、港滬深股、美股、財經新聞等資訊。</span><br><span class="line">		* 財經新聞等資訊。</span><br><span class="line"></span><br><span class="line">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span><br><span class="line">    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,</span><br><span class="line">    viverra nec, fringilla in, laoreet vitae, risus.</span><br><span class="line">&lt;br&gt;	</span><br><span class="line">	Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span><br><span class="line">    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,</span><br><span class="line">    viverra nec, fringilla in, laoreet vitae, risus.</span><br><span class="line">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span><br><span class="line">Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,</span><br><span class="line">viverra nec, fringilla in, laoreet vitae, risus.</span><br><span class="line">    &gt; This is a blockquote</span><br><span class="line">    &gt; inside a list item.</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>Yahoo!奇摩股市提供您當日行情、大盤走勢、類股走勢、期貨及</p>
+<ul>
+<li>選擇權分類報價、港滬深股、美股、財經新聞等資訊。<ul>
+<li>財經新聞等資訊。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>  Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,<br>  viverra nec, fringilla in, laoreet vitae, risus.</p>
+<br>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+  viverra nec, fringilla in, laoreet vitae, risus.</li>
+<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,<br>viverra nec, fringilla in, laoreet vitae, risus.</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">console</span>.log()</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>This is a blockquote<br>inside a list item.</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">console</span>.log()</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+</ul>
+<h2 id="無序清單-same"><a href="#無序清單-same" class="headerlink" title="無序清單(* + -)-same"></a>無序清單(* + -)-same</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* 1st</span><br><span class="line">	* the 1-1</span><br><span class="line">	* the 1-2</span><br><span class="line">	+ the 1-3</span><br><span class="line">	- the 1-4</span><br></pre></td></tr></table></figure>
+<ul>
+<li>1st<ul>
+<li>the 1-1</li>
+<li>the 1-2</li>
+</ul>
+<ul>
+<li>the 1-3</li>
+</ul>
+<ul>
+<li>the 1-4</li>
+</ul>
+</li>
+</ul>
+<h2 id="有序清單"><a href="#有序清單" class="headerlink" title="有序清單"></a>有序清單</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. Yahoo 股市 </span><br><span class="line">2. Yahoo!奇摩股市</span><br></pre></td></tr></table></figure>
+<ol>
+<li>Yahoo 股市 </li>
+<li>Yahoo!奇摩股市</li>
+</ol>
+<h2 id="超連結"><a href="#超連結" class="headerlink" title="超連結"></a>超連結</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[goole](https://www.google.com/ &quot;Google&quot;)</span><br><span class="line"><span class="comment">&lt;!-- md link to id--&gt;</span></span><br><span class="line">[Django project](#django_project)  </span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">&quot;django_ref&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- md link to top--&gt;</span></span><br><span class="line">[[Home]](#)</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://www.google.com/" title="Google">goole</a></p>
+<h2 id="圖片"><a href="#圖片" class="headerlink" title="圖片"></a>圖片</h2><p>一個驚嘆號!<br>接著一個方括號，裡面放上圖片的替代文字<br>接著一個普通括號，裡面放上圖片的網址，最後還可以用引號包住並加上 選擇性的’title’文字。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![flower](flower.jpeg &quot;pic title&quot;)</span><br></pre></td></tr></table></figure>
+<p><img src="flower.jpeg" alt="flower" title="pic title"></p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>表格的欄位數以標題列的欄位數作為基準，有少則補。有多的，PHP 是直接判斷為文字，GFM 則是隱藏。<br>分隔列每欄至少要有三個 - (dash)，可在 - 的最左最右插入 : 指定文字對齊方式， : 也算在最少三個 - 的數量裡<br>欄位以 | (pipe) 劃分，表格外側可有可不有，但若只有單一欄位，則每欄至少要有一個 |<br>欄位裡，文字與 | 之間的空白符號對程式來說無意義，但對於編寫者能加強可讀性。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">|奇摩股市提供您當|大盤走勢、類股走及|選擇權分|</span><br><span class="line">|--|:--:|--:|</span><br><span class="line">|abc|def|123|</span><br><span class="line">|eeeeee|eeee|21312|</span><br><span class="line"></span><br><span class="line">Age           | Time  | Food | Gold | Requirement</span><br><span class="line">--------------|:-----:|-----:| ----:|------------------------</span><br><span class="line">Feudal Age    | 02:10 |  500 |    0 | Dark Age building x 2</span><br><span class="line">Castle Age    | 02:40 |  800 |  200 | Feudal Age building x 2</span><br><span class="line">Imperial Age  | 03:30 | 1000 |  800 | Castle Age building x 2 </span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>奇摩股市提供您當</th>
+<th align="center">大盤走勢、類股走及</th>
+<th align="right">選擇權分</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>abc</td>
+<td align="center">def</td>
+<td align="right">123</td>
+</tr>
+<tr>
+<td>eeeeee</td>
+<td align="center">eeee</td>
+<td align="right">21312</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Age</th>
+<th align="center">Time</th>
+<th align="right">Food</th>
+<th align="right">Gold</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Feudal Age</td>
+<td align="center">02:10</td>
+<td align="right">500</td>
+<td align="right">0</td>
+<td>Dark Age building x 2</td>
+</tr>
+<tr>
+<td>Castle Age</td>
+<td align="center">02:40</td>
+<td align="right">800</td>
+<td align="right">200</td>
+<td>Feudal Age building x 2</td>
+</tr>
+<tr>
+<td>Imperial Age</td>
+<td align="center">03:30</td>
+<td align="right">1000</td>
+<td align="right">800</td>
+<td>Castle Age building x 2</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|預設|靠右對齊|靠左對齊|置中對齊|</span><br><span class="line">|---|------:|:-----|:-----:|</span><br><span class="line">|12 |12     |12    |12     |</span><br><span class="line">|123|123    |123   |123    |</span><br><span class="line">|1  |1      |1     |1      |</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>預設</th>
+<th align="right">靠右對齊</th>
+<th align="left">靠左對齊</th>
+<th align="center">置中對齊</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>12</td>
+<td align="right">12</td>
+<td align="left">12</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td>123</td>
+<td align="right">123</td>
+<td align="left">123</td>
+<td align="center">123</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">1</td>
+<td align="left">1</td>
+<td align="center">1</td>
+</tr>
+</tbody></table>
+<h2 id="區塊元素-程式碼"><a href="#區塊元素-程式碼" class="headerlink" title="區塊元素(程式碼)"></a>區塊元素(程式碼)</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">console</span>.log()</span><br></pre></td></tr></table></figure>
+
+<h2 id="區塊引言"><a href="#區塊引言" class="headerlink" title="區塊引言"></a>區塊引言</h2><blockquote>
+<p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,<br>consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.<br>Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse<br>id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
+<h2 id="區塊引言-階層"><a href="#區塊引言-階層" class="headerlink" title="區塊引言(階層)"></a>區塊引言(階層)</h2><blockquote>
+<p>This is the first level of quoting.</p>
+<blockquote>
+<p>This is nested blockquote.</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>Back to the first level.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="引言的區塊內也可以使用其他的Markdown語法，包括標題、清單、程式碼區塊等："><a href="#引言的區塊內也可以使用其他的Markdown語法，包括標題、清單、程式碼區塊等：" class="headerlink" title="引言的區塊內也可以使用其他的Markdown語法，包括標題、清單、程式碼區塊等："></a>引言的區塊內也可以使用其他的Markdown語法，包括標題、清單、程式碼區塊等：</h2><blockquote>
+<h2 id="This-is-a-header"><a href="#This-is-a-header" class="headerlink" title="This is a header."></a>This is a header.</h2><ol>
+<li>This is the first list item.</li>
+<li>This is the second list item.</li>
+</ol>
+<p>Here’s some example code:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">return shell_exec(&quot;echo $input | $markdown_script&quot;);</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="水平分隔線"><a href="#水平分隔線" class="headerlink" title="水平分隔線"></a>水平分隔線</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">第一個水平分隔線：</span><br><span class="line">***</span><br><span class="line">第二個水平分隔線：</span><br><span class="line">---</span><br><span class="line">第三個水平分隔線：</span><br><span class="line">___</span><br></pre></td></tr></table></figure>
+<p>第一個水平分隔線：</p>
+<hr>
+<h2 id="第二個水平分隔線："><a href="#第二個水平分隔線：" class="headerlink" title="第二個水平分隔線："></a>第二個水平分隔線：</h2><p>第三個水平分隔線：</p>
+<hr>
+<h2 id="數學公式"><a href="#數學公式" class="headerlink" title="數學公式"></a>數學公式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"># 行內公式</span><br><span class="line">質能方程式$E &#x3D; mc^2$</span><br><span class="line"># 獨立公式</span><br><span class="line">質能方程式$$E &#x3D; mc^2$$</span><br><span class="line"># ^ 上標, _ 下標</span><br><span class="line">$$x &#x3D; a _&#123;1&#125;^n + a_ &#123;2&#125;^n + a_&#123;3&#125;^n$$</span><br><span class="line"># 分數使用\frac&#123;分母&#125;&#123;分子&#125; 不過推薦使用\cfrac來代替\frac，顯示公式不會太擠</span><br><span class="line">$$\frac&#123;1&#125;&#123;3&#125; 與\cfrac&#123;1&#125;&#123;3&#125;$$</span><br><span class="line"># &#123;&#125;因為有特殊作用因此當需要顯示大括號時一般使用\lbrace \rbrace來表示</span><br><span class="line">$$f(x, y) &#x3D; 100 * \lbrace[(x + y) * 3] - 5\rbrace$$</span><br><span class="line"># 開根號 \sqrt[次数]&#123;被开方数&#125;</span><br><span class="line">$$\sqrt[3]&#123;X&#125; \sqrt&#123;5 - x&#125;$$ </span><br><span class="line"># 極限</span><br><span class="line">$g. \lim\limits_&#123;n \rightarrow a&#125; [f(x)&#x2F;g(x)]&#x3D;L&#x2F;M$</span><br><span class="line"># 條件表達式</span><br><span class="line">\[</span><br><span class="line">y&#x3D;</span><br><span class="line">\begin&#123;cases&#125;</span><br><span class="line">-x,\quad x\leq 0 \\</span><br><span class="line">x,\quad x&gt;0</span><br><span class="line">\end&#123;cases&#125;</span><br><span class="line">\]</span><br><span class="line">\begin&#123;equation&#125;</span><br><span class="line">    f(n) &#x3D;</span><br><span class="line">    \begin&#123;cases&#125;</span><br><span class="line">    n&#x2F;2, &amp; \text&#123;if $n$ is even&#125; \\</span><br><span class="line">    3n+1, &amp; \text&#123;if $n$ is odd&#125;</span><br><span class="line">    \end&#123;cases&#125;</span><br><span class="line">\end&#123;equation&#125;</span><br></pre></td></tr></table></figure>
+<p>質能方程式$E = mc^2$<br>質能方程式$$E = mc^2$$<br>上標,下標<br>$$x = a <em>{1}^n + a</em> {2}^n + a_{3}^n$$<br>分數使用<br>$$\frac{1}{3} 與\cfrac{1}{3}$$<br>開根號<br>$$f(x, y) = 100 * \lbrace[(x + y) * 3] - 5\rbrace$$<br>$$\frac{1}{3} 與\cfrac{1}{3}$$<br>$$\sqrt[3]{X} \sqrt{5 - x}$$<br>極限<br>$\lim\limits_{n \rightarrow a} [f(x)/g(x)]=L/M$<br>條件表達式<br>[<br>y=<br>\begin{cases}<br>-x,\quad x\leq 0 \<br>x,\quad x&gt;0<br>\end{cases}<br>]<br>\begin{equation}<br>    f(n) =<br>    \begin{cases}<br>    n/2, &amp; \text{if $n$ is even} \<br>    3n+1, &amp; \text{if $n$ is odd}<br>    \end{cases}<br>\end{equation}</p>
+<p><strong>希臘字母</strong></p>
+<table>
+<thead>
+<tr>
+<th>代碼</th>
+<th>大寫</th>
+<th>代碼</th>
+<th>小寫</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>$A$</td>
+<td>\alpha</td>
+<td>$\alpha$</td>
+</tr>
+<tr>
+<td>B</td>
+<td>$B$</td>
+<td>\beta</td>
+<td>$\beta$</td>
+</tr>
+<tr>
+<td>\Gamma</td>
+<td>$\Gamma$</td>
+<td>\gamma</td>
+<td>$\gamma$</td>
+</tr>
+<tr>
+<td>\Delta</td>
+<td>$\Delta$</td>
+<td>\delta</td>
+<td>$\delta$</td>
+</tr>
+<tr>
+<td>E</td>
+<td>$E$</td>
+<td>\epsilon</td>
+<td>$\epsilon$</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>$Z$</td>
+<td>\zeta</td>
+<td>$\zeta$</td>
+</tr>
+<tr>
+<td>H</td>
+<td>$H$</td>
+<td>\eta</td>
+<td>$\eta$</td>
+</tr>
+<tr>
+<td>\Theta</td>
+<td>$\Theta$</td>
+<td>\theta</td>
+<td>$\theta$</td>
+</tr>
+<tr>
+<td>I</td>
+<td>$I$</td>
+<td>\iota</td>
+<td>$\iota$</td>
+</tr>
+<tr>
+<td>K</td>
+<td>$K$</td>
+<td>\kappa</td>
+<td>$\kappa$</td>
+</tr>
+<tr>
+<td>\Lambda</td>
+<td>$\Lambda$</td>
+<td>\lambda</td>
+<td>$\lambda$</td>
+</tr>
+<tr>
+<td>M</td>
+<td>$M$</td>
+<td>\mu</td>
+<td>$\mu$</td>
+</tr>
+<tr>
+<td>N</td>
+<td>$N$</td>
+<td>\nu</td>
+<td>$\nu$</td>
+</tr>
+<tr>
+<td>\Xi</td>
+<td>$\Xi$</td>
+<td>\xi</td>
+<td>$\xi$</td>
+</tr>
+<tr>
+<td>O</td>
+<td>$O$</td>
+<td>\omicron</td>
+<td>$\omicron$</td>
+</tr>
+<tr>
+<td>\Pi</td>
+<td>$\Pi$</td>
+<td>\pi</td>
+<td>$\pi$</td>
+</tr>
+<tr>
+<td>P</td>
+<td>$P$</td>
+<td>\rho</td>
+<td>$\rho$</td>
+</tr>
+<tr>
+<td>\Sigma</td>
+<td>$\Sigma$</td>
+<td>\sigma</td>
+<td>$\sigma$</td>
+</tr>
+<tr>
+<td>T</td>
+<td>$T$</td>
+<td>\tau</td>
+<td>$\tau$</td>
+</tr>
+<tr>
+<td>\Upsilon</td>
+<td>$\Upsilon$</td>
+<td>\upsilon</td>
+<td>$\upsilon$</td>
+</tr>
+<tr>
+<td>\Phi</td>
+<td>$\Phi$</td>
+<td>\phi</td>
+<td>$\phi$</td>
+</tr>
+<tr>
+<td>X</td>
+<td>$X$</td>
+<td>\chi</td>
+<td>$\chi$</td>
+</tr>
+<tr>
+<td>\Psi</td>
+<td>$\Psi$</td>
+<td>\psi</td>
+<td>$\psi$</td>
+</tr>
+<tr>
+<td>\Omega</td>
+<td>$\Omega$</td>
+<td>\omega</td>
+<td>$\omega$</td>
+</tr>
+</tbody></table>
+<p><strong>關係運算符</strong></p>
+<table>
+<thead>
+<tr>
+<th>符號</th>
+<th>代碼</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\pm$</td>
+<td>\pm</td>
+</tr>
+<tr>
+<td>$\times$</td>
+<td>\times</td>
+</tr>
+<tr>
+<td>$\div$</td>
+<td>\div</td>
+</tr>
+<tr>
+<td>$\mid$</td>
+<td>\mid</td>
+</tr>
+<tr>
+<td>$\nmid$</td>
+<td>\nmid</td>
+</tr>
+<tr>
+<td>$\cdot$</td>
+<td>\cdot</td>
+</tr>
+<tr>
+<td>$\circ$</td>
+<td>\circ</td>
+</tr>
+<tr>
+<td>$\ast$</td>
+<td>\ast</td>
+</tr>
+<tr>
+<td>$\bigodot$</td>
+<td>\bigodot</td>
+</tr>
+<tr>
+<td>$\bigotimes$</td>
+<td>\bigotimes</td>
+</tr>
+<tr>
+<td>$\bigoplus$</td>
+<td>\bigoplus</td>
+</tr>
+<tr>
+<td>$\leq$</td>
+<td>\leq</td>
+</tr>
+<tr>
+<td>$\geq$</td>
+<td>\geq</td>
+</tr>
+<tr>
+<td>$\neq$</td>
+<td>\neq</td>
+</tr>
+<tr>
+<td>$\approx$</td>
+<td>\approx</td>
+</tr>
+<tr>
+<td>$\equiv$</td>
+<td>\equiv</td>
+</tr>
+<tr>
+<td>$\sum$</td>
+<td>\sum</td>
+</tr>
+<tr>
+<td>$\prod$</td>
+<td>\prod</td>
+</tr>
+<tr>
+<td>$\coprod$</td>
+<td>\coprod</td>
+</tr>
+</tbody></table>
+<p><strong>集合運算符</strong></p>
+<table>
+<thead>
+<tr>
+<th>符號</th>
+<th>代碼</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\emptyset$</td>
+<td>\emptyset</td>
+</tr>
+<tr>
+<td>$\in$</td>
+<td>\in</td>
+</tr>
+<tr>
+<td>$\notin$</td>
+<td>\notin</td>
+</tr>
+<tr>
+<td>$\subset$</td>
+<td>\subset</td>
+</tr>
+<tr>
+<td>$\supset$</td>
+<td>\supset</td>
+</tr>
+<tr>
+<td>$\subseteq$</td>
+<td>\subseteq</td>
+</tr>
+<tr>
+<td>$\supseteq$</td>
+<td>\supseteq</td>
+</tr>
+<tr>
+<td>$\bigcap$</td>
+<td>\bigcap</td>
+</tr>
+<tr>
+<td>$\bigcup$</td>
+<td>\bigcup</td>
+</tr>
+<tr>
+<td>$\bigvee$</td>
+<td>\bigvee</td>
+</tr>
+<tr>
+<td>$\bigwedge$</td>
+<td>\bigwedge</td>
+</tr>
+<tr>
+<td>$\biguplus$</td>
+<td>\biguplus</td>
+</tr>
+<tr>
+<td>$\bigsqcup$</td>
+<td>\bigsqcup</td>
+</tr>
+</tbody></table>
+<p><strong>對數運算符</strong></p>
+<table>
+<thead>
+<tr>
+<th>符號</th>
+<th>代碼</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\log$</td>
+<td>\log</td>
+</tr>
+<tr>
+<td>$\lg$</td>
+<td>\lg</td>
+</tr>
+<tr>
+<td>$\ln$</td>
+<td>\ln</td>
+</tr>
+</tbody></table>
+<p><strong>三角運算符</strong></p>
+<table>
+<thead>
+<tr>
+<th>符號</th>
+<th>代碼</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\bot$</td>
+<td>\bot</td>
+</tr>
+<tr>
+<td>$\angle$</td>
+<td>\angle</td>
+</tr>
+<tr>
+<td>$\sin$</td>
+<td>\sin</td>
+</tr>
+<tr>
+<td>$\cos$</td>
+<td>\cos</td>
+</tr>
+<tr>
+<td>$\tan$</td>
+<td>\tan</td>
+</tr>
+<tr>
+<td>$\cot$</td>
+<td>\cot</td>
+</tr>
+<tr>
+<td>$\sec$</td>
+<td>\sec</td>
+</tr>
+<tr>
+<td>$\csc$</td>
+<td>\csc</td>
+</tr>
+</tbody></table>
+<p><strong>微積分運算符</strong></p>
+<table>
+<thead>
+<tr>
+<th>符號</th>
+<th>代碼</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\prime$</td>
+<td>\prime</td>
+</tr>
+<tr>
+<td>$\int$</td>
+<td>\int</td>
+</tr>
+<tr>
+<td>$\iint$</td>
+<td>\iint</td>
+</tr>
+<tr>
+<td>$\iiint$</td>
+<td>\iiint</td>
+</tr>
+<tr>
+<td>$\iiiint$</td>
+<td>\iiiint</td>
+</tr>
+<tr>
+<td>$\oint$</td>
+<td>\oint</td>
+</tr>
+<tr>
+<td>$\lim$</td>
+<td>\lim</td>
+</tr>
+<tr>
+<td>$\infty$</td>
+<td>\infty</td>
+</tr>
+<tr>
+<td>$\nabla$</td>
+<td>\nabla</td>
+</tr>
+<tr>
+<td>$\mathrm{d}$</td>
+<td>\mathrm{d}</td>
+</tr>
+</tbody></table>
+<p><strong>其他</strong></p>
+<table>
+<thead>
+<tr>
+<th>符號</th>
+<th>代碼</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\rightarrow$</td>
+<td>\rightarrow</td>
+</tr>
+<tr>
+<td>$\uparrow$</td>
+<td>\uparrow</td>
+</tr>
+<tr>
+<td>$\nearrow$</td>
+<td>\nearrow</td>
+</tr>
+<tr>
+<td>$\searrow$</td>
+<td>\searrow</td>
+</tr>
+<tr>
+<td>普通空格$\space$空格</td>
+<td>\space</td>
+</tr>
+<tr>
+<td>字符空格$\quad$空格</td>
+<td>\quad</td>
+</tr>
+<tr>
+<td>$\cdot$</td>
+<td>\cdot</td>
+</tr>
+<tr>
+<td>$\approx$</td>
+<td>\approx</td>
+</tr>
+<tr>
+<td>顯示公式較好看$\displaystyle \sum_{n=1}^{10} n^2$</td>
+<td>\displaystyle “\displaystyle \sum_{n=1}^{10} n^2”</td>
+</tr>
+<tr>
+<td>$\overline{x+1}$</td>
+<td>\overline 能覆蓋所有括號中的文本</td>
+</tr>
+<tr>
+<td>$\bar x$</td>
+<td>\bar 長度只能覆蓋一個字母</td>
+</tr>
+<tr>
+<td>$\displaystyle \sum_{i=1}^n$</td>
+<td>\sum_{i=1}^n 總和</td>
+</tr>
+<tr>
+<td>$\frac{1}{3}$</td>
+<td>\frac{1}{3}</td>
+</tr>
+<tr>
+<td>$\sqrt[3]{X}$</td>
+<td>\sqrt[3]{X}</td>
+</tr>
+<tr>
+<td>$\sqrt{5 - x}$</td>
+<td>\sqrt{5 - x}</td>
+</tr>
+<tr>
+<td>$\int^1_{-1}$</td>
+<td>\int^1_{-1}</td>
+</tr>
+<tr>
+<td>$\pm$</td>
+<td>\pm</td>
+</tr>
+<tr>
+<td>$\lim\limits_{n \rightarrow \infty}$</td>
+<td>\lim\limits_{n \rightarrow \infty}</td>
+</tr>
+<tr>
+<td>\begin{cases} -x,\quad x\leq 0 \x,\quad x&gt;0 \end{cases}</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="自動連結"><a href="#自動連結" class="headerlink" title="自動連結"></a>自動連結</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;http:&#x2F;&#x2F;example.com&#x2F;&gt;  </span><br><span class="line">&lt;address@example.com&gt;</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="http://example.com/">http://example.com/</a><br><a href="mailto:&#97;&#x64;&#100;&#114;&#x65;&#115;&#x73;&#x40;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;">&#97;&#x64;&#100;&#114;&#x65;&#115;&#x73;&#x40;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<h2 id="跳脫字元"><a href="#跳脫字元" class="headerlink" title="跳脫字元"></a>跳脫字元</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Markdown可以利用反斜線來插入一些在語法中有其他意義的符號，例如：如果你想要用星號加在文字旁邊的方式來做出強調效果（但不用&lt;em&gt;標籤），你可以在星號的前面加上反斜線：</span><br><span class="line">\*literal asterisks\*</span><br></pre></td></tr></table></figure>
+<p>*literal asterisks*</p>
+<p>Markdown支援在下面這些符號前面加上反斜線來幫助插入普通的符號：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\   反斜線</span><br><span class="line">&#96;   反引號</span><br><span class="line">*   星號</span><br><span class="line">_   底線</span><br><span class="line">&#123;&#125;  大括號</span><br><span class="line">[]  方括號</span><br><span class="line">()  括號</span><br><span class="line">#   井字號</span><br><span class="line">+   加號</span><br><span class="line">-   減號</span><br><span class="line">.   英文句點</span><br><span class="line">!   驚嘆號</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/flow-guide/tags/sub-Markdown/" rel="tag"># sub-Markdown</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/flow-guide/2021/03/23/node-issue/" rel="prev" title="Node.js issue">
+                  <i class="fa fa-chevron-left"></i> Node.js issue
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/flow-guide/2021/03/23/github-issue/" rel="next" title="GitHub issue">
+                  GitHub issue <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Robert Kao</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 強力驅動
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/flow-guide/js/utils.js"></script><script src="/flow-guide/js/motion.js"></script><script src="/flow-guide/js/next-boot.js"></script>
+
+  
+<script src="/flow-guide/js/local-search.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

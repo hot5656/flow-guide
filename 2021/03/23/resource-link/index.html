@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/flow-guide/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/flow-guide/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/flow-guide/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/flow-guide/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/flow-guide/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"hot5656.github.io","root":"/flow-guide/","images":"/flow-guide/images","scheme":"Gemini","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/flow-guide/search.json","localsearch":{"enable":"enable","trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="Root  issue  [Flex bugs](https:&#x2F;&#x2F;github.com&#x2F;philipwalton&#x2F;flexbugs#9-some-html-elements-cant-be-flex-containers)   1某些地方不可使用    Ebook    Kalob CSS&#x2F;CSS3  Font   Free Font  icon   material.io    12345">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Resource reference site">
+<meta property="og:url" content="https://hot5656.github.io/flow-guide/2021/03/23/resource-link/index.html">
+<meta property="og:site_name" content="Robert Flow Guide">
+<meta property="og:description" content="Root  issue  [Flex bugs](https:&#x2F;&#x2F;github.com&#x2F;philipwalton&#x2F;flexbugs#9-some-html-elements-cant-be-flex-containers)   1某些地方不可使用    Ebook    Kalob CSS&#x2F;CSS3  Font   Free Font  icon   material.io    12345">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2021-03-23T07:44:37.000Z">
+<meta property="article:modified_time" content="2021-03-23T08:44:37.674Z">
+<meta property="article:author" content="Robert Kao">
+<meta property="article:tag" content="sub-Resource">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://hot5656.github.io/flow-guide/2021/03/23/resource-link/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+<title>Resource reference site | Robert Flow Guide</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/flow-guide/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Robert Flow Guide</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/flow-guide/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li>
+        <li class="menu-item menu-item-tags"><a href="/flow-guide/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li>
+        <li class="menu-item menu-item-categories"><a href="/flow-guide/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li>
+        <li class="menu-item menu-item-archives"><a href="/flow-guide/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#issue"><span class="nav-number">1.</span> <span class="nav-text">issue</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ebook"><span class="nav-number">2.</span> <span class="nav-text">Ebook</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Font"><span class="nav-number">3.</span> <span class="nav-text">Font</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#icon"><span class="nav-number">4.</span> <span class="nav-text">icon</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#video"><span class="nav-number">5.</span> <span class="nav-text">video</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#image"><span class="nav-number">6.</span> <span class="nav-text">image</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#youtube"><span class="nav-number">7.</span> <span class="nav-text">youtube</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#performance"><span class="nav-number">8.</span> <span class="nav-text">performance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cource"><span class="nav-number">9.</span> <span class="nav-text">cource</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#code"><span class="nav-number">10.</span> <span class="nav-text">code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#API"><span class="nav-number">11.</span> <span class="nav-text">API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#F2E-personal"><span class="nav-number">12.</span> <span class="nav-text">F2E personal</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#F2E-Job"><span class="nav-number">13.</span> <span class="nav-text">F2E Job</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tool"><span class="nav-number">14.</span> <span class="nav-text">tool</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#slide"><span class="nav-number">15.</span> <span class="nav-text">slide</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#reference"><span class="nav-number">16.</span> <span class="nav-text">reference</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#issue-1"><span class="nav-number">17.</span> <span class="nav-text">issue</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%9C%E9%A0%85"><span class="nav-number">18.</span> <span class="nav-text">雜項</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Robert Kao</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/flow-guide/archives/">
+        
+          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/flow-guide/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/flow-guide/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://hot5656.github.io/flow-guide/2021/03/23/resource-link/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/flow-guide/images/avatar.gif">
+      <meta itemprop="name" content="Robert Kao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Robert Flow Guide">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Resource reference site
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2021-03-23 15:44:37 / 修改時間：16:44:37" itemprop="dateCreated datePublished" datetime="2021-03-23T15:44:37+08:00">2021-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/flow-guide/categories/Resource/" itemprop="url" rel="index"><span itemprop="name">Resource</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <ul>
+<li>  <a href="../README.md">Root</a></li>
+</ul>
+<h3 id="issue"><a href="#issue" class="headerlink" title="issue"></a>issue</h3><ul>
+<li><pre><code> [Flex bugs](https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers)
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">某些地方不可使用</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+<h3 id="Ebook"><a href="#Ebook" class="headerlink" title="Ebook"></a>Ebook</h3><ul>
+<li>   <a target="_blank" rel="noopener" href="https://cdn.kalob.io/books/CSSMasterclassBook.pdf?year=2018">Kalob CSS/CSS3</a></li>
+</ul>
+<h3 id="Font"><a href="#Font" class="headerlink" title="Font"></a>Font</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="http://allfont.net/free/">Free Font</a></li>
+</ul>
+<h3 id="icon"><a href="#icon" class="headerlink" title="icon"></a>icon</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://material.io/tools/icons/">material.io</a>  </li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;</span><br><span class="line">      rel=&quot;stylesheet&quot;&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Rules for sizing the icon. */</span></span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-18</span> &#123; <span class="attribute">font-size</span>: <span class="number">18px</span>; &#125;</span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-24</span> &#123; <span class="attribute">font-size</span>: <span class="number">24px</span>; &#125;</span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-36</span> &#123; <span class="attribute">font-size</span>: <span class="number">36px</span>; &#125;</span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-48</span> &#123; <span class="attribute">font-size</span>: <span class="number">48px</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Rules for using icons as black on a light background. */</span></span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-dark</span> &#123; <span class="attribute">color</span>: <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.54</span>); &#125;</span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-dark</span><span class="selector-class">.md-inactive</span> &#123; <span class="attribute">color</span>: <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.26</span>); &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Rules for using icons as white on a dark background. */</span></span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-light</span> &#123; <span class="attribute">color</span>: <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">1</span>); &#125;</span><br><span class="line"><span class="selector-class">.material-icons</span><span class="selector-class">.md-light</span><span class="selector-class">.md-inactive</span> &#123; <span class="attribute">color</span>: <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.3</span>); &#125;</span><br><span class="line"></span><br><span class="line">&lt;i class=&quot;material-icons&quot;&gt;face&lt;/i&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>  <a target="_blank" rel="noopener" href="https://www.flaticon.com/free-icons/up-down">up-down</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.flaticon.com/">flaticon</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://spritegen.website-performance.org/">CSS Sprite</a></li>
+<li>  <a target="_blank" rel="noopener" href="http://www.spritecow.com/">spritecow-find icon position</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.freeiconspng.com/images/borders-png">free border png</a></li>
+</ul>
+<h3 id="video"><a href="#video" class="headerlink" title="video"></a>video</h3><ul>
+<li><pre><code>   [12 Sites to Find High Quality Free Stock Videos](https://superdevresources.com/free-stock-videos-footages/)
+</code></pre>
+</li>
+</ul>
+<h3 id="image"><a href="#image" class="headerlink" title="image"></a>image</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://medium.com/as-a-product-designer/%E5%8D%81%E5%80%8B%E5%B8%B8%E7%94%A8%E7%9A%84ui%E9%9D%88%E6%84%9F%E5%8F%8A%E5%B7%A5%E5%85%B7%E7%B6%B2%E7%AB%99-4b21d4c0a5ac">十個常用的UI靈感及工具網站</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.templatemonster.com/free-templates.php">TemplateMonster(free psd)</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://pixabay.com/">pixabay</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.base64-image.de/">Base64 Image Encoder</a></li>
+</ul>
+<h3 id="youtube"><a href="#youtube" class="headerlink" title="youtube"></a>youtube</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://www.youtube.com/user/polo13999/feed">線上讀書會</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.youtube.com/user/LevelUpTuts/playlists">Web design 教學</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Kp7B_3TrQjg">SASS超入門與RWD</a></li>
+</ul>
+<h3 id="performance"><a href="#performance" class="headerlink" title="performance"></a>performance</h3><ul>
+<li>   <a target="_blank" rel="noopener" href="https://developers.google.com/web/fundamentals/performance/rendering/">轉譯效能</a></li>
+<li>   <a target="_blank" rel="noopener" href="https://www.udacity.com/course/browser-rendering-optimization--ud860">轉譯效能-course</a></li>
+</ul>
+<h3 id="cource"><a href="#cource" class="headerlink" title="cource"></a>cource</h3><ul>
+<li>   <a target="_blank" rel="noopener" href="https://moderndevtools.com/lessons/14">Accessibility debugging with DevTools</a></li>
+</ul>
+<h3 id="code"><a href="#code" class="headerlink" title="code"></a>code</h3><ul>
+<li><pre><code>   [codepen](https://codepen.io/)
+</code></pre>
+</li>
+</ul>
+<h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><ul>
+<li><pre><code>   [公車動態 API](http://ptx.transportdata.tw/MOTC)
+</code></pre>
+</li>
+<li><pre><code>   [Google Map API](https://developers.google.com/maps/documentation/javascript/tutorial?hl=zh-tw)
+</code></pre>
+</li>
+<li><pre><code>   [高雄市政府](https://data.kcg.gov.tw/)
+</code></pre>
+</li>
+</ul>
+<h3 id="F2E-personal"><a href="#F2E-personal" class="headerlink" title="F2E personal"></a>F2E personal</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://www.cakeresume.com/search?query=%E5%89%8D%E7%AB%AF&page=1">CakeResume</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.toptal.com/front-end">Toptal </a></li>
+</ul>
+<h3 id="F2E-Job"><a href="#F2E-Job" class="headerlink" title="F2E Job"></a>F2E Job</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://github.com/f2etw/jobs/issues">F2E TW</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.yourator.co/">yourator</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.104.com.tw/jobs/main/">104</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://mit.jobs/jobs?utf8=%E2%9C%93&search=%E5%89%8D%E7%AB%AF&c=">mit.Jobs</a></li>
+</ul>
+<h3 id="tool"><a href="#tool" class="headerlink" title="tool"></a>tool</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://trello.com/">線上筆記本</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://todoist.com/">Todolist</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://evernote.com/intl/zh-tw">Evernote筆記App-include 網頁收錄</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.google.com.tw/intl/zh-TW/docs/about/">Google Docs</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.aconvert.com/icon/svg-to-ico/">svg-to-ico</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://encycolorpedia.cn/3f5d45">#3f5d45 互補色</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.toolskk.com/color?color=%23123456">色環</a></li>
+</ul>
+<h3 id="slide"><a href="#slide" class="headerlink" title="slide"></a>slide</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://www.slideshare.net/">Slideshare</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://speakerdeck.com/">Speakerdeck</a></li>
+</ul>
+<h3 id="reference"><a href="#reference" class="headerlink" title="reference"></a>reference</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="http://tutorials.jenkov.com/">Jenkov(Web design guide)</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-TW/">WDN(Wage Dynamics Network) web docs</a></li>
+<li>  <a target="_blank" rel="noopener" href="http://www.wibibi.com/">Wibibi 網頁設計教學百科</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://backlog.com/git-tutorial/tw/">連猴子都懂的 Git 入門</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://github.com/doggy8088/Learn-Git-in-30-days">30 天精通 Git 版本控管</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://gitbook.tw/?utm_source=hexschool&utm_campaign=IT">為你自己學 Git</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://medium.com/">medium部落格</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/index.html">Hexo部落格框架</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.linkedin.com/">LinkedIn</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://caniuse.com/#tables">Can I use</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.w3schools.com/colors/colors_names.asp">Color select #1</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://www.w3schools.com/colors/colors_picker.asp">Color select #2</a></li>
+<li>  <a target="_blank" rel="noopener" href="http://jim-nielsen.com/sassme/">Sass Color alignment</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://line25.com/">Line25 Web Design Idea</a></li>
+</ul>
+<h3 id="issue-1"><a href="#issue-1" class="headerlink" title="issue"></a>issue</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://stackoverflow.com/">stackoverflow</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way#%E5%9C%A8%E6%8F%90%E5%95%8F%E4%B9%8B%E5%89%8D">提問的智慧</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://caniuse.com/">can i use</a></li>
+</ul>
+<h3 id="雜項"><a href="#雜項" class="headerlink" title="雜項"></a>雜項</h3><ul>
+<li>  <a target="_blank" rel="noopener" href="https://www.airbnb.com.tw/">Airbnb</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/flow-guide/tags/sub-Resource/" rel="tag"># sub-Resource</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/flow-guide/2021/03/23/resource-list/" rel="prev" title="Resource List">
+                  <i class="fa fa-chevron-left"></i> Resource List
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/flow-guide/2021/03/23/node-issue/" rel="next" title="Node.js issue">
+                  Node.js issue <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Robert Kao</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 強力驅動
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/flow-guide/js/utils.js"></script><script src="/flow-guide/js/motion.js"></script><script src="/flow-guide/js/next-boot.js"></script>
+
+  
+<script src="/flow-guide/js/local-search.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
